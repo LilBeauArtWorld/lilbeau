@@ -8,9 +8,10 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 [...]
 
-### 3 sept - [Workshop]
+### 2 sept - [Workshop]
 
-[...]
+Ik heb een Wok menu kaart veranderd in een online keuze menu.
+Ik heb ook geoefend met CSS en spelen met letters en kleuren.
 
 ### 31 aug - Kickoff
 
