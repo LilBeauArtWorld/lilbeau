@@ -4,9 +4,9 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 ## Learning Log
 
-### [...]
+### 4 sept - Workshops
 
-[...]
+Ik heb geleerd hoe ik door hulp van woorden te associeren met een persoon, lettertypes te vinden op google-fonts. combineren en mixen
 
 ### 2 sept - [Workshop]
 
