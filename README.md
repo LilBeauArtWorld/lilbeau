@@ -2,7 +2,12 @@
 
 Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door studenten worden gemaakt.
 
-## Learning Log
+### Learning Log
+
+### 7 sept -
+
+Opdracht 2 - Eigen verkenning -
+Ik denk dat ik van mijn garden een soort van simpele 'point-and-click'-game ervan wil maken. Ik wil een persoon 'meenemen' in een soort van cozy fantasie-rijke omgeving. Ik leef natuurlijk in het heden en ben vaak realistisch, maar toch een beetje dagdromen en random fantasy creatures maken is toch ook soms wel okay.
 
 ### 4 sept - Workshops
 
