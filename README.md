@@ -95,6 +95,12 @@ Ik had heel veel moeite met het opstarten en aanmaken en connecten van github en
 
 ##### Leg uit wat een source hosting platform is en voor welke jij gekozen hebt.
 
+Een source hosting platform is een online platform waarop je de broncode van een website kunt opslaan, beheren en delen. Je kunt er bijvoorbeeld HTML, CSS en JS bestanden bewaren. Een belangrijke voordeel is dat je via zo'n platform ook je website online kunt publiceren.
+
+Voor mijn website heb ik gekozen voor GitHub en GitHub Pages. Github gebruik ik om mijn code en bestanden te bewaren en met Pages kan ik deze bestanden vervolgens als website op internet publiceren.
+
 ##### Vertel welke domeinnaam jij gekozen hebt en hoe je die hebt gekoppeld aan jouw pagina.
+
+Voor mijn website heb ik de domeinnaam lilbeau.nl gekozen.
 
 ##### Beschrijf hoe je aanpassingen aan jouw pagina kunt maken en hoe je er voor zorgt dat die op het web gepubliceerd worden.
