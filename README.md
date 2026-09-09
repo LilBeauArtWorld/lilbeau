@@ -14,6 +14,8 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 ##### Vertel kort welk idee van de Crazy 8 je het liefst zou willen uitvoeren/ verder zou willen onderzoeken
 
+Ik ben nu begonnen met de eerste schetsen van mijn website. de achtergronden en de light en dark modus (switchen van achtergrond als je op een lampen sprite klikt)
+
 ### 8 sept -
 
 Ik heb vandaag voor mijn website een mindmap gemaakt over wie ik ben... wat natuurlijk belangrijk is als ik een persoonlijke website ga maken. Met hulp daarvan heb ik een paar puntjes eruit kunnen halen die ik eventueel wil laten zien. 50+ afbeelding opgezocht op pinterest die mij inspireren en video's opgezocht die mij kunnen helpen.
