@@ -4,6 +4,31 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 ### Learning Log
 
+### 🌸14 sept -🌸
+
+💚 In mijn notities begonnen met mijn html lay-outs
+
+#### 🌼De checkout vragen voor vandaag:🌼
+
+##### ❓ Leg uit wanneer een website 'lelijk' wordt en geef voorbeelden wat je kan doen om deze 'lelijke' onderdelen te fixen?
+
+Wanneer de vormgeving niet goed samenhangt. Bijvoorbeeld: Te veel verschillende kleuren, te veel verschillende lettertypes, geen hieracchie, alles staat te dicht op elkaar, onduidelijke navigatie, media (afbeeldingen, text, audio, env) horen niet bij elkaar.
+
+##### ❓ Vertel welke volgende stap je neemt om je website responsive te maken.
+
+Ik moet ervoor zorgenn dat het goed werkt op verschillende scherm formaten... :)
+Ik ga dan eerst kijken hoe mijn ontwerp zich gedraagd op de schermen die ik heb (laptop en Iphone) en daarna kijk ik of ik flexbox, grid en media queries nodig heb om onderdelen mee te laten schalen en eventueel anders kan indelen.
+
+##### ❓ Kun je het ontwerp en de bouw van je eigen Garden (zo uit je hoofd) onderbouwen in Webby vocabulair?
+
+Mijn tuintje is een interactieve website met een point-and-click navigatie. De bezoeker ontdekt mijn projecten en interesses door verschillende ruimtes en elementen aan te klikken.
+
+Ik gebruiken een vaste visuele stijl, kleurenpalet en illustratie stijl (mijn stijl) voor een duidelijke visuele identiteit en samenhang. Met visuele hierarchie maak ik duideijk welke onderdelen belangrijk en interactief zijn.
+
+### 🌸11 t/m 13 sept -🌸
+
+💚 Schetsen, tekenen. rondvragen aan mensen of mijn idee wel duidelijk is.
+
 ### 🌸10 sept -🌸
 
 💚 Ik ben meer gaan schetsen. Concepten van achtergronden en concepten van sprites/clickables.
