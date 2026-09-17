@@ -4,6 +4,13 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 ### Learning Log
 
+### 🌸 15 en 16 sept -🌸
+
+💚 Ben tot een realisatie gekomen dan mijn concept nog veelste moeilijk is voor iemand met mijn skills. opzich zou ik het kunnen doen, maar aangezien de te korte tijd die ik heb gekregen, heb ik het maar (voorlopig) bij een simpele layout website gehouden met meedere pagina's dat te maken heeft met mijn hobbies en passies.
+
+#### 🌼De checkout vragen voor vandaag:🌼
+
+
 ### 🌸14 sept -🌸
 
 💚 In mijn notities begonnen met mijn html lay-outs
