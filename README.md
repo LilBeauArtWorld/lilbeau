@@ -8,8 +8,25 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 💚 Ben tot een realisatie gekomen dan mijn concept nog veelste moeilijk is voor iemand met mijn skills. opzich zou ik het kunnen doen, maar aangezien de te korte tijd die ik heb gekregen, heb ik het maar (voorlopig) bij een simpele layout website gehouden met meedere pagina's dat te maken heeft met mijn hobbies en passies.
 
+💚 Ik merk dat ik Grids echt wel lastig vind aangezien ik vakjes niet mag categoriseren met classes en ID's dus het moest erg consistent blijven enzo
+
 #### 🌼De checkout vragen voor vandaag:🌼
 
+##### ❓ Noem 3 Gestalt- of Design principes op en laat de ander uitleggen wat ze betekenen en doen.
+
+- Visuele Hierachie: Zorgt ervoor dat de gebruiker direct ziet welke informatie belangrijker is dan de andere. Dat is aan te geven met grootte, kleur en positie.
+
+- Nabijheid: Elementen die dicht bij elkaar staan, worden gelijk gezien als 'stukjes die bijelkaar horen'.
+
+- Consistentie: Door dezelfde kleuren, vormen, typografie en interacties te gebruiken, weet de gebruiker wat je kan verwachten.
+
+##### ❓ Een grid biedt ruimte om te spelen (vrijheid), maar tegelijkertijd ook eenheid en structuur (vastigheid). Wat wordt hiermee bedoeld?
+
+Een grid geeft structuur en hoevast, omdat elementen op een bepaalde manier worden uitgelijnd. Terelijkertijd geeft een grid vrijheid, omdat je binnen die structuur kan spelen met grootte, positie en verdelingen van elementen.
+
+##### ❓ Welk principe neem je mee in een laatste iteratie van je eigen Garden?
+
+-
 
 ### 🌸14 sept -🌸
 
