@@ -1,0 +1,696 @@
+/****************/
+/* SAIRA NORMAL */
+/****************/
+/* @font-face {
+  font-family: "Saira";
+  src: url("https://assets.codepen.io/274456/Saira-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: "Saira";
+  src: url("https://assets.codepen.io/274456/Saira-Light.ttf")
+    format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Saira";
+  src: url("https://assets.codepen.io/274456/Saira-Regular.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* @font-face {
+  font-family: "Saira";
+  src: url("https://assets.codepen.io/274456/Saira-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: "Saira";
+  src: url("https://assets.codepen.io/274456/Saira-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/***********************/
+/* SAIRA NORMAL ITALIC */
+/***********************/
+/* @font-face {
+  font-family: "Saira";
+  src: url("https://assets.codepen.io/274456/Saira-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+} */
+
+@font-face {
+  font-family: "Saira";
+  src: url("https://assets.codepen.io/274456/Saira-LightItalic.ttf")
+    format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Saira";
+  src: url("https://assets.codepen.io/274456/Saira-RegularItalic.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* @font-face {
+  font-family: "Saira";
+  src: url("https://assets.codepen.io/274456/Saira-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+} */
+
+@font-face {
+  font-family: "Saira";
+  src: url("https://assets.codepen.io/274456/Saira-BoldItalic.ttf")
+    format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+/************************/
+/* SAIRA SEMI-CONDENSED */
+/************************/
+/* @font-face {
+  font-family: "Saira Semi Condensed";
+  src: url("https://assets.codepen.io/274456/Saira_SemiCondensed-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: "Saira Semi Condensed";
+  src: url("https://assets.codepen.io/274456/Saira_SemiCondensed-Light.ttf")
+    format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Saira Semi Condensed";
+  src: url("https://assets.codepen.io/274456/Saira_SemiCondensed-Regular.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* @font-face {
+  font-family: "Saira Semi Condensed";
+  src: url("https://assets.codepen.io/274456/Saira_SemiCondensed-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: "Saira Semi Condensed";
+  src: url("https://assets.codepen.io/274456/Saira_SemiCondensed-Bold.ttf")
+    format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*******************************/
+/* SAIRA SEMI-CONDENSED ITALIC */
+/*******************************/
+/* @font-face {
+  font-family: "Saira Semi Condensed";
+  src: url("https://assets.codepen.io/274456/Saira_SemiCondensed-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+} */
+
+@font-face {
+  font-family: "Saira Semi Condensed";
+  src: url("https://assets.codepen.io/274456/Saira_SemiCondensed-LightItalic.ttf")
+    format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Saira Semi Condensed";
+  src: url("https://assets.codepen.io/274456/Saira_SemiCondensed-RegularItalic.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* @font-face {
+  font-family: "Saira Semi Condensed";
+  src: url("https://assets.codepen.io/274456/Saira_SemiCondensed-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+} */
+
+@font-face {
+  font-family: "Saira Semi Condensed";
+  src: url("https://assets.codepen.io/274456/Saira_SemiCondensed-BoldItalic.ttf")
+    format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+/**************************/
+/* SAIRA CONDENSED NORMAL */
+/**************************/
+/* @font-face {
+  font-family: "Saira Condensed";
+  src: url("https://assets.codepen.io/274456/Saira_Condensed-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: "Saira Condensed";
+  src: url("https://assets.codepen.io/274456/Saira_Condensed-Light.ttf")
+    format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Saira Condensed";
+  src: url("https://assets.codepen.io/274456/Saira_Condensed-Regular.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* @font-face {
+  font-family: "Saira Condensed";
+  src: url("https://assets.codepen.io/274456/Saira_Condensed-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: "Saira Condensed";
+  src: url("https://assets.codepen.io/274456/Saira_Condensed-Bold.ttf")
+    format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/**************************/
+/* SAIRA CONDENSED ITALIC */
+/**************************/
+/* @font-face {
+  font-family: "Saira Condensed";
+  src: url("https://assets.codepen.io/274456/Saira_Condensed-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+} */
+
+@font-face {
+  font-family: "Saira Condensed";
+  src: url("https://assets.codepen.io/274456/Saira_Condensed-LightItalic.ttf")
+    format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Saira Condensed";
+  src: url("https://assets.codepen.io/274456/Saira_Condensed-RegularItalic.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* @font-face {
+  font-family: "Saira Condensed";
+  src: url("https://assets.codepen.io/274456/Saira_Condensed-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+} */
+
+@font-face {
+  font-family: "Saira Condensed";
+  src: url("https://assets.codepen.io/274456/Saira_Condensed-BoldItalic.ttf")
+    format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@layer template {
+  html {
+    font-family: Saira, sans-serif;
+  }
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* THEME */
+
+html {
+  color-scheme: light dark;
+
+  --brand-primary: #0f1e00; /* dark dark green */
+  --brand-secondary: #66cc00; /* green */
+  --brand-accent: light-dark(#ee0088, #ff99cc); /* dark pink, light pink */
+
+  --color: light-dark(var(--brand-primary), white);
+  --background: light-dark(
+    #ffffff,
+    /* white */
+    color-mix(in srgb, var(--brand-secondary), var(--brand-primary) 67%)
+      /* mix of primary and secondary */
+  );
+  --background-transparent: light-dark(
+    #ffffffee,
+    /* transparant white */
+    color-mix(in srgb, var(--background), transparent 33%) /* transparant mix */
+  );
+
+  --color-link: var(--brand-accent);
+  --outline-link: currentcolor;
+
+  --background-deco: var(--brand-secondary);
+  --color-deco: var(--brand-primary);
+  --line-deco: var(--brand-primary);
+
+  --color-button: light-dark(#ffffff, #000000); /* white, black */
+  --background-button: var(--brand-accent);
+  --outline-button: var(--brand-accent);
+
+  --color-input: black;
+  --background-input: white;
+
+  --line-input: var(--brand-primary);
+
+  accent-color: var(--brand-secondary);
+
+  --color-header: #ffffff; /* white */
+  --background-header: var(--brand-primary);
+  --color-link-header: white;
+
+  --color-footer: #ffffff; /* white */
+  --background-footer: var(--brand-primary);
+
+  --color-title: var(--brand-secondary);
+
+  --whitespace-s: 1rem;
+  --whitespace-m: 2rem;
+  --whitespace-l: 4rem;
+
+  --radius-s: 0.5rem;
+  --radius-m: 1rem;
+  --radius-l: 2rem;
+
+  --size-deco: 3.6em;
+}
+
+/* de toggles */
+
+html:has([value="light-theme"]:checked) {
+  color-scheme: light;
+}
+
+html:has([value="dark-theme"]:checked) {
+  color-scheme: dark;
+}
+
+/* OVERALL */
+
+body {
+  margin: 0;
+  background-color: var(--background);
+  background-image:
+    radial-gradient(
+      circle at min(80%, calc(50% + 10.25em)) 36.25em,
+      var(--line-deco) 0 3em,
+      transparent 0
+    ),
+    radial-gradient(
+      circle at max(30%, calc(50% - 7.75em)) 32.25em,
+      var(--line-deco) 0 3em,
+      transparent 0
+    ),
+    repeating-radial-gradient(
+      circle at min(79%, calc(50% + 10em)) 36em,
+      var(--line-deco) 0 1px,
+      transparent 0 4em
+    ),
+    repeating-radial-gradient(
+      circle at max(29%, calc(50% - 8em)) 32em,
+      var(--line-deco) 0 1px,
+      transparent 0 4em
+    );
+  color: var(--color);
+}
+
+h1 {
+  margin-block: var(--whitespace-m);
+
+  font-weight: 100;
+  font-size: clamp(2.5rem, -1.25rem + 18.75vw, 7rem);
+  line-height: 1;
+
+  &::first-line {
+    color: var(--color-title);
+  }
+}
+
+h2 {
+  margin-block: var(--whitespace-m);
+
+  font-weight: 100;
+  font-size: clamp(2rem, -0.5rem + 12.5vw, 5rem);
+  line-height: 1;
+}
+
+h3 {
+  font-weight: 100;
+  font-size: clamp(1.5rem, 0.6667rem + 4.1667vw, 2.5rem);
+}
+
+input {
+  padding: 0.25em 0.5em;
+
+  background-color: var(--background-input);
+  border: solid 1px var(--line-input);
+  border-radius: var(--radius-s);
+  corner-shape: squircle;
+
+  font: inherit;
+  color: var(--color-input);
+}
+
+button {
+  padding: 0.25em 0.5em;
+
+  appearance: none;
+  border: none;
+  border-radius: var(--radius-s);
+  corner-shape: squircle;
+
+  font: inherit;
+
+  &:focus-visible {
+    outline: solid 0.1em var(--outline-button);
+    outline-offset: 0.25em;
+  }
+}
+
+a {
+  padding: 0.25em;
+  border-radius: var(--radius-s);
+  color: var(--color-link);
+
+  text-underline-offset: 0.2em;
+
+  &:focus-visible {
+    outline: solid 0.1em currentcolor;
+    text-decoration: none;
+  }
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--whitespace-m);
+
+  padding: var(--whitespace-l) var(--whitespace-m);
+
+  background: var(--background-header);
+  color: var(--color-link-header);
+
+  @media (width > 38em) {
+    align-items: center;
+  }
+}
+
+/* NAVIGATIE */
+
+header ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: "";
+
+  display: grid;
+  gap: 0.5em;
+
+  @media (width > 38em) {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+}
+
+header ul li:first-child {
+  margin-inline-end: auto;
+}
+
+header ul li a {
+  color: var(--color-link-header);
+}
+
+/* TOGGLES */
+
+header form {
+  display: grid;
+  align-content: start;
+  justify-items: start;
+
+  @media (width > 60em) {
+    display: flex;
+    gap: 1em;
+  }
+}
+
+header form label {
+  position: relative;
+  padding: 0.25em;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+
+  border-radius: var(--radius-s);
+
+  &:has(:focus-visible) {
+    outline: solid 0.1em currentcolor;
+  }
+
+  &::before {
+    width: 1em;
+    height: 1em;
+
+    display: grid;
+    place-items: center;
+    place-content: center;
+
+    scale: 1.25;
+
+    transition: 0.3s;
+  }
+
+  &:has(:checked)::before {
+    scale: 1.75;
+    color: var(--brand-secondary);
+  }
+
+  &:has([value="auto-theme"])::before {
+    content: "☯";
+  }
+
+  &:has([value="light-theme"])::before {
+    content: "☀";
+    rotate: 0.1turn;
+  }
+
+  &:has([value="dark-theme"])::before {
+    content: "☽";
+    rotate: 0.425turn;
+  }
+}
+
+header form input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
+
+/* MAIN */
+
+main {
+  max-inline-size: 44em;
+  margin-inline: auto;
+  padding: var(--whitespace-l) var(--whitespace-m);
+  background-color: var(--background-transparent);
+}
+
+/* INTRO */
+
+main section:nth-of-type(1) p {
+  position: relative;
+  padding: 0.5em;
+
+  &:first-of-type {
+    padding-block-start: calc(var(--size-deco) + var(--whitespace-s));
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      inset-block-start: 0;
+      inset-inline-start: 10%;
+
+      inline-size: var(--size-deco);
+      aspect-ratio: 1;
+
+      background-color: var(--background-deco);
+      border-radius: 50%;
+    }
+  }
+
+  &:last-of-type {
+    padding-block-end: calc(var(--size-deco) + var(--whitespace-s));
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      inset-block-end: 0;
+      inset-inline-end: 10%;
+
+      inline-size: var(--size-deco);
+      aspect-ratio: 1;
+
+      background-color: var(--background-deco);
+      border-radius: 50%;
+    }
+  }
+}
+
+/* WERKWIJZE */
+
+main section:nth-of-type(2) ol {
+  counter-reset: werkwijze;
+  padding: 0;
+  list-style-type: "";
+
+  display: grid;
+  gap: var(--whitespace-m);
+}
+
+main section:nth-of-type(2) li {
+  counter-increment: werkwijze;
+
+  display: grid;
+  grid-template-areas:
+    "number title"
+    "number text";
+  column-gap: var(--whitespace-s);
+
+  max-inline-size: 24em;
+
+  &:nth-of-type(1) {
+    justify-self: start;
+  }
+
+  &:nth-of-type(2) {
+    justify-self: center;
+  }
+
+  &:nth-of-type(3) {
+    justify-self: end;
+  }
+}
+
+main section:nth-of-type(2) li::before {
+  content: counter(werkwijze);
+  grid-area: number;
+
+  inline-size: var(--size-deco);
+  aspect-ratio: 1;
+
+  display: grid;
+  place-items: center;
+
+  background-color: var(--background-deco);
+  border-radius: 50%;
+  align-self: center;
+
+  color: var(--color-deco);
+}
+
+main section:nth-of-type(2) li :is(h3, p) {
+  margin: 0;
+}
+
+/* FOOTER */
+
+footer {
+  background: var(--background-footer);
+  color: var(--color-footer);
+}
+
+footer section,
+footer nav {
+  max-inline-size: 44em;
+  margin-inline: auto;
+  padding: var(--whitespace-l) var(--whitespace-m);
+}
+
+/* NIEUWSBRIEF */
+
+footer form {
+  inline-size: fit-content;
+  margin-block-start: var(--whitespace-m);
+  padding: var(--whitespace-m);
+
+  display: grid;
+  gap: var(--whitespace-s);
+
+  background: var(--background);
+  border-radius: var(--radius-m);
+  corner-shape: squircle;
+
+  color: var(--color);
+
+  @media (width > 36em) {
+    grid-template-columns: max-content 1fr;
+  }
+}
+
+footer form h3 {
+  margin: 0;
+  line-height: 1;
+  grid-column: 1/-1;
+}
+
+footer form label {
+  display: grid;
+
+  @media (width > 36em) {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+  }
+}
+
+footer form button {
+  width: fit-content;
+
+  background-color: var(--background-button);
+  color: var(--color-button);
+}
