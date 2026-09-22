@@ -4,6 +4,27 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 ### Learning Log
 
+### 🌸 18 t/m 21 sept -🌸
+
+💚 Heb vooral deze dagen mijn huidige wesite code een beetje aangepast en zitten spelen met kleuren en visuals. Ook heb ik wel wat meer persoonlijker textjes er in gedaan. Dat werd tijdens mijn feedback moment vertelt, maak het meer persoonlijker. Ook nog aan mijn kleine comic gewerkt, zeker nog niet af, alleen misschien gooi ik een tijdelijke digitale schets versie daarvan erin.
+
+#### 🌼De checkout vragen voor vrijdag 18 sept:🌼
+
+#### 🌼De checkout vragen voor vrijdag 21 sept:🌼
+
+##### ❓ Wat zijn HTML landmark role elements?
+
+Landmark elements zijn HTML-elemneten die belangrijke onderdelen van een webpagina aangeven. bijvoorbeeld: header, nav, main, aside, footer en section.
+
+##### ❓ Wat zijn heading elementen en hoe horen deze 'genest' te worden?
+
+Heading elementen zijn de koppen van je content, dus h1 t/m h6. Ze geven je hierachie van je informatie aan.
+Je moet dus niet zomaar een h3 of een h5 gebruiken omdat je de text grootte toevallig kleiner of mooier vind. De heading niveaus beschrijven de scructuur, niet de vormgeving. DAAR HEB JE CSS VOOR!
+
+##### ❓ Hoe ga jij met cookies om? Beschrijf jouw beweegredenen en of die zijn veranderd na het volgen van dit college.
+
+Ik zal er bewuster mee omgaan, vooral als het een onbekende website is. Ik heb tot nu toe al vooral van 'alleen de noodzakelijke cookies' accepteren als het echt niet kan. maar anders weiger is sowieso alles wat ik kan.
+
 ### 🌸 15 en 16 sept -🌸
 
 💚 Ben tot een realisatie gekomen dan mijn concept nog veelste moeilijk is voor iemand met mijn skills. opzich zou ik het kunnen doen, maar aangezien de te korte tijd die ik heb gekregen, heb ik het maar (voorlopig) bij een simpele layout website gehouden met meedere pagina's dat te maken heeft met mijn hobbies en passies.
