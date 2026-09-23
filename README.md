@@ -4,6 +4,10 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 ### Learning Log
 
+### 🌸 23 sept -🌸
+
+💚 Ik heb decorative deviders gemaakt die de opmaak en sfeer van mijn website meer whimsical maakt! :) Ben er best trots op, aangezien het goed te zien is in lightmode, maar vooral in darkmode. love ittttt!
+
 ### 🌸 18 t/m 21 sept -🌸
 
 💚 Heb vooral deze dagen mijn huidige wesite code een beetje aangepast en zitten spelen met kleuren en visuals. Ook heb ik wel wat meer persoonlijker textjes er in gedaan. Dat werd tijdens mijn feedback moment vertelt, maak het meer persoonlijker. Ook nog aan mijn kleine comic gewerkt, zeker nog niet af, alleen misschien gooi ik een tijdelijke digitale schets versie daarvan erin.
