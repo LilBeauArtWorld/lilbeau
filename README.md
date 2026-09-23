@@ -10,6 +10,74 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 #### 🌼De checkout vragen voor vrijdag 18 sept:🌼
 
+Oriënteren en begrijpen
+
+##### ❓ Waarom geven de docenten deze opdracht?
+
+##### ❓ Welke technieken gebruik ik?
+
+##### ❓ Wat zijn de randvoorwaarden?
+
+##### ❓ Waar gebruik je HTML/CSS voor?
+
+##### ❓ Wat kan er allemaal met CSS?
+
+Verbeelden en conceptualiseren
+
+##### ❓ Lukt het om verschillende ideeën te bedenken?
+
+##### ❓ Lukt het om je ideeën te schetsen?
+
+##### ❓ Wat doet deze CSS-property?
+
+##### ❓ Welke content, en welke HTML heb ik nodig?
+
+##### ❓ Hoe kan ik dit soort content vormgeven?
+
+##### ❓ Wat als ik hier nu eens 1000 invul?
+
+Prototypen en uitwerken
+
+##### ❓ Begrijpen bezoekers de site?
+
+##### ❓ Wat vindt de opdrachtgever er van?
+
+##### ❓ Werkt dit wel?
+
+##### ❓ Oooooh, kan dit óók?!
+
+Evalueren
+
+##### ❓ (1) wat wilde ik weten? (2) wat deed ik om er achter te komen? (3) wat was het resultaat? (4) wat weet ik nu (niet)?
+
+##### ❓ Wat wil(de) ik weten/bereiken?
+
+##### ❓ Wat heb ik gedaan?
+
+##### ❓ Wat was het resultaat?
+
+##### ❓ Wat weet je nu (niet)?
+
+##### ❓ Wat vond je (niet) leuk?
+
+##### ❓ Voldoet het nog aan de eisen?
+
+extra
+
+##### ❓ Is de HTML die je hebt geschreven nog wel valide? Check het regelmatig, hiermee voorkom je onverklaarbare fouten. En klopt de HTML wel? Gebruik je de juiste elementen op de juiste plek?
+
+##### ❓ Check regelmatig of je website nog wel goed te gebruiken is met het toetsenbord. En of hij nog te begrijpen is met een screenreader. Zitten er alt-teksten op de afbeeldingen? Is het contrast overal hoog genoeg?
+
+##### ❓ Is mijn website nog wel adaptief?
+
+##### ❓ Voldoet mijn website nog wel aan de wet?
+
+##### ❓ Zie ik mezelf nog wel terug in wat ik doe?
+
+##### ❓
+
+##### ❓
+
 #### 🌼De checkout vragen voor vrijdag 21 sept:🌼
 
 ##### ❓ Wat zijn HTML landmark role elements?
