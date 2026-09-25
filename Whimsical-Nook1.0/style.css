@@ -1,0 +1,360 @@
+@font-face {
+  font-family: IndieFlower-Regular;
+  src: url(../fonts/IndieFlower-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: CaveatBrush-Regular;
+  src: url(../fonts/CaveatBrush-Regular.ttf) format("truetype");
+}
+
+:root {
+  --bg-main: #76af8d;
+  --bg-card: hsl(52, 94%, 94%);
+  --bg-accent: #fcfbfa;
+  --bg-header: #faf0bb;
+  --bg-button: #fefae0;
+  --border-color: #4e2d10;
+  --text-main: #423624;
+  --text-heading: #3c4737;
+  --accent-color: #b5838d;
+}
+
+body.dark-theme {
+  --bg-main: #0c1a1a;
+  --bg-card: #1c2b22;
+  --bg-accent: #17241e;
+  --bg-header: #213024;
+  --bg-button: #444d3c;
+  --border-color: #313f38;
+  --text-main: #dce4dc;
+  --text-heading: #f0d379;
+  --accent-color: #b08d5c;
+}
+
+/*structuur*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 3em;
+  color: var(--text-heading);
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  text-align: center;
+  font-family: CaveatBrush-Regular, cursive;
+}
+
+p {
+  margin-bottom: 1em;
+  font-family: IndieFlower-Regular, cursive;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--text-heading);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1.5em;
+  display: block;
+  margin: 0 auto;
+}
+
+/* header*/
+header {
+  background-color: var(--bg-header);
+  border-bottom: 0.2em solid var(--border-color);
+  padding: 1.2em 4em;
+  text-align: center;
+  position: relative;
+}
+
+header h1 {
+  font-size: 1.4em;
+  margin-bottom: 0.1em;
+}
+
+header p {
+  font-size: 0.85em;
+  margin-bottom: 0;
+  opacity: 0.9;
+}
+
+/* Utility buttons inside header */
+header button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0.5em 0.7em;
+  font-size: 1.1em;
+  background-color: var(--bg-accent);
+  border: 0.15em solid var(--border-color);
+  border-radius: 0.6em;
+  box-shadow: 0 0.15em 0 var(--border-color);
+  cursor: pointer;
+  color: var(--text-main);
+}
+
+header button:active {
+  transform: translateY(-40%);
+  box-shadow: 0 0.05em 0 var(--border-color);
+}
+
+header button[aria-label="Open Navigation Menu"] {
+  left: 1em;
+}
+
+header button[aria-label="Toggle Night Mode"] {
+  right: 1em;
+}
+
+/* hamburger menu */
+nav {
+  position: fixed;
+  top: 0;
+  left: -16em; /* cheat dat hij van het scherm uit staat */
+  width: 15em;
+  height: 100vh;
+  background-color: var(--bg-accent);
+  border-right: 0.2em solid var(--border-color);
+  padding: 4em 1.5em 1.5em 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  z-index: 1000;
+  transition: left 0.3s ease;
+  box-shadow: 0.3em 0 1em rgba(0, 0, 0, 0.05);
+}
+
+nav.open {
+  left: 0;
+}
+nav button[aria-label="Close Navigation Menu"] {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  color: var(--text-main);
+}
+
+nav a {
+  background-color: var(--bg-button);
+  border: 0.1em solid var(--border-color);
+  box-shadow: 0 0.15em 0 var(--border-color);
+  color: var(--text-main);
+  padding: 0.7em;
+  text-align: center;
+  border-radius: 0.6em;
+}
+
+nav a:active {
+  transform: translateY(0.1em);
+  box-shadow: 0 0.05em 0 var(--border-color);
+}
+
+/* keuken filters */
+main nav {
+  position: static;
+  height: auto;
+  width: auto;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0 0 0.5em 0;
+  margin-bottom: 1.5em;
+  border-right: none;
+  box-shadow: none;
+  z-index: 1;
+}
+
+main nav button {
+  display: none;
+}
+
+main nav a {
+  padding: 0.4em 0.8em;
+}
+
+/* main en grid/layout*/
+main {
+  flex: 1;
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+section {
+  background-color: var(--bg-card);
+  border: 0.15em solid var(--bg-header);
+  padding: 1.5em;
+  border-radius: 1.5em;
+}
+
+grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+  margin-top: 1.5em;
+}
+
+article {
+  background-color: var(--bg-accent);
+  border: 0.1em solid var(--border-color);
+  padding: 1.2em;
+  border-radius: 1.2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.8em;
+}
+
+/* forms en input */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+  max-width: 25em;
+  margin: 0 auto;
+  width: 100%;
+}
+
+label {
+  font-weight: bold;
+  color: var(--text-heading);
+  display: block;
+  margin-bottom: 0.3em;
+}
+
+input,
+textarea {
+  font-family: inherit;
+  padding: 0.8em;
+  border-radius: 0.8em;
+  border: 0.15em solid var(--border-color);
+  background-color: var(--bg-accent);
+  color: var(--text-main);
+  width: 100%;
+}
+
+form button {
+  font-family: inherit;
+  background-color: var(--accent-color);
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0.8em;
+  border-radius: 0.8em;
+  border: none;
+  box-shadow: 0 0.3em 0 var(--text-main);
+}
+
+form button:active {
+  transform: translateY(0.2em);
+  box-shadow: 0 0.1em 0 var(--text-main);
+}
+
+footer {
+  background-color: var(--bg-header);
+  padding: 1.5em;
+  text-align: center;
+  font-size: 0.9em;
+  border-top: 0.2em solid var(--border-color);
+  margin-top: auto;
+}
+
+/* ==========================================
+   DESKTOP RESPONSIVE ADAPTATIONS
+   ========================================== */
+@media (min-width: 48em) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 6em 1.5em 3em;
+    text-align: left;
+  }
+
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+
+  header button[aria-label="Open Navigation Menu"] {
+    display: none;
+  }
+
+  header button[aria-label="Toggle Night Mode"] {
+    position: static;
+    transform: none;
+    order: 2; /* Positions toggle cleanly on far right side */
+  }
+
+  /* Transform mobile side-drawer into a flat horizontal top row display navbar */
+  nav {
+    position: static;
+    height: auto;
+    width: auto;
+    background-color: transparent;
+    border-right: none;
+    padding: 0;
+    flex-direction: row;
+    box-shadow: none;
+    margin: 0;
+    order: 1;
+  }
+
+  nav button[aria-label="Close Navigation Menu"] {
+    display: none;
+  }
+
+  nav a {
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+  }
+
+  main {
+    max-width: 75em;
+    margin: 0 auto;
+    width: 100%;
+    padding: 2.5em 1.5em;
+  }
+
+  grid {
+    grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+  }
+}
