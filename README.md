@@ -4,6 +4,42 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 ### Learning Log
 
+### 🌸 26 & 27 sept -🌸
+
+💚 Ik ben weer terug gegaan naar mijn idee van een point en click functie. Eerst dacht ik dat het onmogelijk was om een image op een vaste plek te houden. Ik heb een andere klasgenoot gezien en dacht "nah, nu moet ik het wel doen."
+
+dus ik heb echt de tijd genomen om videos en artikkelen te lezen over hoe javascript en css werkt en hoe ik daarmee verder kan en mijn eigen iedeen toe kan passen. het was super pittig en achteraf kan ik sommige dingen nog steeds niet uitleggen wat wat doet, maar ik volg de instructie en door trial en error en erme te spelen, lukte het soortvan. Hier zijn wat bronnen:
+
+1. W3Schools — How To Create a Slideshow
+   https://www.w3schools.com/howto/howto_js_slideshow.asp
+
+2. W3Schools — Slideshow Gallery
+   https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp
+
+3. Programming Duck — Carousel Slider Tutorial with HTML, CSS and JavaScript
+   https://programmingduck.com/articles/javascript-carousel
+
+4. Programming Duck — Carousel Slider Tutorial (YouTube)
+   https://www.youtube.com/watch?v=QruodbmSq0A
+
+5. Florin Pop — Create a Modal (Popup) with HTML/CSS and JavaScript
+   https://www.youtube.com/watch?v=XH5OW46yO8I
+
+6. Jason Watmore — Vanilla JS + CSS Modal Popup (Dialog) Tutorial
+   https://jasonwatmore.com/post/2023/01/04/vanilla-js-css-modal-popup-dialog-tutorial-with-example
+
+7. MDN — EventTarget.addEventListener()
+   https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+
+8. MDN — Window.matchMedia()
+   https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia
+
+9. MDN — Web Storage API / localStorage
+   https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API
+
+10. W3Schools — W3.JS Slideshow
+    https://www.w3schools.com/w3js/w3js_slideshow.asp
+
 ### 🌸 23 sept -🌸
 
 💚 Ik heb decorative deviders gemaakt die de opmaak en sfeer van mijn website meer whimsical maakt! :) Ben er best trots op, aangezien het goed te zien is in lightmode, maar vooral in darkmode. love ittttt!
