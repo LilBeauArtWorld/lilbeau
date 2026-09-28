@@ -40,6 +40,8 @@ dus ik heb echt de tijd genomen om videos en artikkelen te lezen over hoe javasc
 10. W3Schools — W3.JS Slideshow
     https://www.w3schools.com/w3js/w3js_slideshow.asp
 
+💚 aangezien de cookies/privacy dingen niet echt werken met github enzo, ga ik alleen een informatieve cookies popup. De gebruiker kan alleen maar accepteren/doorgaan... dussssss...
+
 ### 🌸 23 sept -🌸
 
 💚 Ik heb decorative deviders gemaakt die de opmaak en sfeer van mijn website meer whimsical maakt! :) Ben er best trots op, aangezien het goed te zien is in lightmode, maar vooral in darkmode. love ittttt!
