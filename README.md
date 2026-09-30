@@ -6,6 +6,8 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 ### 🌸 28 sept -🌸
 
+💚 Ik heb nog een paar afbeeldigen erbij toegevoegd.
+
 #### 🌼De checkout vragen voor vrijdag 18 sept:🌼
 
 ##### ❓ Wat bedoelt Vasilis met de uitspraak: Semantiek doet mij niet zo veel, ik ben liever bezig met de UX van HTML?
