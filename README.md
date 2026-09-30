@@ -4,6 +4,27 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 ### Learning Log
 
+### 🌸 28 sept -🌸
+
+#### 🌼De checkout vragen voor vrijdag 18 sept:🌼
+
+##### ❓ Wat bedoelt Vasilis met de uitspraak: Semantiek doet mij niet zo veel, ik ben liever bezig met de UX van HTML?
+
+Het boeit hem niet hoe de funties in codes heten, gewoon hoe het eruit ziet.
+
+##### ❓ Wat voor type beperkingen hebben invloed op het gebruiken van websites?
+
+- Kleurenblindheid
+- Motorieke beperkingen
+- Zichtelijke beperkingen
+- Auditieve beperkingen
+
+##### ❓ Noem drie manieren om door een website te navigeren met jouw screenreader.
+
+- Tab
+- Enter
+- Spatie
+
 ### 🌸 26 & 27 sept -🌸
 
 💚 Ik ben weer terug gegaan naar mijn idee van een point en click functie. Eerst dacht ik dat het onmogelijk was om een image op een vaste plek te houden. Ik heb een andere klasgenoot gezien en dacht "nah, nu moet ik het wel doen."
