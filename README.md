@@ -4,11 +4,26 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 ### Learning Log
 
+### 🌸 30 sept -🌸
+
+#### 🌼De checkout vragen voor woensdag 30 sept:🌼
+
+##### ❓Waar staat WCAG en A11y voor?
+
+WCAG - Web content accessibility Guidelines
+A11Y - het is een afkorting van 'accessibility'. A is de eerste letter en Y de laatste. de cijfer '11' staat voor de letters die er tussen in zitten.
+
+##### ❓Wat vind je lastiger, je laptop/websites alleen met een toetsenbord bedienen of met een screenreader? Waarom? Waar moet je nog mee oefenen?
+
+Nou ik vind een screenreader het lastigst aangezien die van mijne helemaal niet werkt.
+
+##### ❓Met welke beperking rekening houden vind je het meest lastig? Vind je dat je beperkt wordt in wat je kunt ontwerpen? Of heb je al manieren gevonden om vanuit een solide basis - die voor iedereen toegankelijk is - allemaal leuke en mooie extra's toe te voegen als je bezoekers dat goed vinden?
+
 ### 🌸 28 sept -🌸
 
 💚 Ik heb nog een paar afbeeldigen erbij toegevoegd.
 
-#### 🌼De checkout vragen voor vrijdag 18 sept:🌼
+#### 🌼De checkout vragen voor maandag 28 sept:🌼
 
 ##### ❓ Wat bedoelt Vasilis met de uitspraak: Semantiek doet mij niet zo veel, ik ben liever bezig met de UX van HTML?
 
@@ -17,6 +32,7 @@ Het boeit hem niet hoe de funties in codes heten, gewoon hoe het eruit ziet.
 ##### ❓ Wat voor type beperkingen hebben invloed op het gebruiken van websites?
 
 - Kleurenblindheid
+- cognitieve beperking
 - Motorieke beperkingen
 - Zichtelijke beperkingen
 - Auditieve beperkingen
