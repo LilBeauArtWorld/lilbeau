@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Mijn wereld</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <main data-page="home">
+      <!-- ==================================
+             WELKOM
+        =================================== -->
+
+      <article data-home-welcome>
+        <h1>Welkom ♡</h1>
+
+        <p>Stap mijn kleine wereld binnen.</p>
+
+        <button type="button" data-begin>Begin</button>
+      </article>
+
+      <!-- ==================================
+             THEMA
+        =================================== -->
+
+      <aside aria-label="Thema instellingen">
+        <button type="button" aria-label="Schakel naar nachtmodus">🌙</button>
+      </aside>
+
+      <!-- ==================================
+             WOONKAMER
+        =================================== -->
+
+      <section aria-label="Woonkamer" data-active="false">
+        <!-- ACHTERGROND -->
+
+        <img src="images/homepage.png" alt="" />
+
+        <!-- COCKTAILGLAS -->
+
+        <button
+          type="button"
+          aria-label="Bekijk mijn cocktails"
+          data-open-popup="cocktails"
+        >
+          <img src="images/cocktail-glass.png" alt="" />
+        </button>
+
+        <!-- IPAD -->
+
+        <button
+          type="button"
+          aria-label="Bekijk mijn digitale tekeningen"
+          data-open-popup="ipad"
+        >
+          <img src="images/ipad.png" alt="" />
+        </button>
+
+        <!-- SPIEGEL -->
+
+        <button
+          type="button"
+          aria-label="Bekijk mijn fashion tekeningen"
+          data-open-popup="fashion"
+        >
+          <img src="images/mirror.png" alt="" />
+        </button>
+      </section>
+
+      <!-- ==================================
+             IPAD POPUP
+        =================================== -->
+
+      <section
+        aria-label="Digitale tekeningen"
+        data-popup="ipad"
+        aria-hidden="true"
+      >
+        <article>
+          <button type="button" aria-label="Popup sluiten" data-close-popup>
+            ×
+          </button>
+
+          <h2>Mijn tekeningen</h2>
+
+          <figure>
+            <img
+              src="images/drawing-1.png"
+              alt="Digitale tekening"
+              data-popup-image
+            />
+
+            <figcaption data-popup-caption>
+              Mijn eerste digitale tekening.
+            </figcaption>
+          </figure>
+
+          <nav aria-label="Digitale tekeningen navigatie">
+            <button
+              type="button"
+              aria-label="Vorige tekening"
+              data-popup-previous
+            >
+              ←
+            </button>
+
+            <p data-popup-counter>1 / 4</p>
+
+            <button
+              type="button"
+              aria-label="Volgende tekening"
+              data-popup-next
+            >
+              →
+            </button>
+          </nav>
+        </article>
+      </section>
+
+      <!-- ==================================
+             COCKTAIL POPUP
+        =================================== -->
+
+      <section
+        aria-label="Cocktail tekeningen"
+        data-popup="cocktails"
+        aria-hidden="true"
+      >
+        <article>
+          <button type="button" aria-label="Popup sluiten" data-close-popup>
+            ×
+          </button>
+
+          <h2 data-cocktail-name>Strawberry Mojito</h2>
+
+          <figure>
+            <img
+              src="images/cocktail-1.png"
+              alt="Tekening van een cocktail"
+              data-popup-image
+            />
+          </figure>
+
+          <section>
+            <h3>Mijn mening</h3>
+
+            <p data-cocktail-opinion>
+              Lekker fris en fruitig. Wel een beetje zoet.
+            </p>
+
+            <h3>Hoe maak je hem?</h3>
+
+            <p data-cocktail-recipe>
+              Rum, limoen, munt, aardbei en bruiswater. Alles mengen met ijs en
+              klaar!
+            </p>
+          </section>
+
+          <nav aria-label="Cocktail navigatie">
+            <button
+              type="button"
+              aria-label="Vorige cocktail"
+              data-popup-previous
+            >
+              ←
+            </button>
+
+            <p data-popup-counter>1 / 4</p>
+
+            <button
+              type="button"
+              aria-label="Volgende cocktail"
+              data-popup-next
+            >
+              →
+            </button>
+          </nav>
+        </article>
+      </section>
+
+      <!-- ==================================
+             FASHION POPUP
+        =================================== -->
+
+      <section
+        aria-label="Fashion tekeningen"
+        data-popup="fashion"
+        aria-hidden="true"
+      >
+        <article>
+          <button type="button" aria-label="Popup sluiten" data-close-popup>
+            ×
+          </button>
+
+          <h2 data-fashion-name>Outfit idea #01</h2>
+
+          <figure>
+            <img
+              src="images/fashion-1.png"
+              alt="Fashion tekening"
+              data-popup-image
+            />
+
+            <figcaption data-fashion-caption>
+              Een outfit die ik zelf heb bedacht.
+            </figcaption>
+          </figure>
+
+          <nav aria-label="Fashion tekeningen navigatie">
+            <button
+              type="button"
+              aria-label="Vorige outfit"
+              data-popup-previous
+            >
+              ←
+            </button>
+
+            <p data-popup-counter>1 / 4</p>
+
+            <button type="button" aria-label="Volgende outfit" data-popup-next>
+              →
+            </button>
+          </nav>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

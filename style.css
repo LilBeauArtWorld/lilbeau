@@ -1,0 +1,772 @@
+@font-face {
+  font-family: IndieFlower;
+  src: url("../fonts/IndieFlower-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: CaveatBrush;
+  src: url("../fonts/CaveatBrush-Regular.ttf") format("truetype");
+}
+
+:root {
+  color-scheme: light;
+
+  --page-background: #ffffff;
+  --text-color: #111111;
+  --button-background: #111111;
+  --button-color: #ffffff;
+  --focus-color: #111111;
+
+  --overlay-background: rgba(255, 255, 255, 0.78);
+  --popup-background: #ffffff;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --page-background: #111111;
+  --text-color: #ffffff;
+  --button-background: #ffffff;
+  --button-color: #111111;
+  --focus-color: #ffffff;
+
+  --overlay-background: rgba(0, 0, 0, 0.78);
+  --popup-background: #181818;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    color-scheme: dark;
+
+    --page-background: #111111;
+    --text-color: #ffffff;
+    --button-background: #ffffff;
+    --button-color: #111111;
+    --focus-color: #ffffff;
+
+    --overlay-background: rgba(0, 0, 0, 0.78);
+    --popup-background: #181818;
+  }
+}
+
+/* =========================
+   BASIS
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  overflow: hidden;
+  background: var(--page-background);
+  color: var(--text-color);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  font: inherit;
+}
+
+button:focus-visible {
+  outline: 0.1875rem solid var(--focus-color);
+  outline-offset: 0.3125rem;
+}
+
+/* =========================
+   COOKIES PAGINA
+========================= */
+
+main[data-page="cookies"] {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--page-background);
+  color: var(--text-color);
+}
+
+main[data-page="cookies"] > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  user-select: none;
+}
+
+main[data-page="cookies"] > article {
+  position: relative;
+  z-index: 1;
+  width: min(90vw, 31.25rem);
+  padding: 2.5rem;
+  text-align: center;
+  background: var(--overlay-background);
+  backdrop-filter: blur(0.625rem);
+  border-radius: 1.5rem;
+}
+
+main[data-page="cookies"] h1 {
+  margin: 0 0 0.9375rem;
+}
+
+main[data-page="cookies"] p {
+  margin: 0 0 1.5625rem;
+  line-height: 1.6;
+}
+
+main[data-page="cookies"] button {
+  padding: 0.75rem 1.5rem;
+  border: 0;
+  border-radius: 999px;
+  background: var(--button-background);
+  color: var(--button-color);
+  cursor: pointer;
+}
+
+/* =========================
+   INTRO PAGINA
+========================= */
+
+main[data-page="intro"] {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #000000;
+  color: #ffffff;
+}
+
+main[data-page="intro"] > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  user-select: none;
+}
+
+main[data-page="intro"] > aside[aria-hidden="true"] {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: #000000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+}
+
+main[data-page="intro"] > article {
+  position: absolute;
+  left: 50%;
+  bottom: 13%;
+  z-index: 2;
+  width: min(90vw, 43.75rem);
+  transform: translateX(-50%);
+  text-align: center;
+  text-shadow: 0 0.125rem 0.75rem rgba(0, 0, 0, 0.5);
+}
+
+main[data-page="intro"] > article h1 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(2rem, 5vw, 4rem);
+}
+
+main[data-page="intro"] > article p {
+  margin: 0;
+  font-size: clamp(1rem, 2vw, 1.3rem);
+}
+
+main[data-page="intro"] > nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.1875rem;
+}
+
+main[data-page="intro"] > nav button {
+  border: 0;
+  padding-bottom: 5em;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  text-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.6);
+}
+
+main[data-page="intro"] > nav button:nth-child(1),
+main[data-page="intro"] > nav button:nth-child(2) {
+  width: 3.125rem;
+  height: 3.125rem;
+  font-size: 2rem;
+}
+
+main[data-page="intro"] > nav button:nth-child(3) {
+  position: absolute;
+  left: 2.1875rem;
+  bottom: 0;
+  font-size: 0.95rem;
+}
+
+main[data-page="intro"] > aside[aria-label="Verhaal voortgang"] {
+  position: absolute;
+  left: 50%;
+  bottom: 2.375rem;
+  z-index: 3;
+  display: flex;
+  gap: 0.5rem;
+  transform: translateX(-50%);
+}
+
+main[data-page="intro"] > aside[aria-label="Verhaal voortgang"] button {
+  width: 0.5625rem;
+  height: 0.5625rem;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+main[data-page="intro"]
+  > aside[aria-label="Verhaal voortgang"]
+  button[aria-current="step"] {
+  background: #ffffff;
+}
+
+/* =========================
+   HOMEPAGE
+========================= */
+
+main[data-page="home"] {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--page-background);
+}
+
+/* =========================
+   WELKOMSTVENSTER
+========================= */
+
+main[data-page="home"] > article[data-home-welcome] {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  width: min(90vw, 31.25rem);
+  padding: 2.8125rem;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: var(--overlay-background);
+  backdrop-filter: blur(0.75rem);
+  border-radius: 1.75rem;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+main[data-page="home"] > article[data-home-welcome][data-hidden="true"] {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.96);
+  pointer-events: none;
+}
+
+main[data-page="home"] > article[data-home-welcome] h1 {
+  margin: 0 0 0.9375rem;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+main[data-page="home"] > article[data-home-welcome] p {
+  margin: 0 0 1.5625rem;
+  line-height: 1.6;
+}
+
+main[data-page="home"] > article[data-home-welcome] button {
+  padding: 0.8125rem 1.875rem;
+  border: 0;
+  border-radius: 999px;
+  background: var(--button-background);
+  color: var(--button-color);
+  cursor: pointer;
+}
+
+/* =========================
+   THEMAKNOP
+========================= */
+
+main[data-page="home"] > aside[aria-label="Thema instellingen"] {
+  position: absolute;
+  top: 1.5625rem;
+  right: 1.5625rem;
+  z-index: 20;
+}
+
+main[data-page="home"] > aside[aria-label="Thema instellingen"] button {
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--overlay-background);
+  color: var(--text-color);
+  cursor: pointer;
+  backdrop-filter: blur(0.5rem);
+}
+
+/* =========================
+   16:9 WOONKAMER
+========================= */
+
+main[data-page="home"] > section[aria-label="Woonkamer"] {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: min(100vw, calc(100vh * 16 / 9));
+  height: min(100vh, calc(100vw * 9 / 16));
+
+  aspect-ratio: 16 / 9;
+
+  transform: translate(-50%, -50%);
+
+  opacity: 0;
+  pointer-events: none;
+
+  z-index: 1;
+
+  transition: opacity 0.7s ease;
+}
+
+@media (max-aspect-ratio: 16/9) {
+  main[data-page="home"] > section[aria-label="Woonkamer"] {
+    width: calc(100vh * 16 / 9);
+    height: 100vh;
+  }
+}
+
+main[data-page="home"] > section[aria-label="Woonkamer"][data-active="true"] {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* =========================
+   WOONKAMER ACHTERGROND
+========================= */
+
+main[data-page="home"] > section[aria-label="Woonkamer"] > img:first-child {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: fill;
+
+  user-select: none;
+  pointer-events: none;
+}
+
+/* =========================
+   CLICKABLE OBJECTEN
+========================= */
+
+main[data-page="home"] > section[aria-label="Woonkamer"] > button {
+  position: absolute;
+
+  display: block;
+
+  padding: 0;
+  margin: 0;
+
+  border: 0;
+  background: transparent;
+
+  cursor: pointer;
+
+  transform: translate(-50%, -50%);
+
+  transition:
+    transform 0.2s ease,
+    filter 0.2s ease;
+}
+
+main[data-page="home"] > section[aria-label="Woonkamer"] > button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+  filter: brightness(1.05);
+}
+
+main[data-page="home"] > section[aria-label="Woonkamer"] > button:active {
+  transform: translate(-50%, -50%) scale(0.98);
+}
+
+main[data-page="home"] > section[aria-label="Woonkamer"] > button > img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  user-select: none;
+  pointer-events: none;
+}
+
+/* =========================
+   POSITIES CLICKABLE OBJECTEN
+========================= */
+
+/* cocktail glass */
+
+main[data-page="home"]
+  > section[aria-label="Woonkamer"]
+  > button:nth-of-type(1) {
+  left: 55%;
+  top: 65%;
+  width: 5%;
+}
+
+/* ipad */
+
+main[data-page="home"]
+  > section[aria-label="Woonkamer"]
+  > button:nth-of-type(2) {
+  left: 35%;
+  top: 74%;
+  width: 13%;
+}
+
+/* mirror */
+
+main[data-page="home"]
+  > section[aria-label="Woonkamer"]
+  > button:nth-of-type(3) {
+  left: 57.5%;
+  top: 35%;
+  width: 7.5%;
+}
+
+/* =========================
+   POPUP OVERLAY
+========================= */
+
+main[data-page="home"] > section[data-popup] {
+  position: fixed;
+  inset: 0;
+
+  z-index: 50;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1.875rem;
+
+  background: rgba(0, 0, 0, 0.72);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+
+main[data-page="home"] > section[data-popup][aria-hidden="false"] {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* =========================
+   POPUP VENSTER
+========================= */
+
+main[data-page="home"] > section[data-popup] > article {
+  position: relative;
+
+  width: min(90vw, 43.75rem);
+  aspect-ratio: 1 / 1;
+
+  max-height: 90vh;
+
+  padding: 4.375rem 5rem 3.4375rem;
+
+  overflow: hidden;
+
+  border-radius: 1.875rem;
+
+  color: var(--text-color);
+
+  background-color: var(--popup-background);
+
+  /* JOUW EIGEN GETEKENDE ACHTERGROND */
+  background-image: url("images/popup-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  box-shadow: 0 1.5625rem 5rem rgba(0, 0, 0, 0.35);
+
+  transform: scale(0.94);
+
+  transition: transform 0.3s ease;
+}
+
+main[data-page="home"] > section[data-popup][aria-hidden="false"] > article {
+  transform: scale(1);
+}
+
+/* =========================
+   POPUP SLUITKNOP
+========================= */
+
+main[data-page="home"]
+  > section[data-popup]
+  > article
+  > button[data-close-popup] {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  z-index: 3;
+  width: 2.6rem;
+  height: 2.6rem;
+
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(249, 204, 204, 0.8);
+  color: #4d392b;
+  font-size: 1.8rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/* =========================
+   POPUP TITELS
+========================= */
+
+main[data-page="home"] > section[data-popup] h2 {
+  position: relative;
+  z-index: 2;
+  margin: 0 0 1.25rem;
+
+  text-align: center;
+
+  font-size: clamp(1.5rem, 3vw, 2.4rem);
+  font-family: IndieFlower, cursive;
+}
+
+main[data-page="home"] > section[data-popup] h3 {
+  margin: 0.9375rem 0 0.375rem;
+}
+
+main[data-page="home"] > section[data-popup] p {
+  line-height: 1.5;
+}
+
+/* =========================
+   POPUP AFBEELDING
+========================= */
+
+main[data-page="home"] > section[data-popup] figure {
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  width: 50%;
+}
+
+main[data-page="home"] > section[data-popup] figure img {
+  display: block;
+
+  width: 100%;
+  max-height: 100%;
+
+  margin: 0 auto;
+
+  object-fit: contain;
+
+  border-radius: 0.75rem;
+}
+
+/* =========================
+   POPUP EXTRA TEKST
+========================= */
+
+main[data-page="home"] > section[data-popup] article > section {
+  position: relative;
+  z-index: 2;
+
+  max-height: 10%;
+  margin-top: 0.9375rem;
+  padding-right: 0.5rem;
+}
+
+/* =========================
+   POPUP NAVIGATIE
+========================= */
+
+main[data-page="home"] > section[data-popup] nav {
+  position: absolute;
+
+  left: 50%;
+  bottom: 1.5625rem;
+
+  z-index: 3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1.5625rem;
+
+  transform: translateX(-50%);
+}
+
+main[data-page="home"] > section[data-popup] nav button {
+  width: 2.8rem;
+  height: 2.8rem;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+
+  background: rgba(255, 223, 175, 0.8);
+  color: #4e3620;
+
+  font-size: 1.5rem;
+
+  cursor: pointer;
+}
+
+main[data-page="home"] > section[data-popup] nav p {
+  min-width: 3.4rem;
+
+  margin: 0;
+
+  text-align: center;
+
+  font-weight: bold;
+}
+
+/* =========================
+   POPUP FIGCAPTION
+========================= */
+
+main[data-page="home"] > section[data-popup] figcaption {
+  position: relative;
+  z-index: 2;
+
+  margin-top: 0.625rem;
+
+  text-align: center;
+
+  font-size: 0.95rem;
+}
+
+/* =========================
+   MOBIEL
+========================= */
+
+@media (max-width: 43.75rem) {
+  main[data-page="home"] > aside[aria-label="Thema instellingen"] {
+    top: 0.9375rem;
+    right: 0.9375rem;
+  }
+
+  main[data-page="home"] > aside[aria-label="Thema instellingen"] button {
+    width: 2.625rem;
+    height: 2.625rem;
+  }
+
+  main[data-page="home"] > section[data-popup] {
+    padding: 0.9375rem;
+  }
+
+  main[data-page="home"] > section[data-popup] > article {
+    width: min(94vw, 37.5rem);
+
+    max-height: 94vh;
+
+    padding: 3.4375rem 1.875rem 4.0625rem;
+
+    border-radius: 1.375rem;
+  }
+
+  main[data-page="home"]
+    > section[data-popup]
+    > article
+    > button[data-close-popup] {
+    top: 0.75rem;
+    right: 0.75rem;
+
+    width: 2.375rem;
+    height: 2.375rem;
+  }
+
+  main[data-page="home"] > section[data-popup] h2 {
+    margin-bottom: 0.75rem;
+  }
+
+  main[data-page="home"] > section[data-popup] nav {
+    bottom: 0.9375rem;
+    gap: 0.9375rem;
+  }
+
+  main[data-page="home"] > section[data-popup] nav button {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  main[data-page="home"] > section[data-popup] article > section {
+    max-height: 32%;
+  }
+}
+
+/* =========================
+   KLEINE MOBIELE SCHERMEN
+========================= */
+
+@media (max-width: 28.125rem) {
+  main[data-page="home"] > article[data-home-welcome] {
+    width: 90vw;
+    padding: 1.875rem 1.375rem;
+  }
+
+  main[data-page="home"] > section[data-popup] > article {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  main[data-page="home"] > section[data-popup] article > section {
+    font-size: 0.9rem;
+  }
+}
+
+/* =========================
+   MINDER BEWEGING
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
