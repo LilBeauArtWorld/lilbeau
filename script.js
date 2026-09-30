@@ -1,14 +1,10 @@
-/* ========================================
-   BASIS
-======================================== */
+/* Basis */
 
 const main = document.querySelector("main");
 
 const page = main ? main.getAttribute("data-page") : "";
 
-/* ========================================
-   THEMA
-======================================== */
+/* thema switch */
 
 const root = document.documentElement;
 
@@ -73,17 +69,13 @@ if (themeButton) {
   });
 }
 
-/* ========================================
-   HOMEPAGE FUNCTIE
-======================================== */
+/* home pagina functie */
 
 function goToHomepage() {
   window.location.href = "homepage.html";
 }
 
-/* ========================================
-   COOKIES PAGINA
-======================================== */
+/* cookies pagi a */
 
 if (page === "cookies") {
   const acceptButton = main.querySelector("article > button");
@@ -103,9 +95,7 @@ if (page === "cookies") {
   }
 }
 
-/* ========================================
-   INTRO
-======================================== */
+/* intro slidesss */
 
 if (page === "intro") {
   const background = main.querySelector(":scope > img");
@@ -176,10 +166,6 @@ if (page === "intro") {
 
   let changingSlide = false;
 
-  /* ------------------------------------
-       PUNTJES
-    ------------------------------------ */
-
   story.forEach(function (slide, index) {
     const dot = document.createElement("button");
 
@@ -200,19 +186,11 @@ if (page === "intro") {
 
   const dots = progress.querySelectorAll("button");
 
-  /* ------------------------------------
-       AFBEELDINGEN VOORLADEN
-    ------------------------------------ */
-
   story.forEach(function (slide) {
     const image = new Image();
 
     image.src = slide.background;
   });
-
-  /* ------------------------------------
-       SLIDE UPDATE
-    ------------------------------------ */
 
   function updateSlide(index) {
     if (
@@ -289,9 +267,7 @@ if (page === "intro") {
     }, 450);
   }
 
-  /* ------------------------------------
-       VOLGENDE SLIDE
-    ------------------------------------ */
+  /* volgende slides */
 
   function nextSlide() {
     if (currentSlide === story.length - 1) {
@@ -303,9 +279,7 @@ if (page === "intro") {
     updateSlide(currentSlide + 1);
   }
 
-  /* ------------------------------------
-       VORIGE SLIDE
-    ------------------------------------ */
+  /* vorige slides */
 
   function previousSlide() {
     if (currentSlide === 0) {
@@ -315,9 +289,7 @@ if (page === "intro") {
     updateSlide(currentSlide - 1);
   }
 
-  /* ------------------------------------
-       KNOPPEN
-    ------------------------------------ */
+  /* knoppen */
 
   previousButton.addEventListener("click", previousSlide);
 
@@ -327,9 +299,7 @@ if (page === "intro") {
 
   previousButton.disabled = true;
 
-  /* ------------------------------------
-       TOETSENBORD
-    ------------------------------------ */
+  /* toetsenboord*/
 
   document.addEventListener("keydown", function (event) {
     if (event.key === "ArrowRight") {
@@ -346,9 +316,7 @@ if (page === "intro") {
   });
 }
 
-/* ========================================
-   HOMEPAGE
-======================================== */
+/* homepagina */
 
 if (page === "home") {
   const welcome = main.querySelector("[data-home-welcome]");
@@ -357,9 +325,7 @@ if (page === "home") {
 
   const scene = main.querySelector('section[aria-label="Woonkamer"]');
 
-  /* ------------------------------------
-       BEGIN
-    ------------------------------------ */
+  /* beginnetjw */
 
   if (welcome && beginButton && scene) {
     beginButton.addEventListener("click", function () {
@@ -371,9 +337,7 @@ if (page === "home") {
     });
   }
 
-  /* ====================================
-       POPUP DATA
-    ==================================== */
+  /* popup data */
 
   const popupData = {
     ipad: [
@@ -480,9 +444,7 @@ if (page === "home") {
     ],
   };
 
-  /* ====================================
-       POPUPS
-    ==================================== */
+  /* popupss*/
 
   const popups = main.querySelectorAll("section[data-popup]");
 
@@ -492,9 +454,7 @@ if (page === "home") {
 
   let activeIndex = 0;
 
-  /* ------------------------------------
-       OPEN POPUP
-    ------------------------------------ */
+  /* open popuop */
 
   function openPopup(name) {
     const popup = main.querySelector('section[data-popup="' + name + '"]');
@@ -522,9 +482,7 @@ if (page === "home") {
     }
   }
 
-  /* ------------------------------------
-       CLOSE POPUP
-    ------------------------------------ */
+  /* close popup knop */
 
   function closePopup() {
     popups.forEach(function (popup) {
@@ -533,10 +491,6 @@ if (page === "home") {
 
     activePopup = null;
   }
-
-  /* ------------------------------------
-       UPDATE POPUP
-    ------------------------------------ */
 
   function updatePopup() {
     if (!activePopup) {
@@ -587,9 +541,7 @@ if (page === "home") {
       next.disabled = activeIndex === items.length - 1;
     }
 
-    /* --------------------------------
-           IPAD
-        -------------------------------- */
+    /* Ipad shizzle */
 
     if (activePopup === "ipad") {
       const caption = popup.querySelector("[data-popup-caption]");
@@ -599,9 +551,7 @@ if (page === "home") {
       }
     }
 
-    /* --------------------------------
-           COCKTAILS
-        -------------------------------- */
+    /* cocktails shizzle */
 
     if (activePopup === "cocktails") {
       const name = popup.querySelector("[data-cocktail-name]");
@@ -623,9 +573,7 @@ if (page === "home") {
       }
     }
 
-    /* --------------------------------
-           FASHION
-        -------------------------------- */
+    /*Fashion shizzle */
 
     if (activePopup === "fashion") {
       const name = popup.querySelector("[data-fashion-name]");
@@ -642,9 +590,7 @@ if (page === "home") {
     }
   }
 
-  /* ------------------------------------
-       VOLGENDE ITEM
-    ------------------------------------ */
+  /* volgende item knop*/
 
   function nextPopupItem() {
     if (!activePopup) {
@@ -660,9 +606,7 @@ if (page === "home") {
     }
   }
 
-  /* ------------------------------------
-       VORIGE ITEM
-    ------------------------------------ */
+  /* vorige item knop*/
 
   function previousPopupItem() {
     if (!activePopup) {
@@ -676,9 +620,7 @@ if (page === "home") {
     }
   }
 
-  /* ------------------------------------
-       OBJECTEN OPENEN POPUP
-    ------------------------------------ */
+  /* objecten open popupie */
 
   openButtons.forEach(function (button) {
     button.addEventListener("click", function () {
@@ -688,9 +630,7 @@ if (page === "home") {
     });
   });
 
-  /* ------------------------------------
-       POPUP KNOPPEN
-    ------------------------------------ */
+  /* knoppen van popup*/
 
   popups.forEach(function (popup) {
     const closeButton = popup.querySelector("[data-close-popup]");
@@ -720,9 +660,7 @@ if (page === "home") {
     });
   });
 
-  /* ------------------------------------
-       TOETSENBORD
-    ------------------------------------ */
+  /* toetsenbord */
 
   document.addEventListener("keydown", function (event) {
     if (!activePopup) {
