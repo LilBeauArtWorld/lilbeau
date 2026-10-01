@@ -78,7 +78,7 @@ button:focus-visible {
   outline-offset: 0.3125rem;
 }
 
-/* Intro pagina (cookies shizzle) */
+/* Cookie-intro */
 
 main[data-page="cookies"] {
   position: relative;
@@ -125,13 +125,13 @@ main[data-page="cookies"] p {
 main[data-page="cookies"] button {
   padding: 0.75rem 1.5rem;
   border: 0;
-  border-radius: 999px;
+  border-radius: 62.44rem;
   background: var(--button-background);
   color: var(--button-color);
   cursor: pointer;
 }
 
-/* Intro pagina */
+/* Intro */
 
 main[data-page="intro"] {
   position: relative;
@@ -294,13 +294,13 @@ main[data-page="home"] > article[data-home-welcome] p {
 main[data-page="home"] > article[data-home-welcome] button {
   padding: 0.8125rem 1.875rem;
   border: 0;
-  border-radius: 999px;
+  border-radius: 62.44rem;
   background: var(--button-background);
   color: var(--button-color);
   cursor: pointer;
 }
 
-/* Thema knopje*/
+/* Thema-instellingen */
 
 main[data-page="home"] > aside[aria-label="Thema instellingen"] {
   position: absolute;
@@ -321,7 +321,7 @@ main[data-page="home"] > aside[aria-label="Thema instellingen"] button {
   backdrop-filter: blur(0.5rem);
 }
 
-/* Woonkamer ratio*/
+/* Woonkamerverhouding */
 
 main[data-page="home"] > section[aria-label="Woonkamer"] {
   position: absolute;
@@ -355,7 +355,7 @@ main[data-page="home"] > section[aria-label="Woonkamer"][data-active="true"] {
   pointer-events: auto;
 }
 
-/* woonkamer achtergrond*/
+/* Woonkamerachtergrond */
 
 main[data-page="home"] > section[aria-label="Woonkamer"] > img:first-child {
   position: absolute;
@@ -411,7 +411,7 @@ main[data-page="home"] > section[aria-label="Woonkamer"] > button > img {
   pointer-events: none;
 }
 
-/* positie van clickables*/
+/* Positie van klikbare elementen */
 
 /* cocktail glass */
 
@@ -443,7 +443,7 @@ main[data-page="home"]
   width: 7.5%;
 }
 
-/* Overlay van popup*/
+/* Popup-overlay */
 
 main[data-page="home"] > section[data-popup] {
   position: fixed;
@@ -474,7 +474,7 @@ main[data-page="home"] > section[data-popup][aria-hidden="false"] {
   pointer-events: auto;
 }
 
-/* Venster popup */
+/* Popupvenster */
 
 main[data-page="home"] > section[data-popup] > article {
   position: relative;
@@ -494,7 +494,7 @@ main[data-page="home"] > section[data-popup] > article {
 
   background-color: var(--popup-background);
 
-  /* JOUW EIGEN GETEKENDE ACHTERGROND */
+  /* eigen getekende popup achtergrond */
   background-image: url("images/popup-background.png");
   background-size: cover;
   background-position: center;
@@ -511,7 +511,7 @@ main[data-page="home"] > section[data-popup][aria-hidden="false"] > article {
   transform: scale(1);
 }
 
-/* sluit knop van popup */
+/* Popup sluiten */
 
 main[data-page="home"]
   > section[data-popup]
@@ -534,7 +534,7 @@ main[data-page="home"]
   cursor: pointer;
 }
 
-/* Popup titels */
+/* Popuptitels */
 
 main[data-page="home"] > section[data-popup] h2 {
   position: relative;
@@ -555,7 +555,7 @@ main[data-page="home"] > section[data-popup] p {
   line-height: 1.5;
 }
 
-/* popup afbeeldingen */
+/* Popupafbeeldingen */
 
 main[data-page="home"] > section[data-popup] figure {
   position: relative;
@@ -577,7 +577,7 @@ main[data-page="home"] > section[data-popup] figure img {
   border-radius: 0.75rem;
 }
 
-/* Popup text */
+/* Popuptekst */
 
 main[data-page="home"] > section[data-popup] article > section {
   position: relative;
@@ -588,7 +588,7 @@ main[data-page="home"] > section[data-popup] article > section {
   padding-right: 0.5rem;
 }
 
-/* Pop up navigatie knopen*/
+/* Popupnavigatie */
 
 main[data-page="home"] > section[data-popup] nav {
   position: absolute;
@@ -632,7 +632,7 @@ main[data-page="home"] > section[data-popup] nav p {
   font-weight: bold;
 }
 
-/* popup figcapion */
+/* Popup-figcaption */
 
 main[data-page="home"] > section[data-popup] figcaption {
   position: relative;
@@ -645,7 +645,7 @@ main[data-page="home"] > section[data-popup] figcaption {
   font-size: 0.95rem;
 }
 
-/* Mobiel quiry */
+/* Mobiel */
 
 @media (max-width: 43.75rem) {
   main[data-page="home"] > aside[aria-label="Thema instellingen"] {
@@ -702,7 +702,7 @@ main[data-page="home"] > section[data-popup] figcaption {
   }
 }
 
-/* mobiel klein*/
+/* Klein mobiel */
 
 @media (max-width: 28.125rem) {
   main[data-page="home"] > article[data-home-welcome] {
@@ -720,7 +720,7 @@ main[data-page="home"] > section[data-popup] figcaption {
   }
 }
 
-/* reduced motion*/
+/* Beperkte beweging */
 
 @media (prefers-reduced-motion: reduce) {
   *,
