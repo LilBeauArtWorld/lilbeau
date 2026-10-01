@@ -12,7 +12,7 @@
   color-scheme: light;
 
   --page-background: #ffffff;
-  --text-color: #111111;
+  --text-color: #2c2016;
   --button-background: #111111;
   --button-color: #ffffff;
   --focus-color: #111111;
@@ -49,9 +49,7 @@
   }
 }
 
-/* =========================
-   BASIS
-========================= */
+/* basics */
 
 * {
   box-sizing: border-box;
@@ -80,9 +78,7 @@ button:focus-visible {
   outline-offset: 0.3125rem;
 }
 
-/* =========================
-   COOKIES PAGINA
-========================= */
+/* Intro pagina (cookies shizzle) */
 
 main[data-page="cookies"] {
   position: relative;
@@ -135,9 +131,7 @@ main[data-page="cookies"] button {
   cursor: pointer;
 }
 
-/* =========================
-   INTRO PAGINA
-========================= */
+/* Intro pagina */
 
 main[data-page="intro"] {
   position: relative;
@@ -306,9 +300,7 @@ main[data-page="home"] > article[data-home-welcome] button {
   cursor: pointer;
 }
 
-/* =========================
-   THEMAKNOP
-========================= */
+/* Thema knopje*/
 
 main[data-page="home"] > aside[aria-label="Thema instellingen"] {
   position: absolute;
@@ -329,9 +321,7 @@ main[data-page="home"] > aside[aria-label="Thema instellingen"] button {
   backdrop-filter: blur(0.5rem);
 }
 
-/* =========================
-   16:9 WOONKAMER
-========================= */
+/* Woonkamer ratio*/
 
 main[data-page="home"] > section[aria-label="Woonkamer"] {
   position: absolute;
@@ -365,9 +355,7 @@ main[data-page="home"] > section[aria-label="Woonkamer"][data-active="true"] {
   pointer-events: auto;
 }
 
-/* =========================
-   WOONKAMER ACHTERGROND
-========================= */
+/* woonkamer achtergrond*/
 
 main[data-page="home"] > section[aria-label="Woonkamer"] > img:first-child {
   position: absolute;
@@ -382,9 +370,7 @@ main[data-page="home"] > section[aria-label="Woonkamer"] > img:first-child {
   pointer-events: none;
 }
 
-/* =========================
-   CLICKABLE OBJECTEN
-========================= */
+/* clickables */
 
 main[data-page="home"] > section[aria-label="Woonkamer"] > button {
   position: absolute;
@@ -425,9 +411,7 @@ main[data-page="home"] > section[aria-label="Woonkamer"] > button > img {
   pointer-events: none;
 }
 
-/* =========================
-   POSITIES CLICKABLE OBJECTEN
-========================= */
+/* positie van clickables*/
 
 /* cocktail glass */
 
@@ -459,9 +443,7 @@ main[data-page="home"]
   width: 7.5%;
 }
 
-/* =========================
-   POPUP OVERLAY
-========================= */
+/* Overlay van popup*/
 
 main[data-page="home"] > section[data-popup] {
   position: fixed;
@@ -492,9 +474,7 @@ main[data-page="home"] > section[data-popup][aria-hidden="false"] {
   pointer-events: auto;
 }
 
-/* =========================
-   POPUP VENSTER
-========================= */
+/* Venster popup */
 
 main[data-page="home"] > section[data-popup] > article {
   position: relative;
@@ -531,9 +511,7 @@ main[data-page="home"] > section[data-popup][aria-hidden="false"] > article {
   transform: scale(1);
 }
 
-/* =========================
-   POPUP SLUITKNOP
-========================= */
+/* sluit knop van popup */
 
 main[data-page="home"]
   > section[data-popup]
@@ -556,9 +534,7 @@ main[data-page="home"]
   cursor: pointer;
 }
 
-/* =========================
-   POPUP TITELS
-========================= */
+/* Popup titels */
 
 main[data-page="home"] > section[data-popup] h2 {
   position: relative;
@@ -579,9 +555,7 @@ main[data-page="home"] > section[data-popup] p {
   line-height: 1.5;
 }
 
-/* =========================
-   POPUP AFBEELDING
-========================= */
+/* popup afbeeldingen */
 
 main[data-page="home"] > section[data-popup] figure {
   position: relative;
@@ -603,9 +577,7 @@ main[data-page="home"] > section[data-popup] figure img {
   border-radius: 0.75rem;
 }
 
-/* =========================
-   POPUP EXTRA TEKST
-========================= */
+/* Popup text */
 
 main[data-page="home"] > section[data-popup] article > section {
   position: relative;
@@ -616,9 +588,7 @@ main[data-page="home"] > section[data-popup] article > section {
   padding-right: 0.5rem;
 }
 
-/* =========================
-   POPUP NAVIGATIE
-========================= */
+/* Pop up navigatie knopen*/
 
 main[data-page="home"] > section[data-popup] nav {
   position: absolute;
@@ -662,9 +632,7 @@ main[data-page="home"] > section[data-popup] nav p {
   font-weight: bold;
 }
 
-/* =========================
-   POPUP FIGCAPTION
-========================= */
+/* popup figcapion */
 
 main[data-page="home"] > section[data-popup] figcaption {
   position: relative;
@@ -677,9 +645,7 @@ main[data-page="home"] > section[data-popup] figcaption {
   font-size: 0.95rem;
 }
 
-/* =========================
-   MOBIEL
-========================= */
+/* Mobiel quiry */
 
 @media (max-width: 43.75rem) {
   main[data-page="home"] > aside[aria-label="Thema instellingen"] {
@@ -736,9 +702,7 @@ main[data-page="home"] > section[data-popup] figcaption {
   }
 }
 
-/* =========================
-   KLEINE MOBIELE SCHERMEN
-========================= */
+/* mobiel klein*/
 
 @media (max-width: 28.125rem) {
   main[data-page="home"] > article[data-home-welcome] {
@@ -756,9 +720,7 @@ main[data-page="home"] > section[data-popup] figcaption {
   }
 }
 
-/* =========================
-   MINDER BEWEGING
-========================= */
+/* reduced motion*/
 
 @media (prefers-reduced-motion: reduce) {
   *,
