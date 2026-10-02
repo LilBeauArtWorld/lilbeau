@@ -4,6 +4,15 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 ### Learning Log
 
+### 🌸 2 okt -🌸
+
+💚 Ik heb helaas door prive redenen niet heel veel kunnen doen tijdens mijn studiedag... toch nog soortvan vandaag dingen kunnen squeezen en aanpassen.
+Ik wil nog de afbeeldingen in de popups zo allemaal kunnen aanpassen dat ze allemaal groot kunnen afgebeeld zijn in veschillende formaten (width: 40% werkt niet en width: auto ook niet...)
+
+💚 daarbij haat ik het feit dat mijn schtergrond schetsen van intro verhaaltje nogsteeds niet af zijn... Ik snap het dat schetsen okay zijn. maar ik vind het verschrikkelijk...
+
+💚 en daarbij moet ik nog de dag en nacht modus nog toepassen door de achtergrond van de woonkamer een dag modus nog te geven.
+
 ### 🌸 30 sept -🌸
 
 #### 🌼De checkout vragen voor woensdag 30 sept:🌼
