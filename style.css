@@ -242,9 +242,7 @@ main[data-page="intro"]
   background: #ffffff;
 }
 
-/* =========================
-   HOMEPAGE
-========================= */
+/* home pagina*/
 
 main[data-page="home"] {
   position: relative;
@@ -254,9 +252,7 @@ main[data-page="home"] {
   background: var(--page-background);
 }
 
-/* =========================
-   WELKOMSTVENSTER
-========================= */
+/* welcome venster */
 
 main[data-page="home"] > article[data-home-welcome] {
   position: absolute;
@@ -428,7 +424,7 @@ main[data-page="home"]
 main[data-page="home"]
   > section[aria-label="Woonkamer"]
   > button:nth-of-type(2) {
-  left: 35%;
+  left: 45%;
   top: 74%;
   width: 13%;
 }
@@ -558,10 +554,10 @@ main[data-page="home"] > section[data-popup] p {
 /* Popupafbeeldingen */
 
 main[data-page="home"] > section[data-popup] figure {
-  position: relative;
+  position: auto;
   z-index: 2;
   margin: 0 auto;
-  width: 50%;
+  width: 40%;
 }
 
 main[data-page="home"] > section[data-popup] figure img {

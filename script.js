@@ -356,7 +356,7 @@ if (page === "home") {
       {
         image: "images/drawing-3.png",
 
-        caption: "bleep bloop",
+        caption: "bloop bleep",
       },
 
       {
@@ -368,14 +368,12 @@ if (page === "home") {
 
     cocktails: [
       {
-        image: "images/cocktail-1.png",
+        image: "images/emartini.png",
 
         name: "Espresso Martini",
 
-        opinion: "Lekker fris en fruitig. Wel een beetje zoet.",
-
-        recipe:
-          "Rum, limoen, munt, aardbei en bruiswater. Alles mengen met ijs en klaar!",
+        opinion:
+          "A little gossip and getting wasted? This drink also comes with caffeine. I normally prefer lattes, cappuccinos, or a Starbucks caramel latte macchiato, but this is an exception. Especially in good company.",
       },
 
       {
@@ -383,29 +381,26 @@ if (page === "home") {
 
         name: "Piña Colada",
 
-        opinion: "Lekker tropisch en zoet.",
-
-        recipe: "Mango, limoen, bruiswater en ijs mengen.",
+        opinion:
+          "This was one of the first cocktails I ordered at a restaurant when I was 18. In the Netherlands, 18 is the legal drinking age. It is also lactos free, although I am allergic to pineapple, alcohol, and coconut.",
       },
 
       {
-        image: "images/cocktail-3.png",
+        image: "images/pmartini.png",
 
         name: "Pornstar Martini",
 
-        opinion: "Fris en lekker voor een zomerse avond.",
-
-        recipe: "Citroen, blauwe siroop, bruiswater en ijs.",
+        opinion:
+          "Nice and fruityyyyy. Also one of my absolute faves. Never made it before myself, but always ordered when I'm out drinking with friends",
       },
 
       {
-        image: "images/cocktail-4.png",
+        image: "images/aperol.png",
 
         name: "Aperol Spritz",
 
-        opinion: "Fruitig en niet te zwaar.",
-
-        recipe: "Bessen, limoen, bruiswater en ijs mengen.",
+        opinion:
+          "Perfect for hot days when you want to get a little wasted slowly. This bitter orange drink is easy to make at home. There are also different spritz variations, such as Aperol, Campari, elderflower, and limoncello. Sadly, I am allergic to oranges.",
       },
     ],
 
@@ -413,33 +408,25 @@ if (page === "home") {
       {
         image: "images/fashion-1.png",
 
-        name: "Outfit idea #01",
+        name: "Outfit nr.1",
 
-        caption: "Een outfit die ik zelf heb bedacht.",
+        caption: "",
       },
 
       {
         image: "images/fashion-2.png",
 
-        name: "Outfit idea #02",
+        name: "Outfit nr.2",
 
-        caption: "Een andere outfit die ik heb getekend.",
+        caption: "",
       },
 
       {
         image: "images/fashion-3.png",
 
-        name: "Outfit idea #03",
+        name: "Outfit nr.3",
 
-        caption: "Een outfit met een andere stijl.",
-      },
-
-      {
-        image: "images/fashion-4.png",
-
-        name: "Outfit idea #04",
-
-        caption: "Een van mijn fashion ideeën.",
+        caption: "",
       },
     ],
   };
