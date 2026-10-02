@@ -379,7 +379,7 @@ if (page === "home") {
       },
 
       {
-        image: "images/cocktail-2.png",
+        image: "images/pinacolada.png",
 
         name: "Piña Colada",
 
