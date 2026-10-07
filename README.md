@@ -4,6 +4,16 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 ### Learning Log
 
+### 🌸 7 okt -🌸
+
+#### 🌼De checkout vragen voor maandag 7 okt:🌼
+
+##### ❓ Waarom is het goed om een grid in je ontwerp toe te passen? Noem een reden voor de ontwerper en een voor de bezoeker.
+
+##### ❓ Noem drie manieren om chaos in je ontwerp te voorkomen.
+
+##### ❓ Hoeveel gekkigheid moet er in je werk zitten?
+
 ### 🌸 5 okt -🌸
 
 #### 🌼De checkout vragen voor maandag 5 okt:🌼
