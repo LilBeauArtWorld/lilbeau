@@ -14,6 +14,10 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 ##### ❓ Hoeveel gekkigheid moet er in je werk zitten?
 
+### 🌸 6 okt -🌸
+
+💚 Ik heb eindelijk even rond kunnen spellen met verschillende keyframes/animaties die je kan maken in css... HEERLIJK om een keertje div/spans/classes mag gebruiken. yum... dus ik vond het wel leuk om bepaalde animaties te gebruiken op een woord te benadrukken. Dit vind ik gewoon leuk, ook om eventueel mijn kennis een beetje te testen van vorig jaar toen we het ook kort over keyframes hadden.
+
 ### 🌸 5 okt -🌸
 
 #### 🌼De checkout vragen voor maandag 5 okt:🌼
