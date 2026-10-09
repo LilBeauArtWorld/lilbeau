@@ -95,6 +95,24 @@ if (page === "cookies") {
   }
 }
 
+if (page === "cookies") {
+  const refuseButton = main.querySelector("article > button-r");
+
+  if (refuseButton) {
+    refuseButton.addEventListener("click", function () {
+      refuseButton.disabled = true;
+
+      main.style.transition = "opacity 0.5s ease";
+
+      main.style.opacity = "0";
+
+      window.setTimeout(function () {
+        window.location.href = "cookies-refused.html";
+      }, 500);
+    });
+  }
+}
+
 /* intro slidesss */
 
 if (page === "intro") {
