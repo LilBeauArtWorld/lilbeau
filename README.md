@@ -8,6 +8,8 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 💚 Gewoon rond gespeeld met html en css voor mijn song text shizzle. Ik heb het wel simpel gehouden aangezien docenten aleen willen dat ik dingen gebruik die bij deepdives worden gegeven. dus heb alleen met grids en divs en classes gewerkt. Simpel, maar toch misschien wel iets leuks. Ik had meer keyframes animaties als eerste, maar later dacht ik "Nee doe maar niet want anders wordt er tegen je gezegd dat je niet zo veel moet doen."
 
+💚 Feedback gekregen van docenten... Dus wat ik nu gaan doen is ervoor zorgen dat het een samenhangende flow heeft. misschien de 'noise' ietsjes rustiger maken. en alarm als je naar beneden scrolled ineens naar vooren laten schuiven en helemaal groot!
+
 ### 🌸 7 okt -🌸
 
 #### 🌼De checkout vragen voor maandag 7 okt:🌼
