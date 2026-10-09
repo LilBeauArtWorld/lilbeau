@@ -4,6 +4,10 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 ### Learning Log
 
+### 🌸 8 okt -🌸
+
+💚 Gewoon rond gespeeld met html en css voor mijn song text shizzle. Ik heb het wel simpel gehouden aangezien docenten aleen willen dat ik dingen gebruik die bij deepdives worden gegeven. dus heb alleen met grids en divs en classes gewerkt. Simpel, maar toch misschien wel iets leuks. Ik had meer keyframes animaties als eerste, maar later dacht ik "Nee doe maar niet want anders wordt er tegen je gezegd dat je niet zo veel moet doen."
+
 ### 🌸 7 okt -🌸
 
 #### 🌼De checkout vragen voor maandag 7 okt:🌼
