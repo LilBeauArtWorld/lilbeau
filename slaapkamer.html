@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digital Garden | Slaapkamer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="top-bar">
+      <a class="site-title" href="index.html">✿ Digital Garden</a>
+      <button
+        class="menu-toggle"
+        aria-label="Open navigatiemenu"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+        ☰
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Hoofdnavigatie">
+        <a href="index.html">Keuken</a>
+        <a href="slaapkamer.html" aria-current="page">Slaapkamer</a>
+        <a href="woonkamer.html">Woonkamer</a>
+      </nav>
+
+      <button class="theme-toggle" aria-label="Wissel licht en donker thema">
+        <span class="theme-icon" aria-hidden="true">☾</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="room-viewport" aria-label="De slaapkamer">
+        <div class="room-world">
+          <img class="room-background" src="images/slaapkamer.png" alt="" />
+
+          <button
+            class="creature creature-three"
+            data-message="Zo fluffy... Ik denk dat ik in één keer in slaap zal vallen als ik mijn hoofd op wol leg..."
+          >
+            <img src="images/creature-3.png" alt="Fantasie wezentje" />
+          </button>
+
+          <button
+            class="creature creature-four"
+            data-message="Een konijn! Die hopt van de ene droom naar de andere."
+          >
+            <img src="images/creature-4.png" alt="Fantasi wezentje" />
+          </button>
+
+          <button
+            class="clickable object-one"
+            data-message="Een klein geheim in de slaapkamer."
+          >
+            <img src="images/clickable-3.png" alt="Klikbaar voorwerp" />
+          </button>
+
+          <button
+            class="clickable object-ipad"
+            data-open-ipad
+            aria-label="Open mijn iPad"
+          >
+            <img src="images/ipad.png" alt="iPad" />
+          </button>
+        </div>
+
+        <button
+          class="room-arrow arrow-left"
+          aria-label="Schuif naar links"
+          hidden
+        >
+          ‹
+        </button>
+        <button
+          class="room-arrow arrow-right"
+          aria-label="Schuif naar rechts"
+          hidden
+        >
+          ›
+        </button>
+      </section>
+    </main>
+
+    <aside class="message-box" aria-live="polite" hidden>
+      <button class="message-close" aria-label="Sluit bericht">×</button>
+      <img src="images/text-box.png" alt="" />
+      <p class="message-text"></p>
+    </aside>
+
+    <!-- IPAD -->
+    <section class="experience-backdrop" id="ipad-backdrop" hidden>
+      <section
+        class="ipad-window"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="ipad-heading"
+      >
+        <button
+          class="experience-close"
+          data-close-experience
+          aria-label="Sluit iPad"
+        >
+          ×
+        </button>
+
+        <div class="ipad-content">
+          <h2 id="ipad-heading">My Art Gallery 🎨</h2>
+          <p>Welcome to my little world of art!</p>
+
+          <div class="art-gallery">
+            <figure>
+              <img src="images/drawing-1.png" alt="Mijn tekening 1" />
+              <figcaption>Drawing one</figcaption>
+            </figure>
+            <figure>
+              <img src="images/drawing-2.png" alt="Mijn tekening 2" />
+              <figcaption>Drawing two</figcaption>
+            </figure>
+            <figure>
+              <img src="images/drawing-3.png" alt="Mijn tekening 3" />
+              <figcaption>Drawing three</figcaption>
+            </figure>
+            <figure>
+              <img src="images/drawing-4.png" alt="Mijn tekening 4" />
+              <figcaption>Drawing four</figcaption>
+            </figure>
+            <figure>
+              <img src="images/drawing-5.png" alt="Mijn tekening 5" />
+              <figcaption>Drawing five</figcaption>
+            </figure>
+            <figure>
+              <img src="images/drawing-6.png" alt="Mijn tekening 6" />
+              <figcaption>Drawing six</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <button class="cookie-button" aria-label="Cookie-instellingen">🍪</button>
+
+    <div class="cookie-backdrop" hidden></div>
+    <section
+      class="cookie-panel"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="cookie-title"
+      hidden
+    >
+      <h2 id="cookie-title">🍪 Cookie-instellingen</h2>
+      <p>
+        Deze website gebruikt lokale opslag om voorkeuren te onthouden. Er
+        worden geen analytics- of advertentiecookies gebruikt.
+      </p>
+      <p>Je kunt optionele cookies weigeren en de website blijven gebruiken.</p>
+      <div class="cookie-actions">
+        <button class="cookie-accept">Akkoord</button>
+        <button class="cookie-reject">Weiger optionele cookies</button>
+        <button class="cookie-close">Sluiten</button>
+      </div>
+    </section>
+
+    <aside class="cookie-side-eye" role="status" aria-live="polite" hidden>
+      <span class="side-eye-face" aria-hidden="true">🙄🍪</span>
+      <p>Nouuuuu, jaaa zeggg…</p>
+      <p>
+        Je mag natuurlijk weigeren, maar mijn koekjeshart is toch een béétje
+        gebroken.
+      </p>
+    </aside>
+  </body>
+</html>

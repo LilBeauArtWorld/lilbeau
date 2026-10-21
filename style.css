@@ -1,0 +1,625 @@
+/* rootssss */
+
+:root {
+  --page-color: #f5eff9;
+  --bar-color: #e9def3;
+  --text-color: #483653;
+  --button-color: #d8c4e8;
+  --panel-color: #fffaf4;
+  --border-color: #c7b3d8;
+  --shadow-color: rgb(40 25 50 / 20%);
+}
+
+:root[data-theme="dark"] {
+  --page-color: #211c2a;
+  --bar-color: #30253c;
+  --text-color: #f6eafa;
+  --button-color: #59466a;
+  --panel-color: #342b3d;
+  --border-color: #766084;
+  --shadow-color: rgb(0 0 0 / 40%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+body {
+  margin: 0;
+  background: var(--page-color);
+  color: var(--text-color);
+  font-family: Georgia, serif;
+}
+
+button,
+a {
+  color: inherit;
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 0.15rem solid #ba79c9;
+  outline-offset: 0.2rem;
+}
+
+/* Nav balk */
+
+.top-bar {
+  position: relative;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 4.5rem;
+  padding: 0.75rem 1.25rem;
+  background: var(--bar-color);
+  box-shadow: 0 0.2rem 0.8rem var(--shadow-color);
+}
+
+.site-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main-nav a {
+  padding: 0.5rem 0.75rem;
+  border-radius: 1rem;
+  text-decoration: none;
+}
+
+.main-nav a:hover,
+.main-nav a[aria-current="page"] {
+  background: var(--button-color);
+}
+
+.menu-toggle,
+.theme-toggle {
+  display: grid;
+  place-items: center;
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  border: 0.08rem solid var(--border-color);
+  border-radius: 50%;
+  background: var(--panel-color);
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/* kamersss */
+
+.room-viewport {
+  position: relative;
+  height: calc(100vh - 4.5rem);
+  height: calc(100dvh - 4.5rem);
+  overflow: hidden;
+}
+
+.room-world {
+  position: relative;
+  height: 100%;
+  min-width: 100%;
+  overflow: hidden;
+  transform: translateX(0);
+  transition: transform 0.45s ease;
+  will-change: transform;
+}
+
+.room-background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* dah clickables */
+
+.creature,
+.clickable {
+  position: absolute;
+  display: block;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  transition: transform 0.2s ease;
+}
+
+.creature img,
+.clickable img {
+  display: block;
+  width: 150%;
+  height: auto;
+}
+
+.creature-one {
+  left: 2%;
+  bottom: 37%;
+  width: 10%;
+}
+
+.creature-two {
+  left: 50%;
+  bottom: 47%;
+  width: 7%;
+}
+.creature-three {
+  left: 30%;
+  bottom: 10%;
+  width: 15%;
+}
+.creature-four {
+  left: 80%;
+  bottom: 50%;
+  width: 11%;
+}
+.creature-five {
+  left: 15%;
+  bottom: 24%;
+  width: 10%;
+}
+.creature-six {
+  left: 50%;
+  bottom: 33%;
+  width: 8%;
+}
+
+.object-one {
+  left: 35%;
+  top: 35%;
+  width: 8%;
+}
+.object-books {
+  left: 65%;
+  top: 75%;
+  width: 8%;
+}
+
+.object-ipad {
+  left: 65%;
+  top: 75%;
+  width: 9%;
+}
+
+.object-cocktail {
+  left: 80%;
+  top: 52%;
+  width: 5%;
+}
+
+.creature:hover,
+.clickable:hover {
+  transform: scale(1.08);
+}
+
+/* manouver pijltjes links en rechts */
+
+.room-arrow {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  display: grid;
+  place-items: center;
+  width: 2.8rem;
+  height: 4rem;
+  transform: translateY(-50%);
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  background: var(--panel-color);
+  box-shadow: 0 0.2rem 0.8rem var(--shadow-color);
+  font-size: 2rem;
+}
+
+.arrow-left {
+  left: 0.75rem;
+}
+
+.arrow-right {
+  right: 0.75rem;
+}
+
+.room-arrow:disabled {
+  opacity: 0.35;
+}
+
+/* mini popups */
+
+.message-box {
+  position: fixed;
+  z-index: 50;
+  left: 50%;
+  bottom: 5rem;
+  width: min(24rem, 85vw);
+  min-height: 7rem;
+  padding: 2rem;
+  transform: translateX(-50%);
+  border: 0.12rem solid var(--border-color);
+  border-radius: 1rem;
+  background: var(--panel-color);
+  box-shadow: 0 0.4rem 1.5rem var(--shadow-color);
+}
+
+.message-box > img {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: inherit;
+}
+
+.message-text {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.message-close,
+.experience-close {
+  position: absolute;
+  z-index: 5;
+  top: 0.5rem;
+  right: 0.75rem;
+  border: 0;
+  background: transparent;
+  font-size: 1.8rem;
+}
+
+/* big pop-ups */
+
+.experience-backdrop {
+  position: fixed;
+  z-index: 80;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  overflow-y: auto;
+  background: rgb(20 15 25 / 70%);
+  animation: fade-in 0.25s ease;
+}
+
+.book-window .ipad-window {
+  position: relative;
+  width: min(60rem, 96vw);
+  max-height: 90vh;
+  max-height: 90dvh;
+  overflow: auto;
+  padding: clamp(1rem, 3vw, 2.5rem);
+  border: 0.15rem solid var(--border-color);
+  border-radius: 1.25rem;
+  background: var(--panel-color);
+  color: var(--text-color);
+  box-shadow: 0 0.8rem 3rem rgb(0 0 0 / 35%);
+  animation: open-book 0.35s ease;
+}
+
+.book-content h2,
+.ipad-content h2 {
+  margin: 0 2rem 1.5rem;
+  text-align: center;
+}
+
+.book-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  min-height: 20rem;
+  padding: clamp(1rem, 3vw, 2rem);
+  border: 0.08rem solid var(--border-color);
+  border-radius: 0.5rem;
+  background:
+    linear-gradient(
+      90deg,
+      transparent 49.8%,
+      rgb(130 95 70 / 15%) 50%,
+      transparent 50.2%
+    ),
+    #f8eedc;
+  color: #49382e;
+}
+
+.item-image {
+  display: block;
+  width: 100%;
+  max-height: 25rem;
+  object-fit: contain;
+}
+
+.item-details {
+  line-height: 1.6;
+}
+
+.item-details h3 {
+  font-size: clamp(1.25rem, 3vw, 2rem);
+}
+
+.page-counter {
+  font-size: 0.9rem;
+  opacity: 0.75;
+}
+
+.page-controls {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.page-controls button {
+  padding: 0.7rem 1rem;
+  border: 0.08rem solid var(--border-color);
+  border-radius: 1rem;
+  background: var(--button-color);
+  color: var(--text-color);
+}
+
+/* Ipad venster */
+
+.ipad-window {
+  width: min(58rem, 96vw);
+  border: 0.65rem solid #39343f;
+  border-radius: 2rem;
+  background: #f8f5fa;
+  color: #483653;
+}
+
+.ipad-content {
+  padding: 1rem;
+}
+
+.art-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  max-height: 60vh;
+  max-height: 60dvh;
+  overflow-y: auto;
+  padding: 0.75rem;
+}
+
+.art-gallery figure {
+  margin: 0;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  background: white;
+  box-shadow: 0 0.2rem 0.8rem rgb(40 25 50 / 12%);
+}
+
+.art-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.4rem;
+}
+
+.art-gallery figcaption {
+  padding-top: 0.5rem;
+  text-align: center;
+}
+
+/* smooooth (operator) animatie voor het sluiten van venster */
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes open-book {
+  from {
+    opacity: 0;
+    transform: scale(0.88) rotateY(-5deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) rotateY(0);
+  }
+}
+
+/* Cookies instellingen shizzle */
+
+.cookie-button {
+  position: fixed;
+  z-index: 100;
+  left: 1rem;
+  bottom: 1rem;
+  display: grid;
+  place-items: center;
+  width: 3.25rem;
+  height: 3.25rem;
+  border: 0.1rem solid var(--border-color);
+  border-radius: 50%;
+  background: var(--panel-color);
+  box-shadow: 0 0.2rem 0.8rem var(--shadow-color);
+  font-size: 1.7rem;
+}
+
+.cookie-backdrop {
+  position: fixed;
+  z-index: 109;
+  inset: 0;
+  background: rgb(0 0 0 / 35%);
+}
+
+.cookie-panel {
+  position: fixed;
+  z-index: 110;
+  top: 50%;
+  left: 50%;
+  width: min(28rem, calc(100% - 2rem));
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 1.5rem;
+  transform: translate(-50%, -50%);
+  border: 0.1rem solid var(--border-color);
+  border-radius: 1.25rem;
+  background: var(--panel-color);
+  box-shadow: 0 0.5rem 2rem var(--shadow-color);
+  line-height: 1.6;
+}
+
+.cookie-panel h2 {
+  margin-top: 0;
+}
+
+.cookie-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.cookie-actions button {
+  padding: 0.65rem 0.9rem;
+  border: 0.08rem solid var(--border-color);
+  border-radius: 1rem;
+  background: var(--button-color);
+  color: var(--text-color);
+}
+
+/* Media Queries voor mobiel */
+
+@media (max-width: 48rem) {
+  .top-bar {
+    min-height: 4rem;
+    padding: 0.5rem 0.75rem;
+    gap: 0.5rem;
+  }
+
+  .site-title {
+    font-size: 1rem;
+  }
+
+  .menu-toggle {
+    display: grid;
+    margin-left: auto;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: none;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding: 0.75rem;
+    background: var(--bar-color);
+    box-shadow: 0 0.4rem 0.8rem var(--shadow-color);
+  }
+
+  .main-nav.is-open {
+    display: flex;
+  }
+
+  .room-viewport {
+    height: calc(100vh - 4rem);
+    height: calc(100dvh - 4rem);
+  }
+
+  .room-arrow {
+    width: 2.3rem;
+    height: 3.4rem;
+  }
+
+  .book-page {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .item-image {
+    max-height: 14rem;
+  }
+
+  .art-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .cookie-button {
+    left: 0.75rem;
+    bottom: 0.75rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
+
+/* hehehe de guilt trippin cookies */
+
+.cookie-side-eye {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  z-index: 1000;
+  width: min(19rem, calc(100% - 3rem));
+  padding: 1.25rem;
+  border: 0.15rem solid #d7a4a0;
+  border-radius: 1.25rem;
+  background: #fff0e6;
+  color: #573d42;
+  box-shadow: 0 0.5rem 1.5rem #0002;
+  text-align: center;
+  animation: sideEyePop 0.35s ease-out;
+}
+
+.cookie-side-eye p {
+  margin: 0.5rem 0;
+}
+
+.side-eye-face {
+  display: block;
+  font-size: 2.5rem;
+}
+
+@keyframes sideEyePop {
+  from {
+    opacity: 0;
+    transform: translateY(1rem) rotate(-3deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) rotate(0);
+  }
+}
+
+.cookie-side-eye[hidden] {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cookie-side-eye {
+    animation: none;
+  }
+}

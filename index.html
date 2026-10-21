@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digital Garden | Keuken</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="top-bar">
+      <a class="site-title" href="index.html">✿ Digital Garden</a>
+
+      <button
+        class="menu-toggle"
+        aria-label="Open navigatiemenu"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+        ☰
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Hoofdnavigatie">
+        <a href="index.html" aria-current="page">Keuken</a>
+        <a href="slaapkamer.html">Slaapkamer</a>
+        <a href="woonkamer.html">Woonkamer</a>
+      </nav>
+
+      <button class="theme-toggle" aria-label="Wissel licht en donker thema">
+        <span class="theme-icon" aria-hidden="true">☾</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="room-viewport" aria-label="De keuken">
+        <div class="room-world">
+          <img class="room-background" src="images/keuken.png" alt="" />
+
+          <button class="creature creature-one" data-message=" Hoooo Hoooo! ">
+            <img src="images/creature-1.png" alt="Fantasie wezentje" />
+          </button>
+
+          <button class="creature creature-two" data-message="Squeeeek squeek!">
+            <img src="images/creature-2.png" alt="Fantasie wezentje" />
+          </button>
+
+          <button class="clickable object-bloop" data-message="errrr meep?.">
+            <img src="images/clickable-1.png" alt="Klikbaar voorwerp" />
+          </button>
+
+          <button
+            class="clickable object-cocktail"
+            data-open-book
+            aria-label="Open het cocktailboek"
+          >
+            <img src="images/cocktail.png" alt="Cocktail" />
+          </button>
+        </div>
+
+        <button
+          class="room-arrow arrow-left"
+          aria-label="Schuif naar links"
+          hidden
+        >
+          ‹
+        </button>
+        <button
+          class="room-arrow arrow-right"
+          aria-label="Schuif naar rechts"
+          hidden
+        >
+          ›
+        </button>
+      </section>
+    </main>
+
+    <aside class="message-box" aria-live="polite" hidden>
+      <button class="message-close" aria-label="Sluit bericht">×</button>
+      <img src="images/text-box.png" alt="" />
+      <p class="message-text"></p>
+    </aside>
+
+    <!-- COCKTAILBOEK -->
+    <section class="experience-backdrop" id="cocktail-backdrop" hidden>
+      <section
+        class="book-window"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="cocktail-heading"
+      >
+        <button
+          class="experience-close"
+          data-close-experience
+          aria-label="Sluit cocktailboek"
+        >
+          ×
+        </button>
+
+        <div class="book-content">
+          <h2 id="cocktail-heading">The Cocktail Book 🍸</h2>
+
+          <div class="book-page">
+            <img
+              class="item-image"
+              id="cocktail-image"
+              src="images/pornstar-martini.png"
+              alt="Pornstar Martini"
+            />
+
+            <div class="item-details">
+              <p class="page-counter" id="cocktail-counter">1 / 4</p>
+              <h3 id="cocktail-name">Pornstar Martini</h3>
+              <p><strong>Mijn mening</strong></p>
+              <p id="cocktail-review"></p>
+              <p><strong>Zo maak je het</strong></p>
+              <p id="cocktail-recipe"></p>
+            </div>
+          </div>
+
+          <div class="page-controls">
+            <button id="cocktail-previous">← Vorige</button>
+            <button id="cocktail-next">Volgende →</button>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- COOKIE-INSTELLINGEN -->
+    <button class="cookie-button" aria-label="Cookie-instellingen">🍪</button>
+
+    <div class="cookie-backdrop" hidden></div>
+    <section
+      class="cookie-panel"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="cookie-title"
+      hidden
+    >
+      <h2 id="cookie-title">🍪 Cookie-instellingen</h2>
+      <p>
+        Deze website gebruikt lokale opslag om voorkeuren te onthouden. Er
+        worden geen analytics- of advertentiecookies gebruikt.
+      </p>
+      <p>Je kunt optionele cookies weigeren en de website blijven gebruiken.</p>
+      <div class="cookie-actions">
+        <button class="cookie-accept">Akkoord</button>
+        <button class="cookie-reject">Weiger optionele cookies</button>
+        <button class="cookie-close">Sluiten</button>
+      </div>
+    </section>
+
+    <aside class="cookie-side-eye" role="status" aria-live="polite" hidden>
+      <span class="side-eye-face" aria-hidden="true">🙄🍪</span>
+      <p>Nouuuuu, jaaa zeggg…</p>
+      <p>
+        Je mag natuurlijk weigeren, maar mijn koekjeshart is toch een béétje
+        gebroken.
+      </p>
+    </aside>
+  </body>
+</html>
