@@ -1,4 +1,10 @@
-/* rootssss */
+@font-face {
+  font-family: "GloriaHalleluja";
+  src: url(fonts/GloriaHallelujah-Regular.ttf) format("truetype");
+  font-weight: normal;
+}
+
+/* MARK: rootssss */
 
 :root {
   --page-color: #f5eff9;
@@ -32,7 +38,7 @@ body {
   margin: 0;
   background: var(--page-color);
   color: var(--text-color);
-  font-family: Georgia, serif;
+  font-family: GloriaHalleluja, serif;
 }
 
 button,
@@ -51,7 +57,7 @@ a:focus-visible {
   outline-offset: 0.2rem;
 }
 
-/* Nav balk */
+/* MARK: Nav balk */
 
 .top-bar {
   position: relative;
@@ -104,7 +110,7 @@ a:focus-visible {
   display: none;
 }
 
-/* kamersss */
+/* MARK: kamersss */
 
 .room-viewport {
   position: relative;
@@ -133,7 +139,7 @@ a:focus-visible {
   user-select: none;
 }
 
-/* dah clickables */
+/* MARK: dah clickables */
 
 .creature,
 .clickable {
@@ -200,10 +206,26 @@ a:focus-visible {
   top: 75%;
   width: 9%;
 }
+.object-notes {
+  left: 33%;
+  top: 20%;
+  width: 4%;
+}
 
 .object-cocktail {
   left: 80%;
   top: 52%;
+  width: 5%;
+}
+.object-radio {
+  left: 60%;
+  top: 52%;
+  width: 5%;
+}
+
+.object-hoor {
+  left: 80%;
+  top: 80%;
   width: 5%;
 }
 
@@ -212,7 +234,7 @@ a:focus-visible {
   transform: scale(1.08);
 }
 
-/* manouver pijltjes links en rechts */
+/* MARK: manouver pijltjes links en rechts */
 
 .room-arrow {
   position: absolute;
@@ -242,7 +264,7 @@ a:focus-visible {
   opacity: 0.35;
 }
 
-/* mini popups */
+/* MARK: mini popups */
 
 .message-box {
   position: fixed;
@@ -285,7 +307,7 @@ a:focus-visible {
   font-size: 1.8rem;
 }
 
-/* big pop-ups */
+/* MARK: big pop-ups */
 
 .experience-backdrop {
   position: fixed;
@@ -375,7 +397,7 @@ a:focus-visible {
   color: var(--text-color);
 }
 
-/* Ipad venster */
+/* MARK: Ipad venster */
 
 .ipad-window {
   width: min(58rem, 96vw);
@@ -501,7 +523,7 @@ a:focus-visible {
   color: var(--text-color);
 }
 
-/* Media Queries voor mobiel */
+/* MARK: Media Queries voor mobiel */
 
 @media (max-width: 48rem) {
   .top-bar {
@@ -575,7 +597,7 @@ a:focus-visible {
   }
 }
 
-/* hehehe de guilt trippin cookies */
+/* MARK: hehehe de guilt trippin cookies */
 
 .cookie-side-eye {
   position: fixed;

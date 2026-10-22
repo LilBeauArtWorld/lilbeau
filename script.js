@@ -269,7 +269,11 @@ if (roomBackground?.complete) {
   updateRoom();
 }
 
-/* */
+/* bronnen:
+1. https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/naturalWidth
+2. https://developer.mozilla.org/en-US/docs/Web/API/Element/clientWidth
+3. https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translateX
+4. https://developer.mozilla.org/en-US/docs/Web/API/Window/resize_event */
 
 /* MARK: de interactieve elementen ipad en boeken */
 
@@ -406,24 +410,32 @@ document
 const readingBooks = [
   {
     name: "Fall I want",
-    author: "beepbeep",
-    image: "images/book-1.png",
+    author: "Lyra Parish ",
+    image: "images/fall-i-want.png",
     review: "Hier komt mijn persoonlijke mening over dit boek.",
     rating: "Mijn beoordeling: ★★★★☆",
   },
   {
-    name: "The score",
-    author: "elle Kennedy",
-    image: "images/book-2.png",
-    review: "Hier komt mijn persoonlijke mening over dit boek.",
+    name: "The Love Hypothesis",
+    author: "Ali Hazelwood",
+    image: "images/tlh.png",
+    review: "Oh my god! absolute my fave!",
     rating: "Mijn beoordeling: ★★★★★",
   },
   {
     name: "A Court of Thorns and Roses",
     author: "Sarah J. Maas",
-    image: "images/book-3.png",
+    image: "images/acotar.png",
     review:
       "Ik vond dit boek geweldig! Het verhaal is meeslepend en de personages zijn goed uitgewerkt.",
+    rating: "Mijn beoordeling: ★★★☆☆",
+  },
+  {
+    name: "A Sign of Affection",
+    author: "Suu Morishita",
+    image: "images/asoa.png",
+    review:
+      "Wat kan ik zeggen?... Het hoofd karakter heeft gehoorproblemen... Ik heb gehoor problemen... plus dit is een romance manga en ik ben een grote sucker voor romance.",
     rating: "Mijn beoordeling: ★★★☆☆",
   },
 ];
