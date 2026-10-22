@@ -1,63 +1,101 @@
-/* hamboorger nav*/
+/* MARK: hamboorger nav*/
+/* */
+/* Eerst eventjes de knop en het menu uit de HTML halen */
 
 const menuButton = document.querySelector(".menu-toggle");
 const navigation = document.querySelector(".main-nav");
 
+/* ALs iemand op de knop klikt/drukt, klapt het menu open of dicht*/
 menuButton?.addEventListener("click", function () {
   navigation?.classList.toggle("is-open");
-
+  /*even checken of het menu nu open is */
   const open = navigation?.classList.contains("is-open");
-
+  /* Dit helpt bijvoorbeeld een schreenreader te begrijpen 
+of het menu open of dicht is*/
   menuButton.setAttribute("aria-expanded", open);
+  /* Het icoontje verandert mee. Een kruisje als het menu geopend is 
+  en 3 strepen voor als het gesloten is*/
   menuButton.textContent = open ? "×" : "☰";
+  /*Dit is dus de beschrijvingvan de knop die ook mee gaat. */
   menuButton.setAttribute(
     "aria-label",
     open ? "Sluit navigatiemenu" : "Open navigatiemenu",
   );
 });
 
-/* licht en donker van roots */
+/* Bronnennnn:
+1. https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector
+2. https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+3. https://developer.mozilla.org/en-US/docs/Web/API/Element/classList */
 
+/* MARK: licht en donker van roots */
+
+/* De knop, het icoontje en thema instellingen van het apparaat ophalen..*/
 const themeButton = document.querySelector(".theme-toggle");
 const themeIcon = document.querySelector(".theme-icon");
 const deviceTheme = window.matchMedia("(prefers-color-scheme: dark)");
 
+/*Misschien heeft de bezoeker al eerder een thema gekozen? 
+Die keuze proberen t script hier uit de browser te halen. */
 let savedTheme = localStorage.getItem("garden-theme");
 
+/*Met deze funtie zetten we het gekozen thema op de website! :) */
 function setTheme(theme) {
   document.documentElement.dataset.theme = theme;
 
+  /* Als het icoontje bestaat, laten we het met het thema meekijken.*/
   if (themeIcon) {
     themeIcon.textContent = theme === "dark" ? "☀" : "☾";
   }
 }
 
+/*Heeft de bezoeker al eeen keuze opgeslagen? Dan wordt het gebruikt.
+Zo niet, wordt er naar de gebruiker's device gekeken welke thema is opgeslagen */
 setTheme(savedTheme || (deviceTheme.matches ? "dark" : "light"));
 
+/*Verandert de thema instelling van het apparaat? */
 deviceTheme.addEventListener("change", function (event) {
+  /* Volgt het apparaat alleen als de gebruiker zelf geen keuze heeft gemaakt. */
   if (!savedTheme) {
     setTheme(event.matches ? "dark" : "light");
+    /* Hehehe mijn zelf getekende achtergronden van de kamers veranderen mee */
     updateRoomBackground();
   }
 });
 
+/* Wanneer de gebruiker op de thema knop drukt/klikt, wisselt t thema.*/
 themeButton?.addEventListener("click", function () {
   savedTheme =
     document.documentElement.dataset.theme === "dark" ? "light" : "dark";
 
+  /* Het nieuwe thema toepassen en bewaren voor de volgende keer als
+  de gebruiker het website weer bezoekt. Dit zorgt ervoor dat je niet iedere
+  keer weer opnieuw moet aangeven dat je het donker of licht wilt.*/
   setTheme(savedTheme);
   localStorage.setItem("garden-theme", savedTheme);
+  /* getekende achtergronden gaan erin mee, maar dat hoe ik je niet
+   constant te vertellen toch? */
   updateRoomBackground();
 });
 
-/* mini popups  */
+/* Bronnen:
+1. https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+2. https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia
+3. https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset */
 
+/* MARK: mini popups  */
+
+/*Dit zijn dus de onderdelen die kleine popups */
 const messageBox = document.querySelector(".message-box");
 const messageText = document.querySelector(".message-text");
 const messageClose = document.querySelector(".message-close");
-
+/* Hier zoekt het script naar alle creatures en andere klikbare objecten.
+ForEach  laat het script ieder gevonden object apart behandelt worden.*/
 document.querySelectorAll(".creature, .clickable").forEach(function (object) {
   object.addEventListener("click", function () {
+    /* Sommige objecten hebben hun eigen unieke popups zoals de Ipad, leesbeoken 
+    en boek voor de cocktails. Die laten we hier met rust want ander krijg je het zo dat
+    er twee popups tegenlijketijd kunnen openen...*/
     if (
       object.hasAttribute("data-open-book") ||
       object.hasAttribute("data-open-ipad") ||
@@ -66,60 +104,93 @@ document.querySelectorAll(".creature, .clickable").forEach(function (object) {
       return;
     }
 
+    /*Alleen iets doen als de popup en de tekst erin bestaat. */
     if (messageText && messageBox) {
+      /*Elke object kan zijn eigen bericht hebben via 
+      de 'data-message' functie in HTML. Zodra er geen bericht in is gevoerd
+      wordt er geoon een lege tekst gebruikt */
       messageText.textContent = object.dataset.message || "";
+
+      /* Bwaaam, de popup verschijntttt!*/
       messageBox.hidden = false;
     }
   });
 });
-
+/* Klik je op t kruisje, dan verdwijnt de kleine pop-up weer!*/
 messageClose?.addEventListener("click", function () {
   if (messageBox) {
     messageBox.hidden = true;
   }
 });
 
-/* kamer + pijlen */
+/*Bronnenn:
+1. https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll
+2. https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset
+3. https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/hidden */
 
+/* */
+/* MARK: kamer + pijlen */
+
+/* Allereerst alle onderdelen ophalen die script nodig heeft om de kamer
+te kunnen laten bewegen*/
 const roomViewport = document.querySelector(".room-viewport");
 const roomWorld = document.querySelector(".room-world");
 const roomBackground = document.querySelector(".room-background");
 const leftArrow = document.querySelector(".arrow-left");
 const rightArrow = document.querySelector(".arrow-right");
-
+/* Het begint aan de linker kant van de kamer.
+Deze variabelen houden de positie en breedtes bij */
 let roomPosition = 0;
 let roomWidth = 0;
 let screenWidth = 0;
 
-/* day and night van kamer achtergronden switcheroo */
+/*  MARK: day and night van kamer achtergronden switcheroo */
 
+/* DEze funtie kiest welke afbeelding kamer script zal laten zien*/
 function updateRoomBackground() {
+  /* Staat er op deze pagina geen kamer achtergrond?
+  Dan hoeft script niets te doen natuurlijk!*/
   if (!roomBackground) return;
 
+  /*De naam van de dag versies van de kamers, wordt bewaart
+  in data-day-src. */
   const dayImage = roomBackground.dataset.daySrc;
 
+  /*Zonder die bestandnamen kan het niet verder. */
   if (!dayImage) return;
 
+  /* van, bijvoorbeeld, slaapkamer.png maken we slaapkamer-n.png */
   const nightImage = dayImage.replace(".png", "-n.png");
 
+  /* Controlle of de website op darkmode staat.*/
   const darkMode = document.documentElement.dataset.theme === "dark";
-
+  /* Donker? dan de -n.png afbeelding. anders blijft het gewoon 
+  een normale .png afbeelding.*/
   const newImage = darkMode ? nightImage : dayImage;
 
+  /* Alleen iets aanpassen als we ook echt naar 
+  een andere afbeelding wisselen. */
   if (roomBackground.getAttribute("src") !== newImage) {
     roomBackground.setAttribute("src", newImage);
   }
 }
 
-/* Bewaar de originele dagafbeelding */
+/* brrrrron:
+1. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace */
 
+/* MARK: Bewaar de originele dagafbeelding */
+/*Het onthouden van de originele afbeelding, zodat het altijd weet
+welke dag versie bij de nachtafbeelding hoort. gotta secure it! */
 if (roomBackground) {
   roomBackground.dataset.daySrc = roomBackground.getAttribute("src");
 }
 
-/* De kamer verschuiven met knopen links en rechts*/
-
+/* */
+/* MARK: De kamer verschuiven met knopen links en rechts*/
+/* DEze functie rekent uit hoe breed de kamer moet zijn
+en of de pijlen nodig zijn.*/
 function updateRoom() {
+  /* Eerst checken of alle nodige onderdelen bestaan. en zo niet, stopt het*/
   if (
     !roomBackground ||
     !roomViewport ||
@@ -130,57 +201,73 @@ function updateRoom() {
     return;
   }
 
+  /**/
   if (!roomBackground.naturalWidth || !roomViewport.clientHeight) {
     return;
   }
 
+  /* Hoe breed is het stukje scherm waardoor je de kamer bekijkt?*/
   screenWidth = roomViewport.clientWidth;
 
+  /* */
   const height = roomViewport.clientHeight;
 
+  /* */
   const ratio = roomBackground.naturalWidth / roomBackground.naturalHeight;
 
+  /* */
   roomWidth = Math.max(screenWidth, height * ratio);
 
+  /* */
   roomWorld.style.width = roomWidth + "px";
 
+  /* */
   const canMove = roomWidth > screenWidth + 1;
 
+  /* */
   leftArrow.hidden = !canMove;
   rightArrow.hidden = !canMove;
 
+  /* */
   roomPosition = Math.max(0, Math.min(roomPosition, roomWidth - screenWidth));
 
+  /* */
   roomWorld.style.transform = "translateX(-" + roomPosition + "px)";
 
+  /* */
   leftArrow.disabled = roomPosition <= 0;
 
+  /* */
   rightArrow.disabled = roomPosition >= roomWidth - screenWidth - 1;
 }
 
+/* */
 leftArrow?.addEventListener("click", function () {
   roomPosition -= screenWidth * 0.75;
   updateRoom();
 });
 
+/* */
 rightArrow?.addEventListener("click", function () {
   roomPosition += screenWidth * 0.75;
   updateRoom();
 });
 
+/* */
 roomBackground?.addEventListener("load", updateRoom);
 
+/* */
 window.addEventListener("resize", updateRoom);
 
-/* Kies de juiste achtergrond bij het openen */
-
+/* */
 updateRoomBackground();
 
+/* */
 if (roomBackground?.complete) {
   updateRoom();
 }
 
-/* de interactieve elementen ipad en boeken */
+/* MARK: de interactieve elementen ipad en boeken */
 
 const experiences = document.querySelectorAll(".experience-backdrop");
 
@@ -242,7 +329,7 @@ document.addEventListener("keydown", function (event) {
   }
 });
 
-/* cocktails review en recepten */
+/* MARK: cocktails review en recepten */
 
 const cocktails = [
   {
@@ -307,7 +394,7 @@ document
     showCocktail(cocktailIndex + 1);
   });
 
-/* boeken review */
+/* MARK: boeken review */
 
 const readingBooks = [
   {
@@ -364,7 +451,7 @@ document.querySelector("#reading-next")?.addEventListener("click", function () {
   showReadingBook(readingIndex + 1);
 });
 
-/* cookies instellingen */
+/* MARK: cookies instellingen */
 
 const cookieButton = document.querySelector(
   ".cookie-button, [data-open-cookies]",
@@ -395,14 +482,14 @@ function saveCookieChoice(choice) {
   closeCookiePanel();
 }
 
-/* Open de instellingen opnieuw via 'Mijn cookies' */
+/* MARK: Open de instellingen opnieuw via 'Mijn cookies' */
 
 cookieButton?.addEventListener("click", function (event) {
   event.preventDefault();
   openCookiePanel();
 });
 
-/* bewaar keuze */
+/* MARK: bewaar keuze */
 
 acceptButton?.addEventListener("click", function () {
   saveCookieChoice("accepted");
@@ -422,13 +509,13 @@ rejectButton?.addEventListener("click", function () {
   }
 });
 
-/* venster sluiten */
+/* MARK: venster sluiten */
 
 closeButton?.addEventListener("click", closeCookiePanel);
 
 cookieBackdrop?.addEventListener("click", closeCookiePanel);
 
-/* Toon de instellingen als er nog geen keuze is gemaakt */
+/* MARK: Toon de instellingen als er nog geen keuze is gemaakt */
 
 if (!localStorage.getItem("garden-cookie-choice")) {
   openCookiePanel();
