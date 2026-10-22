@@ -4,6 +4,73 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 ### Learning Log
 
+Procesdocumentatie - Digital Garden
+
+1. Het oorspronkelijke idee
+
+Mijn oorspronkelijke idee was om een persoonlijke website te maken die niet alleen als een portfolio functioneert, maar ook als een interactieve digitale wereld. Ik wilde mijn interesses zoals tekenen, lezen, bakken en creative projecten, op een visuele manier presenteren.
+
+Ik wilde voorkomen dat mijn website eruit zou zien als een standaardportfolio met alleen tekst, een paar afbeeldingen en losse pagina's. Daarom koos ik voor een fantasierijke omgeving waarin bezoekers verschillende ruimtes kunnen ontdekken en objecten kunnen klikken om meer informatie te bekijken.
+
+2. De ontwikkeling an het ontwerp
+
+Tijdens het ontwerpprocess heb ik verschillende ideeën uitgewerkt. In eerste instatie dacht ik aan een grote website met meerde ruimtes en aparte pagina's voor verschillende onderwerpen. Hierbij kwamen onder andere een portfolio, boekenplank, keuken, art studio en contactmogelijkheden aan bod. Het was allemaal te veel waardoor mijn pagina helemaal niet uitkwam hoe ik het wilde...
+
+Ik kreeg daarom feedback van mijn docenten dat de website te saai was en dat ik mij beter op2 of 3 pagina's kon concentreren dan op 8 aparte HTML pagina's. Hierdoor moest ik opnieuw nadenken over de hoeveelheid pagina's en de manier waarop ik mijn ideeën kon uitwerken.
+
+In plaats van iedere pagina uitgebreid te maken, ben ik meer aandacht gaan besteden aan de visuele uitwerking en interactie met javascript. De keuken, slaapkamer en woonkamer kregen allemaal hun eigen achtergrond en interactieve elementen.
+
+Uiteindelijk is het mij zeker gelukt om een deel van mijn idee uit te kunnen werken en is het persoonlijker geworden door bijna alles zelf geïllustreert te hebben.
+
+3. Technische uitdagingen
+
+Één van de grootste uitdagingen was het combineren van mijn eigen illustraties met interactieve webtechnieken. Ik wilde dat de afbeeldingen niet alleen decoratief waren, maar ook als onderdeel van de interface konden functioneren.
+
+Daarbij moest ik leren hoe HTML, CSS en JavaScript samen werken. HTML bepaalt de structuur van de pagina, CSS verzoorgt de vormgeving en JavaScript maakt interacties mogelijk.
+
+Vooral JavaScript vond ik uitdagend. Ik moest onder andere begrijpen hoe elementen worden geselecteerd, hoe gebeurtenissen zoals klikken worden afgehandeld en hoe de website op basis daarvan iets kan openen, sluiten of veranderen.
+
+Ook de dag en nacht modus vroeg om extra aandacht naast de root; functie in css omdat ik dag en nacht versies van de kamer achtergronden heb gemaakt. De juiste achtergrond moest worden gekozen op basis van de geselecteerde modus en de gekozen instellingen moesten behouden blijven wanneer de gebruiker de website opnieuw opent.
+
+De trial and error was echt zo pijnlijk aangezien alles nog niet zo soepel gaat. Ik moest echt heen en weer van mijn pagina, naar artikellen en video's kijken wat er in vredensnaam mis is gegaan. Gelukkig had ik een hele Herft recess daarvoor. :)
+
+4. Gebruikte bronnen en hulpmiddelen
+
+Tijdens het ontwikkelen heb ik veel online documentatie en hulpmiddelen gebruikt om technieken op te zoeken, voorbeelden te begrijpen en oplossingem voor technische problemen te vinden.
+
+voor HTML, CSS en JavaScript heb ik de volgende documentties kunnen gebruiken en studeren:
+
+- MDN Web Docs voor JavaScript functiess, events en browserfunctionaliteiten
+- web.dev voor de basis van HTML, CSS, JavaScript en toegankelijk webdesign.
+- De documentatie over querySelector() (hoe vindt de code het juiste element) en addEventListener() (hoe reageert de website op een klik?) om te begrijpen hoe interactieve elementen werken.
+- De documentatie over LocalStorage om te begrijpen hoe voorkeuren in de browser bewaard kunnen blijven.
+
+Daarnaast heb ik ChatGPT alleen gebruikt voor als hulpmiddel als ik bepaalde problemen echt niet kon spotten tijdens het nalezen van documentaties en artikkelen en videos. Echt als PLAN Z.
+
+Mijn eigen illustraties heb ik gemaakt als onderdeel van het visuele ontwerp.
+
+5. Wat heb ik geleerd?
+
+Ik heb geleerd dat een website niet alleen draait om het uitelijk, maar ook op de manier waarop gebruikers ermee omgaan. Een goed idee moet worden vertaald naar een duidelijke structuur en begrijpelijke interacties.
+
+Daarnaast heb ik geleerd dat het ontwikkelen van een website een iteratief proces is. Het eerste idee hoeft niet het uiteindelijke ontwerp te worden. Feedback, experimenteren, technische beperkingen en het testen van functies kunnen ervoor zorgen dat een ontwerp verandert.
+
+Ook heb ik ervaren dat het belangrijk is om te begrijpen wat code doet, zelfs wanneer ik documentatie of hulmiddelen gebruik om de code te schrijven. Ik nu nogsteeds niet alles uit mijn hoofd opschrijven, maar de docenten hebben gelukkig zelf gezegd dat het bijna onmogelijk is om het uit je hoofd te leren en dat zelf zij er veel moeite mee hebben.
+
+6. Evaluatie en verbeterpunten
+
+Ik ben tevreden met de ontwikkeling van het concept, omdat de website steeds beter aansluit bij mijn persoonlijke stijl en mijn intresse in illustratie en visueel ontwerp.
+
+Een belangrijk verbeterpunt is dat ik mijn technische kennis verder wil ontwikkelen. Ik wil beter begrijpen hoe JavaScript functies zijn opgebouwd zodat ik in de toekomst veel soepeler kan typen inplaats van 3 minuten per regel besteden omdat ik heen en weer van tabblad naar tabblad moet klikken. Ik wil later interacties zelfstandig kunnen maken en aanpassen!
+
+7. Als ik meer tijd had
+
+Als ik meer tijd had gehad, zou ik de interactieve wereld verder willen uitbreiden met verborgen elementen (eastereggs), uitgebreidere infromatie over mijn illustraties en extra mogelijkheden om tussen de verschillende ruimtes/kamers te navigeren.
+
+Daarnaast zou ik meer gebruikerstests uitvoeren om te onderzoeken of gebruikers wel begrijpen welke onderdelen klikbaar zijn en hoe zij hun weg door de website vinden. Op basis van die resultaten zou ik de navigatie en interacties ver verbeteren.
+
+Ook zou ik de toegankelijkheid van de website uitgebreider testen. Hierbij zou ik onder andere letten op contrast, kleuren blindheid, leesbaarheid enzov
+
 ### 🌸 8 okt -🌸
 
 💚 Gewoon rond gespeeld met html en css voor mijn song text shizzle. Ik heb het wel simpel gehouden aangezien docenten aleen willen dat ik dingen gebruik die bij deepdives worden gegeven. dus heb alleen met grids en divs en classes gewerkt. Simpel, maar toch misschien wel iets leuks. Ik had meer keyframes animaties als eerste, maar later dacht ik "Nee doe maar niet want anders wordt er tegen je gezegd dat je niet zo veel moet doen."
