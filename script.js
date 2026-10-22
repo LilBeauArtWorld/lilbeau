@@ -412,14 +412,16 @@ const readingBooks = [
     name: "Fall I want",
     author: "Lyra Parish ",
     image: "images/fall-i-want.png",
-    review: "Hier komt mijn persoonlijke mening over dit boek.",
-    rating: "Mijn beoordeling: ★★★★☆",
+    review:
+      "Een fake-dating romance met small-town vibes, romantische spanning en natuurlijk gevoelens die net even iets ingewikkelder zijn dan nodig. Ik hou van verhalen waarin twee personages doen alsof ze verliefd zijn, om er vervolgens achter te komen dat het misschien toch niet zo nep is. Geef me die ongemakkelijke momenten, de plagerijtjes en de “girl, doe niet alsof je hem niet leuk vindt”-energie. Een leuke keuze als je zin hebt in een romantisch verhaal met vlinders-in-je-buik-vibes en een vleugje drama. Soms wil je gewoon even wegduiken in een romance en genieten van alle chaos.",
+    rating: "Mijn beoordeling: ★★★☆☆",
   },
   {
     name: "The Love Hypothesis",
     author: "Ali Hazelwood",
     image: "images/tlh.png",
-    review: "Oh my god! absolute my fave!",
+    review:
+      "Een professor, een slimme studente en een neprelatie die van nep... Naar echt verandert. Ik hou van de chemie tussen Olive en Adam, vooral die “hij doet alsof hij haar niet leuk vindt, maar ondertussen yearns hij gewoon enorm voor haar”... Adam is absoluut niet de meest toegankelijke man, maar juist dat maakt hun dynamiek zo leuk om te volgen. En Olive? Een fantastisch en realistische personage om mee mee te leven! Perfect voor liefhebbers van fake dating en grumpy x sunshine. Ennuh... Voor de mensen die niet zo gek zijn op lezen (losers)...: Er is ook een film van dit boek op Prime Video! ",
     rating: "Mijn beoordeling: ★★★★★",
   },
   {
@@ -427,16 +429,16 @@ const readingBooks = [
     author: "Sarah J. Maas",
     image: "images/acotar.png",
     review:
-      "Ik vond dit boek geweldig! Het verhaal is meeslepend en de personages zijn goed uitgewerkt.",
-    rating: "Mijn beoordeling: ★★★☆☆",
+      "Oké, deze serie heeft me echt nieuwsgierig gemaakt naar de wereld van de fae. Ik hou van de sprookjesachtige sfeer, de magie en het feit dat je niet altijd weet wie je kunt vertrouwen aka PLOTTWISTS! En laten we eerlijk zijn… mysterieuze, gevaarlijke personages hebben nu eenmaal iets. HAHAHA... Wat ik vooral leuk vind, is dat het verhaal je steeds nieuwsgieriger maakt naar wat er achter de personages en hun keuzes zit. Het is zo’n boek waarbij je na afloop begrijpt waarom mensen zo enthousiast zijn over deze serie! Perfect als je houdt van romantische fantasy, intriges en personages waar je véél te veel over wilt nadenken.",
+    rating: "Mijn beoordeling: ★★★★☆",
   },
   {
     name: "A Sign of Affection",
     author: "Suu Morishita",
     image: "images/asoa.png",
     review:
-      "Wat kan ik zeggen?... Het hoofd karakter heeft gehoorproblemen... Ik heb gehoor problemen... plus dit is een romance manga en ik ben een grote sucker voor romance.",
-    rating: "Mijn beoordeling: ★★★☆☆",
+      "Een romance die voor mij nét wat persoonlijker voelt, omdat Yuki, de hoofdpersoon, slechthorend is... just like me for real, for real! Het is bijzonder om een personage te zien dat de wereld op een andere manier ervaart en waarbij communicatie soms net even anders werkt... Wat ik zo mooi vind, is dat haar gehoorverlies niet haar hele identiteit bepaalt. Ze is gewoon een meisje dat verliefd wordt, haar eigen gevoelens ontdekt en haar wereld verder verkent. En de romantiek? ZO LIEF. Ik smelt. Een zachte, hartverwarmende romance die me niet alleen vlinders geeft, maar ook een extra gevoel van herkenning. Soms is het fijn om jezelf een klein beetje terug te zien in een verhaal.",
+    rating: "Mijn beoordeling: ★★★★★",
   },
 ];
 
