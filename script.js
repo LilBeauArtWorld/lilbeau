@@ -201,7 +201,8 @@ function updateRoom() {
     return;
   }
 
-  /**/
+  /*Afbeelding moet wel geladen zijn en het kijkvenster moet een bepaalde
+  hoogte hebben*/
   if (!roomBackground.naturalWidth || !roomViewport.clientHeight) {
     return;
   }
@@ -209,72 +210,78 @@ function updateRoom() {
   /* Hoe breed is het stukje scherm waardoor je de kamer bekijkt?*/
   screenWidth = roomViewport.clientWidth;
 
-  /* */
+  /* hoe hoog is dat stukje?*/
   const height = roomViewport.clientHeight;
 
-  /* */
+  /* Hiermee berekent het de verhouding van de originele afbeelding.
+  zo blijft de verhouding ook echt netjes*/
   const ratio = roomBackground.naturalWidth / roomBackground.naturalHeight;
 
-  /* */
+  /* Berekent hoe breed de kamer moet zijn. Het nemt de grootste warde
+  aangezien de afbeelding goed in beeld moet kunnen passen. */
   roomWidth = Math.max(screenWidth, height * ratio);
 
-  /* */
+  /* Geef de kamer die breedte.*/
   roomWorld.style.width = roomWidth + "px";
 
-  /* */
+  /* Is de kamer breder dan het kijkvenster, dan hebben we de pijlen nodig.*/
   const canMove = roomWidth > screenWidth + 1;
 
-  /* */
+  /* Is verschuiven niet nodig? Hide the arrows!*/
   leftArrow.hidden = !canMove;
   rightArrow.hidden = !canMove;
 
-  /* */
+  /*Dit houdt de kamer binnen grenzen. Niet verder naar links dan het begin (0)
+  en niet ver over de rechter kan van het scherm schuiven. */
   roomPosition = Math.max(0, Math.min(roomPosition, roomWidth - screenWidth));
 
-  /* */
+  /*Dit is dus het stukje dat ervoorzorgd dat de kamer ook echt verschuift */
   roomWorld.style.transform = "translateX(-" + roomPosition + "px)";
 
-  /* */
+  /* Hierdoor wordt de knop om naar links te gaan niet meer drukbaar
+  omdat de kamer positie 0 (helemaal links) staat*/
   leftArrow.disabled = roomPosition <= 0;
 
-  /* */
+  /* En dit als het helemaal rechts staat*/
   rightArrow.disabled = roomPosition >= roomWidth - screenWidth - 1;
 }
 
-/* */
+/* Klik je op links of rechts. dan verplaatst de kamer ongeveer drie kwart
+van de breedte van het kijkventer*/
 leftArrow?.addEventListener("click", function () {
   roomPosition -= screenWidth * 0.75;
   updateRoom();
 });
 
-/* */
 rightArrow?.addEventListener("click", function () {
   roomPosition += screenWidth * 0.75;
   updateRoom();
 });
 
-/* */
+/*Zodra de achtergrond geladen is, rekent het de kamer opnieuw uit. */
 roomBackground?.addEventListener("load", updateRoom);
 
-/* */
+/* Als de grootte van het browservenster veranderd, 
+wordt de kamer opnieuw aangepast*/
 window.addEventListener("resize", updateRoom);
-
-/* */
 updateRoomBackground();
-
-/* */
 if (roomBackground?.complete) {
   updateRoom();
 }
 
+/* */
+
 /* MARK: de interactieve elementen ipad en boeken */
 
+/* */
 const experiences = document.querySelectorAll(".experience-backdrop");
 
+/* */
 const closeExperienceButtons = document.querySelectorAll(
   "[data-close-experience]",
 );
 
+/* */
 function openExperience(id) {
   const experience = document.querySelector(id);
 
