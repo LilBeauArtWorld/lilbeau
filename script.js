@@ -372,14 +372,16 @@ const cocktails = [
   {
     name: "Pornstar Martini",
     image: "images/pornstar-martini.png",
-    review: "Mijn mening komt hier. Wat vind ik van deze cocktail?",
+    review:
+      "YUM! enorm zoet! heerlijk om eens in de zoveel tijd (het liefst 1 keer per week) te drinken, maar niet veel achter elkaar... Tenzij het een zware week was of course... Wel altijd awkward om het hardop te bestellen vanwege de naam.",
     recipe:
       "Shake vanillevodka, passievruchtlikeur, passievrucht en limoensap met ijs. Zeef in een glas en serveer met passievrucht.",
   },
   {
     name: "Piña Colada",
     image: "images/pina-colada.png",
-    review: "Mijn mening komt hier. Lekker tropisch?",
+    review:
+      "YUM! Piña coladaaaaa! echt zo fricking lekker! Ik weet nog dat ik een keertje zo dronken was geworden omdat alle rum nsar de bodem was gezakt en ik was gewoon soortvan shotjes aan het drinken door een rietje... tip: altijd goed roeren! Voorde rest is het echt zalig, ben ook een fan vn annanas",
     recipe:
       "Blend witte rum, ananassap en kokosroom met ijs. Schenk in een glas en garneer met ananas.",
   },
