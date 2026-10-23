@@ -83,9 +83,18 @@ Ook zou ik de toegankelijkheid van de website uitgebreider testen. Hierbij zou i
 
 ##### ❓ Waarom is het goed om een grid in je ontwerp toe te passen? Noem een reden voor de ontwerper en een voor de bezoeker.
 
+- voor ontwerper: Hept om elementem netjes uit te lijnen en structuur aan te brengen.
+- Voor gebruiker: De website is overzichtelijker en makkelijker te gebruiken.
+
 ##### ❓ Noem drie manieren om chaos in je ontwerp te voorkomen.
 
+- Gebruik een duidelijke visuele hiërachie.
+- Houd voldoende witruimte.
+- Gebruik consistente kleuren en lettertypes en uitlijningen.
+
 ##### ❓ Hoeveel gekkigheid moet er in je werk zitten?
+
+genoeg om je ontwerp uniek en creatief te maken, maar niet zoveel dat het onduidelijk of onbruikbaar wordt.
 
 ### 🌸 6 okt -🌸
 
