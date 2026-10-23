@@ -1,6 +1,4 @@
-/* =========================================
-   MIJN LETTERTYPE
-   ========================================= */
+/* fontfaceeee */
 
 @font-face {
   font-family: SeraphsVF;
@@ -10,9 +8,7 @@
   font-display: swap;
 }
 
-/* =========================================
-   KLEUREN
-   ========================================= */
+/* dromerige kkleuren*/
 
 :root {
   --background: #100c1c;
@@ -23,9 +19,7 @@
   --morning-yellow: #fff2a6;
 }
 
-/* =========================================
-   BASIS VAN DE PAGINA
-   ========================================= */
+/* de basics van pagina */
 
 * {
   box-sizing: border-box;
@@ -46,9 +40,7 @@ body {
   overflow-x: hidden;
 }
 
-/* =========================================
-   TITEL
-   ========================================= */
+/* titleee */
 
 header {
   text-align: center;
@@ -71,9 +63,7 @@ header p {
   letter-spacing: 0.15em;
 }
 
-/* =========================================
-   INDELING VAN DE SONGTEKST
-   ========================================= */
+/* de indeling van lyrics */
 
 main {
   width: min(850px, 88%);
@@ -100,9 +90,7 @@ main {
   opacity: 1;
 }
 
-/* =========================================
-   EERSTE REGELS
-   ========================================= */
+/* de eerste regels */
 
 .noise {
   grid-column: 1 / 6;
@@ -124,10 +112,7 @@ main {
   animation: slow-spin 12s linear infinite;
 }
 
-/* =========================================
-   LET IT HAPPEN
-   Klein beginnen en groeien tijdens het scrollen
-   ========================================= */
+/*LET IT HAPPEN... Klein beginnen en groeien tijdens het scrollen */
 
 .chorus {
   grid-column: 1 / 7;
@@ -163,9 +148,7 @@ main {
   opacity: 0.8;
 }
 
-/* =========================================
-   REGELS OVER HET RONDRENNEN
-   ========================================= */
+/* Running arounddd*/
 
 .running {
   grid-column: 1 / 7;
@@ -176,9 +159,7 @@ main {
   color: var(--purple);
 }
 
-/* =========================================
-   EEN GEVOEL DAT GROEIT
-   ========================================= */
+/* growing en shallow */
 
 .growing {
   grid-column: 2 / 6;
@@ -195,9 +176,7 @@ main {
   color: var(--soft-purple);
 }
 
-/* =========================================
-   DE LAST OP HAAR SCHOUDERS
-   ========================================= */
+/* shoulder */
 
 .heavy {
   grid-column: 1 / 7;
@@ -205,10 +184,7 @@ main {
   color: var(--purple);
 }
 
-/* =========================================
-   I CAN HEAR AN ALARM
-   Schokkerig en plotseling naar voren
-   ========================================= */
+/* alarm part */
 
 .alarm {
   grid-column: 1 / 7;
@@ -223,10 +199,7 @@ main {
   transform-origin: center;
 }
 
-/* =========================================
-   MUST BE A MORNING
-   Paars verandert naar geel
-   ========================================= */
+/* morning part*/
 
 .morning {
   grid-column: 1 / 7;
@@ -240,9 +213,7 @@ main {
   text-shadow: none;
 }
 
-/* =========================================
-   ANIMATIES
-   ========================================= */
+/* keyframe animaties */
 
 /* Titel komt rustig tevoorschijn */
 
@@ -367,10 +338,7 @@ main {
   }
 }
 
-/* =========================================
-   SCROLLANIMATIES
-   Werken in browsers met scroll-driven animations
-   ========================================= */
+/* de scroll + timing */
 
 @supports (animation-timeline: view()) {
   /* Gewone regels vervagen in en worden duidelijker */
@@ -406,9 +374,7 @@ main {
   }
 }
 
-/* =========================================
-   MOBIELE VERSIE
-   ========================================= */
+/* natuurlijk voor mobiel */
 
 @media (max-width: 600px) {
   header {
@@ -441,10 +407,7 @@ main {
   }
 }
 
-/* =========================================
-   TOEGANKELIJKHEID
-   Minder beweging als iemand dat instelt
-   ========================================= */
+/* toegankelijkheid... because we do not discriminate */
 
 @media (prefers-reduced-motion: reduce) {
   *,
