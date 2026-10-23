@@ -323,22 +323,34 @@ document
     openExperience("#reading-backdrop");
     showReadingBook(0);
   });
-
+/* Elke sluit knop krijgt een eigen klikgebeurtenis, 
+zo kan iedere knop zijn eigen venster sluiten.*/
 closeExperienceButtons.forEach(function (button) {
   button.addEventListener("click", function () {
     closeExperience(button);
   });
 });
 
+/* Je kunt ook op de achtergrond naast de popup klikken om
+het venster te sluiten. Handig voor mensen die niet zo precies kunnen richten.
+of mensen met een tremor in hun hand.*/
 experiences.forEach(function (experience) {
   experience.addEventListener("click", function (event) {
+    /* Dit zorgt ervoor dat javascript soort van kan checken of je ook daadwerkelijk
+    op de targets klikt om het venster te sluiten.
+    Het zorgt ervoor dat als je op de inhoud perongeluk tikt,
+    dat het niet perogeluk sluit. */
     if (event.target === experience) {
       experience.hidden = true;
     }
   });
 });
 
+/* Wie liever de toetsenbord gebruik...*/
 document.addEventListener("keydown", function (event) {
+  /* Escape key sluit alle popups (ipad, cocktails en boeken venster) 
+  Dit maakt het makkelijker inplaats van de heletijd op TAB te drukken
+  totdat je op het kruisje komt!*/
   if (event.key === "Escape") {
     experiences.forEach(function (experience) {
       experience.hidden = true;
@@ -346,8 +358,16 @@ document.addEventListener("keydown", function (event) {
   }
 });
 
+/* bronnen:
+1. https://developer.mozilla.org/en-US/docs/Web/API/Element/closest
+2. https://developer.mozilla.org/en-US/docs/Web/API/Event/target
+3. https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key */
+
+/* */
 /* MARK: cocktails review en recepten */
 
+/* Hier staan alle cocktails informaties bij elkaar. zo hoeven we niet
+voor elke cocktail een aparte code te schrijven. Erg handig dus!*/
 const cocktails = [
   {
     name: "Pornstar Martini",
@@ -380,39 +400,61 @@ const cocktails = [
   },
 ];
 
+/* Hier wordt er onthouden welke cokctail op dit moment in beeld staat. 
+De 0 staat voor als eerste cocktail van het lijstje daarboven. */
 let cocktailIndex = 0;
 
+/*Dit functie zorgt ervoor dat de gekozen cocktail ook echt op de pagina verschijnt. 
+SHOWcocktail */
 function showCocktail(index) {
+  /*Staat het afbeeldings element niet in HTML? Dan boohoo... javascript kan
+  er niks mee en gaat dan er niet mee door. */
   if (!document.querySelector("#cocktail-image")) return;
 
+  /* Hierdoor blijft het netjes binnen de lijst. Na de laatste cocktail (4/4) gaat het weer terg
+  naar de eerste (1/4) en zo ook weer terug. Geen 1 richtingsverkeer dus. */
   cocktailIndex = (index + cocktails.length) % cocktails.length;
 
+  /* Dit haalt de gegevens op van de cocktail die laten zien mag worden.*/
   const cocktail = cocktails[cocktailIndex];
 
+  /* De afbeelding, naam, review en het recept bijwerken*/
   document.querySelector("#cocktail-image").src = cocktail.image;
   document.querySelector("#cocktail-image").alt = cocktail.name;
   document.querySelector("#cocktail-name").textContent = cocktail.name;
   document.querySelector("#cocktail-review").textContent = cocktail.review;
   document.querySelector("#cocktail-recipe").textContent = cocktail.recipe;
 
+  /* Dit is dus de indicatie voor de gebruiker om hun te laten zien waar ze zijn.
+  als in, welke nummer cocktail (dus die 1/4 of 3/4 of 2/4 of 4/4) */
   document.querySelector("#cocktail-counter").textContent =
     cocktailIndex + 1 + " / " + cocktails.length;
 }
 
+/* Met deze knop gaan we 1 cocktail terug*/
 document
   .querySelector("#cocktail-previous")
   ?.addEventListener("click", function () {
     showCocktail(cocktailIndex - 1);
   });
 
+/* en 1 vooruit!*/
 document
   .querySelector("#cocktail-next")
   ?.addEventListener("click", function () {
     showCocktail(cocktailIndex + 1);
   });
 
+/*bronnuh:
+  1. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+  2. https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent
+  3. https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement  */
+
+/* */
 /* MARK: boeken review */
 
+/* Alles geld hetzelfde bij de boeken nets als bij de cocktails, alleen
+zijn de eenheden en namen anders. Maar voor de rest is het code en wat het doet BIJNA precies hetzelfde.*/
 const readingBooks = [
   {
     name: "Fall I want",
@@ -478,8 +520,12 @@ document.querySelector("#reading-next")?.addEventListener("click", function () {
   showReadingBook(readingIndex + 1);
 });
 
+/*bronnen: zie bij cocktails... precies hetzelfde*/
+
+/* */
 /* MARK: cookies instellingen */
 
+/* Zoals altijd, eerst de knop en alle onderdelen van het cookie venster ophalen.*/
 const cookieButton = document.querySelector(
   ".cookie-button, [data-open-cookies]",
 );
@@ -490,60 +536,98 @@ const acceptButton = document.querySelector(".cookie-accept");
 const rejectButton = document.querySelector(".cookie-reject");
 const closeButton = document.querySelector(".cookie-close");
 
+/* dit opent het venster*/
 function openCookiePanel() {
+  /*Als het venster of achtergond niet bestaat. stopt het! */
   if (!cookiePanel || !cookieBackdrop) return;
 
+  /*Beide onderdelen zichtbaar maken! */
   cookiePanel.hidden = false;
   cookieBackdrop.hidden = false;
 }
 
+/* Dit knop sluit het venster */
 function closeCookiePanel() {
+  /* De check of alles dat we nodig hebben er ook is.*/
   if (!cookiePanel || !cookieBackdrop) return;
 
+  /* Het venster en achtergrond weer verbergen*/
   cookiePanel.hidden = true;
   cookieBackdrop.hidden = true;
 }
 
+/* Dit onthoudt dus wat de gebruiker heeft gekozen */
 function saveCookieChoice(choice) {
+  /* DE keuze in de browser wordt bewaard.*/
   localStorage.setItem("garden-cookie-choice", choice);
+
+  /* Na keuze mag venster dicht.*/
   closeCookiePanel();
 }
+/* bronnen:
+  1. https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/hidden
+  2. https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage */
 
 /* MARK: Open de instellingen opnieuw via 'Mijn cookies' */
 
+/* Als gebruiker op 'mijn cookies' klikt, opent het de instellingen opnieuw*/
 cookieButton?.addEventListener("click", function (event) {
+  /*Dit voorkomt dat een link bijvoorbeeld naar een andere pagina springt. */
   event.preventDefault();
   openCookiePanel();
 });
 
+/*bron:
+  1. https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault */
+
 /* MARK: bewaar keuze */
 
+/* Heeft de gebruiker op accepteren geklikt?...*/
 acceptButton?.addEventListener("click", function () {
+  /* BWAM bewaar keuze!*/
   saveCookieChoice("accepted");
 });
 
+/*Gebruiker declined? */
 rejectButton?.addEventListener("click", function () {
+  /* NOOOOOOO... bewaar keuze...*/
   saveCookieChoice("rejected");
 
+  /*Zoekt de side eye (emoji) element op hehehe... */
   const sideEye = document.querySelector(".cookie-side-eye");
 
+  /* Alleen iets doen als dat element op pagina staat.*/
   if (sideEye) {
+    /*Eventjes laten verschijnenene hehehehe */
     sideEye.hidden = false;
 
+    /*Dit is dus de kleine timer van hoelang het op beeld moet staan.
+    4500 is 4,5 secondes */
     window.setTimeout(function () {
       sideEye.hidden = true;
     }, 4500);
   }
 });
 
+/* Bron: 
+  1. https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout */
+
 /* MARK: venster sluiten */
 
+/* dah sluitknop... surpriiiise */
 closeButton?.addEventListener("click", closeCookiePanel);
 
+/* precies hetzelfde als bij de andere popups, je kan ook op de achtergond tikken.
+goed voor mensen met tremoren, of slechte zicht. of luilakken hahahah. */
 cookieBackdrop?.addEventListener("click", closeCookiePanel);
 
 /* MARK: Toon de instellingen als er nog geen keuze is gemaakt */
 
+/* Check check... heb je al eerder een keuze gemaakt/opgeslagen?
+zo niet, BWAM eerste wat je ziet is een cookie keuze vester.*/
 if (!localStorage.getItem("garden-cookie-choice")) {
   openCookiePanel();
 }
+
+/* bron: 
+  1. https://developer.mozilla.org/en-US/docs/Web/API/Storage/getItem */
