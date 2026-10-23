@@ -185,7 +185,6 @@ if (roomBackground) {
   roomBackground.dataset.daySrc = roomBackground.getAttribute("src");
 }
 
-/* */
 /* MARK: De kamer verschuiven met knopen links en rechts*/
 /* DEze functie rekent uit hoe breed de kamer moet zijn
 en of de pijlen nodig zijn.*/
@@ -278,26 +277,32 @@ if (roomBackground?.complete) {
 /* MARK: de interactieve elementen ipad en boeken */
 
 /* */
+/* dit zijn de grote popup vensters die geopent kunnen worden*/
 const experiences = document.querySelectorAll(".experience-backdrop");
 
-/* */
+/* Hier verzamelt javascrip alle knoppen waarmee zo'n vester dicht kan.*/
 const closeExperienceButtons = document.querySelectorAll(
   "[data-close-experience]",
 );
 
-/* */
+/*Met deze functie wordt een popup geopent. Het geeft aan welke
+popup het wilt hebben. bijv. "#ipad-backdrop" */
 function openExperience(id) {
   const experience = document.querySelector(id);
 
+  /* Bestaat de popup?? Dan wordt het zichtbaar! */
   if (experience) {
     experience.hidden = false;
   }
 }
-
+/* Deze functie sluit de popup waar de aangeklikte sluitknop bij hoort.*/
 function closeExperience(button) {
+  /* closest() zoekt het bijhorende popup venster boven de knop in de HTML.
+  Daarna wordt het venster verborgen*/
   button.closest(".experience-backdrop").hidden = true;
 }
 
+/* Klik op de cocktail? dan wordt het cocktailvenster geopent!*/
 document
   .querySelector("[data-open-book]")
   ?.addEventListener("click", function () {
@@ -305,12 +310,13 @@ document
     showCocktail(0);
   });
 
+/* klik op de Ipad? BOOOM ipad venser open*/
 document
   .querySelector("[data-open-ipad]")
   ?.addEventListener("click", function () {
     openExperience("#ipad-backdrop");
   });
-
+/*Klik op de boeken?! BWAAAAAMMMM BOEKEN VENSTER! */
 document
   .querySelector("[data-open-reading-book]")
   ?.addEventListener("click", function () {
