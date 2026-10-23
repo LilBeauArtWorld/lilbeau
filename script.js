@@ -402,7 +402,7 @@ const cocktails = [
   },
 ];
 
-/* Hier wordt er onthouden welke cokctail op dit moment in beeld staat. 
+/* Hier wordt er onthouden welke cocktail op dit moment in beeld staat. 
 De 0 staat voor als eerste cocktail van het lijstje daarboven. */
 let cocktailIndex = 0;
 
