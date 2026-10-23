@@ -1,0 +1,489 @@
+/* =========================================
+   MIJN LETTERTYPE
+   ========================================= */
+
+@font-face {
+  font-family: SeraphsVF;
+  src: url("../fonts/SeraphsVF.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* =========================================
+   KLEUREN
+   ========================================= */
+
+:root {
+  --background: #100c1c;
+  --text: #f5efff;
+  --pink: #ff91d2;
+  --purple: #c7b5ff;
+  --soft-purple: #8f79c9;
+  --morning-yellow: #fff2a6;
+}
+
+/* =========================================
+   BASIS VAN DE PAGINA
+   ========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, #35204d 0%, transparent 45%),
+    var(--background);
+  color: var(--text);
+  font-family: SeraphsVF, Georgia, serif;
+  overflow-x: hidden;
+}
+
+/* =========================================
+   TITEL
+   ========================================= */
+
+header {
+  text-align: center;
+  padding: 5em 1em 2em;
+}
+
+h1 {
+  margin: 0;
+  color: var(--pink);
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  letter-spacing: 0.04em;
+  text-shadow: 0 0 25px #ff91d255;
+  animation: title-appear 2s ease both;
+}
+
+header p {
+  margin-top: 1em;
+  color: var(--purple);
+  font-size: 1rem;
+  letter-spacing: 0.15em;
+}
+
+/* =========================================
+   INDELING VAN DE SONGTEKST
+   ========================================= */
+
+main {
+  width: min(850px, 88%);
+  margin: 0 auto;
+  padding: 3em 0 10em;
+}
+
+.lyrics {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  column-gap: 1em;
+  row-gap: clamp(7rem, 16vh, 13rem);
+  align-items: center;
+}
+
+/* De standaardstijl voor alle regels */
+
+.line {
+  grid-column: 1 / 7;
+  margin: 0;
+  font-size: clamp(1.1rem, 2.5vw, 1.8rem);
+  line-height: 1.9;
+  text-align: center;
+  opacity: 1;
+}
+
+/* =========================================
+   EERSTE REGELS
+   ========================================= */
+
+.noise {
+  grid-column: 1 / 6;
+  text-align: left;
+  color: var(--purple);
+}
+
+.voice {
+  grid-column: 2 / 7;
+  text-align: right;
+}
+
+/* Het woord 'around' draait langzaam */
+
+.around-word {
+  display: inline-block;
+  color: var(--pink);
+  font-weight: 700;
+  animation: slow-spin 12s linear infinite;
+}
+
+/* =========================================
+   LET IT HAPPEN
+   Klein beginnen en groeien tijdens het scrollen
+   ========================================= */
+
+.chorus {
+  grid-column: 1 / 7;
+  width: 100%;
+  margin: 2em 0;
+  padding: 2em 1em;
+  text-align: center;
+  color: var(--pink);
+  font-size: clamp(1.4rem, 3.5vw, 2.5rem);
+  line-height: 1.6;
+
+  border-top: 1px solid #a58bff55;
+  border-bottom: 1px solid #ff91d255;
+
+  opacity: 1;
+  transform: scale(1);
+  filter: none;
+  transform-origin: center center;
+}
+
+/* Regels in het refrein */
+
+.chorus p {
+  margin: 0.4em 0;
+  animation: none;
+}
+
+/* Het kleine zinnetje tussen haakjes */
+
+.echo {
+  color: var(--purple);
+  font-size: 0.65em;
+  opacity: 0.8;
+}
+
+/* =========================================
+   REGELS OVER HET RONDRENNEN
+   ========================================= */
+
+.running {
+  grid-column: 1 / 7;
+  text-align: center;
+}
+
+.second {
+  color: var(--purple);
+}
+
+/* =========================================
+   EEN GEVOEL DAT GROEIT
+   ========================================= */
+
+.growing {
+  grid-column: 2 / 6;
+  text-align: center;
+  color: var(--purple);
+}
+
+.shallow {
+  grid-column: 1 / 7;
+  text-align: center;
+}
+
+.third {
+  color: var(--soft-purple);
+}
+
+/* =========================================
+   DE LAST OP HAAR SCHOUDERS
+   ========================================= */
+
+.heavy {
+  grid-column: 1 / 7;
+  text-align: center;
+  color: var(--purple);
+}
+
+/* =========================================
+   I CAN HEAR AN ALARM
+   Schokkerig en plotseling naar voren
+   ========================================= */
+
+.alarm {
+  grid-column: 1 / 7;
+  text-align: center;
+  color: var(--pink);
+  font-weight: 700;
+  font-size: clamp(1.3rem, 3vw, 2rem);
+
+  opacity: 1;
+  transform: none;
+  filter: none;
+  transform-origin: center;
+}
+
+/* =========================================
+   MUST BE A MORNING
+   Paars verandert naar geel
+   ========================================= */
+
+.morning {
+  grid-column: 1 / 7;
+  text-align: center;
+  color: var(--purple);
+  font-size: clamp(1.8rem, 4vw, 3rem);
+
+  opacity: 1;
+  transform: none;
+  filter: none;
+  text-shadow: none;
+}
+
+/* =========================================
+   ANIMATIES
+   ========================================= */
+
+/* Titel komt rustig tevoorschijn */
+
+@keyframes title-appear {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Het woord 'around' draait rond */
+
+@keyframes slow-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Het refrein wordt groter en duidelijker */
+
+@keyframes chorus-grow {
+  0% {
+    opacity: 0.15;
+    transform: scale(0.55);
+    filter: blur(5px);
+  }
+
+  45% {
+    opacity: 0.7;
+    transform: scale(0.85);
+    filter: blur(1px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1.15);
+    filter: blur(0);
+  }
+}
+
+/* Alarm schokt naar voren */
+
+@keyframes alarm-approach {
+  0% {
+    opacity: 0;
+    transform: translateY(50px) scale(0.65);
+    filter: blur(8px);
+  }
+
+  25% {
+    opacity: 0.8;
+    transform: translateY(-5px) scale(1.15) rotate(-3deg);
+    filter: blur(0);
+  }
+
+  45% {
+    transform: translateY(4px) scale(0.95) rotate(3deg);
+  }
+
+  65% {
+    transform: translateY(-3px) scale(1.08) rotate(-2deg);
+  }
+
+  80% {
+    transform: translateY(2px) scale(1.02) rotate(1deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotate(0);
+    filter: blur(0);
+  }
+}
+
+/* De ochtend wordt langzaam geel */
+
+@keyframes morning-colour {
+  0% {
+    color: var(--purple);
+    opacity: 0.25;
+    text-shadow: 0 0 0 transparent;
+    transform: scale(0.9);
+  }
+
+  50% {
+    color: #f4d76b;
+    opacity: 0.75;
+    text-shadow: 0 0 15px #f4d76b55;
+    transform: scale(1);
+  }
+
+  100% {
+    color: var(--morning-yellow);
+    opacity: 1;
+    text-shadow: 0 0 30px #ffdc6a99;
+    transform: scale(1.08);
+  }
+}
+
+/* Fade-effect voor de songtekst */
+
+@keyframes scroll-fade {
+  0% {
+    opacity: 0.1;
+    filter: blur(3px);
+    transform: translateY(25px);
+  }
+
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+}
+
+/* =========================================
+   SCROLLANIMATIES
+   Werken in browsers met scroll-driven animations
+   ========================================= */
+
+@supports (animation-timeline: view()) {
+  /* Gewone regels vervagen in en worden duidelijker */
+
+  .line:not(.chorus):not(.alarm):not(.morning) {
+    animation: scroll-fade linear both;
+    animation-timeline: view(block);
+    animation-range: entry 0% cover 35%;
+  }
+
+  /* Het refrein groeit als je ernaartoe scrolt */
+
+  .chorus {
+    animation: chorus-grow linear both;
+    animation-timeline: view(block);
+    animation-range: entry 0% cover 65%;
+  }
+
+  /* Het alarm komt schokkerig dichterbij */
+
+  .alarm {
+    animation: alarm-approach linear both;
+    animation-timeline: view(block);
+    animation-range: entry 0% entry 45%;
+  }
+
+  /* De laatste regel verandert naar geel */
+
+  .morning {
+    animation: morning-colour linear both;
+    animation-timeline: view(block);
+    animation-range: entry 0% cover 65%;
+  }
+}
+
+/* =========================================
+   MOBIELE VERSIE
+   ========================================= */
+
+@media (max-width: 600px) {
+  header {
+    padding: 3em 1em 2em;
+  }
+
+  main {
+    width: 90%;
+    padding: 2em 0 6em;
+  }
+
+  .lyrics {
+    column-gap: 0.5em;
+    row-gap: 6rem;
+  }
+
+  .noise,
+  .voice,
+  .growing {
+    grid-column: 1 / 7;
+    text-align: center;
+  }
+
+  .chorus {
+    padding: 1.5em 0.5em;
+  }
+
+  .chorus p {
+    overflow-wrap: anywhere;
+  }
+}
+
+/* =========================================
+   TOEGANKELIJKHEID
+   Minder beweging als iemand dat instelt
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+
+  .line,
+  .chorus,
+  .alarm,
+  .morning {
+    opacity: 1;
+    filter: none;
+    transform: none;
+  }
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 1.5em;
+  padding: 0.7em 1.2em;
+  color: #f5efff;
+  text-decoration: none;
+  border: 1px solid #c7b5ff;
+  border-radius: 2em;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.back-link:hover,
+.back-link:focus-visible {
+  background-color: #c7b5ff;
+  color: #100c1c;
+}
+
+.back-link:focus-visible {
+  outline: 2px solid #ff91d2;
+  outline-offset: 4px;
+}
