@@ -3,133 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Digital Garden | Keuken</title>
+    <title>Digital Garden | Welkom</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
-  <body>
+  <body class="intro-page">
     <header class="top-bar">
       <a class="site-title" href="index.html">✿ Digital Garden</a>
-
       <button
         class="menu-toggle"
+        type="button"
         aria-label="Open navigatiemenu"
         aria-expanded="false"
         aria-controls="main-nav"
       >
         ☰
       </button>
-
       <nav id="main-nav" class="main-nav" aria-label="Hoofdnavigatie">
-        <a href="index.html" aria-current="page">Keuken</a>
+        <a href="index.html" aria-current="page">Welkom</a>
+        <a href="keuken.html">Keuken</a>
         <a href="slaapkamer.html">Slaapkamer</a>
         <a href="woonkamer.html">Woonkamer</a>
         <a href="songtext2.0/index.html">Songtext</a>
       </nav>
-
-      <button class="theme-toggle" aria-label="Wissel licht en donker thema">
+      <button
+        class="theme-toggle"
+        type="button"
+        aria-label="Wissel licht en donker thema"
+      >
         <span class="theme-icon" aria-hidden="true">☾</span>
       </button>
     </header>
 
-    <main>
-      <section class="room-viewport" aria-label="De keuken achtergrond">
-        <div class="room-world">
-          <img class="room-background" src="images/keuken.png" alt="" />
+    <img class="me-image" src="images/me.png" alt="Tekening van mij" />
+    <main class="intro-main">
+      <section class="intro-card" aria-labelledby="intro-title">
+        <h1 id="intro-title">Welkom in mijn Digital Garden!</h1>
+        <p>
+          Dit is een klein, persoonlijk wereldje dat laat zien hoe mijn hoofd en
+          creativiteit eruitzien. Als slechthorend persoon kan een dag soms best
+          veel prikkels geven. Tekenen fantaseren en andere dingen zijn voor mij
+          een fijne plek om even tot rust te komen.
+        </p>
 
-          <button class="creature creature-one" data-message=" Hoooo Hoooo! ">
-            <img src="images/creature-1.png" alt="Tekening uiltje" />
-          </button>
+        <p>Je kunt de verschillende kamers ontdekken</p>
 
-          <button class="creature creature-two" data-message="Squeeeek squeek!">
-            <img src="images/creature-2.png" alt="tekening muisje" />
-          </button>
-
-          <button
-            class="clickable object-notes"
-            data-message="NOTE: Hey! En welkom op mijn webpagina! Mijn kleine safe-space waar ik altijd naartoe ga als een slechthorend creatief persoon."
-          >
-            <img src="images/notes.png" alt="tekening notities" />
-          </button>
-
-          <button
-            class="clickable object-cocktail"
-            data-open-book
-            aria-label="Open het cocktailboek"
-          >
-            <img src="images/cocktail.png" alt="Cocktail" />
-          </button>
-        </div>
-
-        <button
-          class="room-arrow arrow-left"
-          aria-label="Schuif naar links"
-          hidden
+        <section
+          class="intro-instructions"
+          aria-labelledby="instructions-title"
         >
-          ‹
-        </button>
-        <button
-          class="room-arrow arrow-right"
-          aria-label="Schuif naar rechts"
-          hidden
-        >
-          ›
-        </button>
+          <h2 id="instructions-title">Hoe werkt het?</h2>
+          <ul>
+            <li>
+              <strong>Klik op de tekeningen en wezentjes</strong> om een klein
+              berichtje te ontdekken.
+            </li>
+            <li>
+              <strong>Klik op speciale voorwerpen</strong> om bijvoorbeeld een
+              boek of mijn tekeningen te openen.
+            </li>
+            <li>
+              <strong>Gebruik de navigatie bovenaan</strong> om tussen de
+              keuken, slaapkamer en woonkamer te wisselen.
+            </li>
+            <li>
+              <strong>Wissel tussen licht en donker</strong> met het maantje
+              rechtsboven.
+            </li>
+          </ul>
+        </section>
+
+        <a class="intro-start" href="keuken.html">Kijk nu even rond! ✨</a>
       </section>
     </main>
 
-    <aside class="message-box" aria-live="polite" hidden>
-      <button class="message-close" aria-label="Sluit bericht">×</button>
-      <img src="images/text-box.png" alt="" />
-      <p class="message-text"></p>
-    </aside>
+    <img
+      class="Devider"
+      src="images/Decorative_Devider_3.png"
+      alt="een leuke decoratieve devider"
+    />
 
-    <section class="experience-backdrop" id="cocktail-backdrop" hidden>
-      <section
-        class="book-window"
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="cocktail-heading"
-      >
-        <button
-          class="experience-close"
-          data-close-experience
-          aria-label="Sluit cocktailboek"
-        >
-          ×
-        </button>
-
-        <div class="book-content">
-          <h2 id="cocktail-heading">The Cocktail Book 🍸</h2>
-
-          <div class="book-page">
-            <img
-              class="item-image"
-              id="cocktail-image"
-              src="images/pornstar-martini.png"
-              alt="Pornstar Martini"
-            />
-
-            <div class="item-details">
-              <p class="page-counter" id="cocktail-counter">1 / 4</p>
-              <h3 id="cocktail-name">Pornstar Martini</h3>
-              <p><strong>Mijn mening</strong></p>
-              <p id="cocktail-review"></p>
-              <p><strong>Zo maak je het</strong></p>
-              <p id="cocktail-recipe"></p>
-            </div>
-          </div>
-
-          <div class="page-controls">
-            <button id="cocktail-previous">← Vorige</button>
-            <button id="cocktail-next">Volgende →</button>
-          </div>
-        </div>
-      </section>
-    </section>
-
-    <button class="cookie-button" aria-label="Cookie-instellingen">🍪</button>
-
+    <button
+      class="cookie-button"
+      type="button"
+      aria-label="Cookie-instellingen"
+    >
+      🍪
+    </button>
     <div class="cookie-backdrop" hidden></div>
     <section
       class="cookie-panel"
@@ -145,18 +105,13 @@
       </p>
       <p>Je kunt optionele cookies weigeren en de website blijven gebruiken.</p>
       <div class="cookie-actions">
-        <button class="cookie-accept">Akkoord</button>
-        <button class="cookie-reject">Weiger optionele cookies</button>
-        <button class="cookie-close">Sluiten</button>
+        <button class="cookie-accept" type="button">Akkoord</button>
+        <button class="cookie-reject" type="button">
+          Weiger optionele cookies
+        </button>
+        <button class="cookie-close" type="button">Sluiten</button>
       </div>
     </section>
-
-    <div class="cookie-side-eye" role="status" aria-live="polite" hidden>
-      <span class="side-eye-face" aria-hidden="true">🙄🍪</span>
-      <p>Nouuuuu, jaaa zeggg…</p>
-      <p>
-        Je mag natuurlijk weigeren, maar mijn hart is toch een BEETJE gebroken.
-      </p>
-    </div>
+    <div class="cookie-side-eye" role="status" aria-live="polite" hidden></div>
   </body>
 </html>

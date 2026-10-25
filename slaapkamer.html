@@ -20,7 +20,8 @@
       </button>
 
       <nav id="main-nav" class="main-nav" aria-label="Hoofdnavigatie">
-        <a href="index.html">Keuken</a>
+        <a href="index.html">Welkom</a>
+        <a href="keuken.html">Keuken</a>
         <a href="slaapkamer.html" aria-current="page">Slaapkamer</a>
         <a href="woonkamer.html">Woonkamer</a>
         <a href="songtext2.0/index.html">Songtext</a>
@@ -32,6 +33,7 @@
     </header>
 
     <main>
+      <h1 class="visually-hidden">De slaapkamer</h1>
       <section class="room-viewport" aria-label="De slaapkamer">
         <div class="room-world">
           <img
@@ -42,21 +44,21 @@
 
           <button
             class="creature creature-three"
-            data-message="Zo fluffy... Ik denk dat ik in één keer in slaap zal vallen als ik mijn hoofd op het wol leg..."
+            data-dialogue="Zo fluffy... Ik denk dat ik in één keer in slaap zal vallen als ik mijn hoofd op het wol leg..."
           >
             <img src="images/creature-3.png" alt="tekening schaapje" />
           </button>
 
           <button
             class="creature creature-four"
-            data-message="Een konijn! Die hopt van de ene droom naar de andere."
+            data-dialogue="Een konijn! Die hopt van de ene droom naar de andere."
           >
             <img src="images/creature-4.png" alt="tekening konijn" />
           </button>
 
           <button
             class="clickable object-radio"
-            data-message="Ik hou enorm veel van muziek luisteren en af en toe zelfs op basis welke muziek het is, een fiml-scene bedenken."
+            data-dialogue="Ik hou enorm veel van muziek luisteren en af en toe zelfs op basis welke muziek het is, een fiml-scene bedenken."
           >
             <img src="images/radio.png" alt="tekening radio" />
           </button>
@@ -87,11 +89,17 @@
       </section>
     </main>
 
-    <aside class="message-box" aria-live="polite" hidden>
-      <button class="message-close" aria-label="Sluit bericht">×</button>
-      <img src="images/text-box.png" alt="text-box" />
-      <p class="message-text"></p>
-    </aside>
+    <dialog
+      id="message-dialog"
+      class="message-box"
+      aria-label="Bericht bij het aangeklikte object"
+    >
+      <form method="dialog">
+        <button class="message-close" aria-label="Sluit bericht">×</button>
+        <img src="images/text-box.png" alt="" />
+        <p class="message-text"></p>
+      </form>
+    </dialog>
 
     <section class="experience-backdrop" id="ipad-backdrop" hidden>
       <section

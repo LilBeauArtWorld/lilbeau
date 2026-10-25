@@ -20,7 +20,8 @@
       </button>
 
       <nav id="main-nav" class="main-nav" aria-label="Hoofdnavigatie">
-        <a href="index.html">Keuken</a>
+        <a href="index.html">Welkom</a>
+        <a href="keuken.html">Keuken</a>
         <a href="slaapkamer.html">Slaapkamer</a>
         <a href="woonkamer.html" aria-current="page">Woonkamer</a>
         <a href="songtext2.0/index.html">Songtext</a>
@@ -32,6 +33,7 @@
     </header>
 
     <main>
+      <h1 class="visually-hidden">De woonkamer</h1>
       <section class="room-viewport" aria-label="De woonkamer">
         <div class="room-world">
           <img
@@ -42,21 +44,21 @@
 
           <button
             class="creature creature-five"
-            data-message="Een slapend draakje... Zijn ruggenvin geeft licht. Handig als een nacht lampje voor tijdens het lezen."
+            data-dialogue="Een slapend draakje... Zijn ruggenvin geeft licht. Handig als een nacht lampje voor tijdens het lezen."
           >
             <img src="images/creature-5.png" alt="tekening draakje" />
           </button>
 
           <button
             class="creature creature-six"
-            data-message="Aww... Vast in slaap gevallen tijdens het lezen..."
+            data-dialogue="Aww... Vast in slaap gevallen tijdens het lezen..."
           >
             <img src="images/creature-6.png" alt="tekening vos" />
           </button>
 
           <button
             class="clickable object-hoor"
-            data-message="Een kleine simulatie hoe het is als een slechthorende: https://www.starkey.com/hearing-loss-simulator/simulator."
+            data-dialogue="Een kleine simulatie hoe het is als een slechthorende: https://www.starkey.com/hearing-loss-simulator/simulator."
           >
             <img
               src="images/hoorapparaten.png"
@@ -90,11 +92,17 @@
       </section>
     </main>
 
-    <aside class="message-box" aria-live="polite" hidden>
-      <button class="message-close" aria-label="Sluit bericht">×</button>
-      <img src="images/text-box.png" alt="" />
-      <p class="message-text"></p>
-    </aside>
+    <dialog
+      id="message-dialog"
+      class="message-box"
+      aria-label="Bericht bij het aangeklikte object"
+    >
+      <form method="dialog">
+        <button class="message-close" aria-label="Sluit bericht">×</button>
+        <img src="images/text-box.png" alt="" />
+        <p class="message-text"></p>
+      </form>
+    </dialog>
 
     <!-- LEESBOEK -->
     <section class="experience-backdrop" id="reading-backdrop" hidden>

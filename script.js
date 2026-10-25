@@ -86,9 +86,8 @@ themeButton?.addEventListener("click", function () {
 /* MARK: mini popups  */
 
 /*Dit zijn dus de onderdelen die kleine popups */
-const messageBox = document.querySelector(".message-box");
+const messageBox = document.querySelector("#message-dialog");
 const messageText = document.querySelector(".message-text");
-const messageClose = document.querySelector(".message-close");
 /* Hier zoekt het script naar alle creatures en andere klikbare objecten.
 ForEach  laat het script ieder gevonden object apart behandelt worden.*/
 document.querySelectorAll(".creature, .clickable").forEach(function (object) {
@@ -106,22 +105,21 @@ document.querySelectorAll(".creature, .clickable").forEach(function (object) {
 
     /*Alleen iets doen als de popup en de tekst erin bestaat. */
     if (messageText && messageBox) {
-      /*Elke object kan zijn eigen bericht hebben via 
-      de 'data-message' functie in HTML. Zodra er geen bericht in is gevoerd
-      wordt er geoon een lege tekst gebruikt */
-      messageText.textContent = object.dataset.message || "";
+      /* Elk klikbaar object heeft zijn eigen tekst via data-dialogue. */
+      messageText.textContent = object.dataset.dialogue || "";
 
-      /* Bwaaam, de popup verschijntttt!*/
-      messageBox.hidden = false;
+      /* Open de native HTML-dialog en laat hem subtiel inschuiven. */
+      if (!messageBox.open) {
+        messageBox.show();
+      }
+      messageBox.classList.remove("is-opening");
+      void messageBox.offsetWidth;
+      messageBox.classList.add("is-opening");
     }
   });
 });
-/* Klik je op t kruisje, dan verdwijnt de kleine pop-up weer!*/
-messageClose?.addEventListener("click", function () {
-  if (messageBox) {
-    messageBox.hidden = true;
-  }
-});
+/* Het kruisje zit in een form met method="dialog". Daardoor sluit
+   de browser de dialog vanzelf als je op de knop drukt. */
 
 /*Bronnenn:
 1. https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll
