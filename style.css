@@ -198,7 +198,7 @@ a:focus-visible {
   width: 10%;
 }
 .creature-six {
-  left: 50%;
+  left: 45%;
   bottom: 33%;
   width: 8%;
 }
@@ -239,7 +239,7 @@ a:focus-visible {
 
 .object-cocktail {
   left: 75%;
-  top: 43%;
+  top: 40%;
   width: 3%;
 }
 .object-alarm {
@@ -273,9 +273,15 @@ a:focus-visible {
 }
 
 .object-scherm {
-  left: 59%;
+  left: 60%;
   top: 20%;
-  width: 20.5%;
+  width: 20%;
+}
+
+.object-radio {
+  left: 69%;
+  top: 51%;
+  width: 4%;
 }
 
 .object-deken {
