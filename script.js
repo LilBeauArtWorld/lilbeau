@@ -381,7 +381,7 @@ const cocktails = [
     review:
       "YUM! Piña coladaaaaa! echt zo fricking lekker! Ik weet nog dat ik een keertje zo dronken was geworden omdat alle rum nsar de bodem was gezakt en ik was gewoon soortvan shotjes aan het drinken door een rietje... tip: altijd goed roeren! Voorde rest is het echt zalig, ben ook een fan vn annanas",
     recipe:
-      "Blend witte rum, ananassap en kokosroom met ijs. Schenk in een glas en garneer met ananas.",
+      "Blend witte rum, ananassap en kokosroom met smashed-ijs. Schenk in een glas en garneer met ananas.",
   },
   {
     name: "Aperol Spritz",
@@ -394,9 +394,10 @@ const cocktails = [
   {
     name: "Espresso Martini",
     image: "images/espresso-martini.png",
-    review: "Mijn mening komt hier. Perfect voor koffieliefhebbers?",
+    review:
+      "Ideaaaaaal voor koffie liefhebbers! Ook erg handig ALS je een cocktail gaat drinken en wat caffeïne binnen wilt hebben. Goed voor na een lange dag. Ik kan heb zelf niet maken aangezien ik geen espresso machine heb... Maar dat zorgt alleen maar dat ik het dubbel koester als ik het bestel.",
     recipe:
-      "Shake vodka, koffielikeur, verse espresso en ijs. Zeef in een martiniglas en garneer met koffiebonen.",
+      "Shake vodka, koffielikeur, verse espresso en ijs. Zeef in een martiniglas en garneer met koffiebonen. Simpel!",
   },
 ];
 
