@@ -4,6 +4,9 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 ### Learning Log
 
+<img src="images/Decorative_Devider_3.png"
+      alt="een leuke decoratieve devider" />
+
 ### Procesdocumentatie - Digital Garden
 
 ##### 1. Het oorspronkelijke idee
