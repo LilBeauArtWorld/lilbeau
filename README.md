@@ -119,6 +119,9 @@ Leading - de verticale ruimte tussen de tekstregels. Meer leading maakt een teks
 
 ##### ❓Als je in een ontwerp maar één variabele tot je beschikking had om hiërarchie aan te brengen (grootte, plaatsing, spacing, lettersoorten), welke zou je dan gebruiken en waarom?
 
+<img src="images/Decorative_Devider_3.png"
+      alt="een leuke decoratieve devider" />
+
 ### 🌸 2 okt -🌸
 
 💚 Ik heb helaas door prive redenen niet heel veel kunnen doen tijdens mijn studiedag... toch nog soortvan vandaag dingen kunnen squeezen en aanpassen.
@@ -208,6 +211,11 @@ dus ik heb echt de tijd genomen om videos en artikkelen te lezen over hoe javasc
 ### 🌸 23 sept -🌸
 
 💚 Ik heb decorative deviders gemaakt die de opmaak en sfeer van mijn website meer whimsical maakt! :) Ben er best trots op, aangezien het goed te zien is in lightmode, maar vooral in darkmode. love ittttt!
+
+<img src="images/Decorative_Devider_3.png"
+      alt="een leuke decoratieve devider" />
+
+# sprint 1
 
 ### 🌸 18 t/m 21 sept -🌸
 
