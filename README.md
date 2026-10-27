@@ -9,6 +9,8 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 ### Procesdocumentatie - Digital Garden
 
+<details> 
+<summary> Sprint 3 </summary>
 ##### 1. Het oorspronkelijke idee
 
 Mijn oorspronkelijke idee was om een persoonlijke website te maken die niet alleen als een portfolio functioneert, maar ook als een interactieve digitale wereld. Ik wilde mijn interesses zoals tekenen, lezen, bakken en creative projecten, op een visuele manier presenteren.
@@ -98,6 +100,11 @@ Ook zou ik de toegankelijkheid van de website uitgebreider testen. Hierbij zou i
 ##### ❓ Hoeveel gekkigheid moet er in je werk zitten?
 
 genoeg om je ontwerp uniek en creatief te maken, maar niet zoveel dat het onduidelijk of onbruikbaar wordt.
+
+</details>
+
+<details> 
+<summary> Sprint 2 </summary>
 
 ### 🌸 6 okt -🌸
 
@@ -212,10 +219,13 @@ dus ik heb echt de tijd genomen om videos en artikkelen te lezen over hoe javasc
 
 💚 Ik heb decorative deviders gemaakt die de opmaak en sfeer van mijn website meer whimsical maakt! :) Ben er best trots op, aangezien het goed te zien is in lightmode, maar vooral in darkmode. love ittttt!
 
+</details>
+
 <img src="images/Decorative_Devider_3.png"
       alt="een leuke decoratieve devider" />
 
-# sprint 1
+<details> 
+<summary> Sprint 1 </summary>
 
 ### 🌸 18 t/m 21 sept -🌸
 
@@ -448,7 +458,10 @@ Een website is 'webby' als je echt gebruik maakt van bijvoorbeeld interactie, an
 - Dream World: Zwevende eilanden die in de wolken zitten.
 - Art Studio Room:1 kamer met mmeerde interactieve elementen.
 - Fantasy Town: Een kleine dorpje waarin verschillende gebouwen verschillende onderdelen van mijn persoonlijkheid en interesses laten zien.
+</details>
 
+<details> 
+<summary> Sprint 0 </summary>
 ### 🌸4 sept - Workshops🌸
 
 💚 -Typografie-
@@ -485,4 +498,5 @@ Voor mijn website heb ik de domeinnaam lilbeau.nl gekozen.
 
 ##### ❓Beschrijf hoe je aanpassingen aan jouw pagina kunt maken en hoe je er voor zorgt dat die op het web gepubliceerd worden.
 
+</details>
 commit - sync changes - refresh page - bwam
