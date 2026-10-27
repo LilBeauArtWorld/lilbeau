@@ -46,11 +46,15 @@ Hierdoor wil ik het liefst meteen beginnen met maken maken maken. trial and erro
 
 ##### ❓ Begrijpen bezoekers de site?
 
+Aan de hand van de expo en (stiekem) observeren hoe mijn mede studenten mijn webiste gebruiken, kan ik zeggen dat het erg soepel gaat. Het heeft vertrouwde funties zoals de nav balk/hamburger menu. scroll funtie op telefoon, je kan klikken op objecten etc etc.
+
+Ik ga in de toekomst zeker door mensen, buiten, deze studie het laten testen. Misschien mijn ouders die zeker wel bekent zijn met telefoons, maar toch 1 of 2 generaties achter lopen... of zelfs mijn oma en opa die vooral de ipad gebruiken.
+
 ##### ❓ Wat vindt de opdrachtgever er van?
 
-##### ❓ Werkt dit wel?
+Mijn docenten zijn degenen die mijn werk beoordelen en feedback geven dus ik zie ze even als mijn opdrachtgever. Tijdens mijn gesprekken met Diederik kreeg ik eerst altijd de "Ja oke, maaaaaar..." Het was erg frustrerend aangezien elke feedback moment ik al wist wat er mis was, alleen had ik nooit de tijd gehad om het te perfectioneren omdat ik mijn website wel ongeveer 5 keer helemaal opnieuw moest coderen.
 
-##### ❓ Oooooh, kan dit óók?!
+Pas in de laatste 2 weken heb ik te horen gekregen dat was ik heb, leuk was... nou kon bijna janken van geluk. Eindelijk was het soortvan okay.
 
 Evalueren
 
