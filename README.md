@@ -671,6 +671,9 @@ Voor mijn website heb ik gekozen voor GitHub en GitHub Pages. Github gebruik ik 
 
 Voor mijn website heb ik de domeinnaam lilbeau.nl gekozen.
 
+<img src="conceptartproces/IPsetup.jpeg"
+      alt="IP" />
+
 ##### ❓Beschrijf hoe je aanpassingen aan jouw pagina kunt maken en hoe je er voor zorgt dat die op het web gepubliceerd worden.
 
 </details>
