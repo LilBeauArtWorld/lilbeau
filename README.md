@@ -279,7 +279,7 @@ Ook zou ik de toegankelijkheid van de website uitgebreider testen. Hierbij zou i
 <img src="conceptartproces/sontextstudy (7).png"
       alt="songtext versie 0" />
 
-<img src="conceptartproces/Decorative_Devider_3.png"
+<img src="images/Decorative_Devider_3.png"
       alt="een leuke decoratieve devider" />
 
 <img src="conceptartproces/songtextv1 (1).png"
