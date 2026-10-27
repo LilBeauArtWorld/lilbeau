@@ -56,25 +56,43 @@ Mijn docenten zijn degenen die mijn werk beoordelen en feedback geven dus ik zie
 
 Pas in de laatste 2 weken heb ik te horen gekregen dat was ik heb, leuk was... nou kon bijna janken van geluk. Eindelijk was het soortvan okay.
 
-Evalueren
-
-##### ❓ (1) wat wilde ik weten? (2) wat deed ik om er achter te komen? (3) wat was het resultaat? (4) wat weet ik nu (niet)?
+### Evalueren
 
 ##### ❓ Wat wil(de) ik weten/bereiken?
 
+Ik wilde een website maken die echt bij mij past en waarin mijn ervaringe met slechthorendheid, overprikkeling en creativiteit samenkomen.
+Ik wilde niet alleen uitleggen hoe het is om slechthorend te zijn, maar over het verhaal achter mijn concept te leren.
+Mijn doel was omm mijn idee om te zetten in een werkende website en ondertussen meer te leren over HTML, CSS en de interacties die mogenlijk zijn met JavaScript.
+
 ##### ❓ Wat heb ik gedaan?
 
-##### ❓ Wat was het resultaat?
+Ik heb verschillende ideeën onderzocht, mijn concept verder ontwikkeld en gewerkt aan de vormgeving van mijn website. Ik heb de achtergronden en andere visuele onderdelnen gemaakt en dezen met MHTL en CSS in mijn website verwerkt. Daarbij ben ik ook gaan werken met navigatie, klikbare objecten, dialogen en, of course, de light en dark mode. Ik wil later echt zelfstandig de JS funties uit mijn hoofd kunnen schrijven... zodat ik niet de heletijd meer hoef te tabben van ene pagina naar andere.
 
-##### ❓ Wat weet je nu (niet)?
+Niet alles ging zoals planned... Ik heb te vaak moeten wisselen waardoor er bepaalde ideeën afgeschaft moesten worden waar ik later opzich wel spijt van heb... maar ik weet wel dat mijn tijd te kort was.
 
 ##### ❓ Wat vond je (niet) leuk?
 
+Ik vond het begin van het denken en stormbrainen over wat voor website ik wil maken het leukst. De keuzes zijn reuze! Het coderen was redelijk leuk, alleen omdat ik een ingewikkelde website layout had, was het niet te doen met de functies van de deepdives alleen met de basics. Ik heb echt heel veel zelf studie moeten doen tijdens herfst reccess... raaaah! Maar het wel leuk om te zien wanneer een JS funtie eindelijk... functioneert!
+
 ##### ❓ Voldoet het nog aan de eisen?
+
+Ik heb echt voor mijn gevoel aan de citeria gehouden:
+
+- Het is fluid en adaptief!
+- het is ZEKER INTERACTIEF!
+- Het is zeker toegankelijk met de tab knop, oplezen van, en wat ik heb gezien bij apple users kon je zien wat de knoppen waaren enzo.
+- Het is volwassen, mijn cookies geven netjes aan wat voor gegevens gebruikt worden en waar.
+- nou... Ik denk dat er geen twijfel is aan het expressieve gedeelte... Het straalt persoonlijkheid uit EN niemand kan het zomaar na apen van mij :)
+- Het is zeker leuk, verassend en uniek!
+- Ik heb geprobeert om zo min mogenlijk spans, divs, id's, classes te gebruiken (naast de sontext waar je het wel mocht gebruiken) alleen met mijn website en mijn kennis, moest ik wel. Voor veel dingen was een consistente CSS code doable, maar omdat veel dingen zo anders zijn, moest ik wel aparte id's en classes en divs gebruiken. Het kon niet anders... :(...
 
 extra
 
 ##### ❓ Is de HTML die je hebt geschreven nog wel valide? Check het regelmatig, hiermee voorkom je onverklaarbare fouten. En klopt de HTML wel? Gebruik je de juiste elementen op de juiste plek?
+
+<img src="images/htmlcheck.png"
+      alt="een leuke decoratieve devider" />
+foto: Screenshot van mijn website html validator check
 
 ##### ❓ Check regelmatig of je website nog wel goed te gebruiken is met het toetsenbord. En of hij nog te begrijpen is met een screenreader. Zitten er alt-teksten op de afbeeldingen? Is het contrast overal hoog genoeg?
 
