@@ -249,7 +249,7 @@ Ook zou ik de toegankelijkheid van de website uitgebreider testen. Hierbij zou i
 <img src="conceptartproces/songtext-schets (3).jpeg"
       alt="songtextschets" />
 
-<img src="images/Decorative_Devider_1.png"
+<img src="images/Decorative_Devider_3.png"
       alt="een leuke decoratieve devider" />
 
 <img src="conceptartproces/sontextstudy (1).png"
@@ -273,7 +273,7 @@ Ook zou ik de toegankelijkheid van de website uitgebreider testen. Hierbij zou i
 <img src="conceptartproces/sontextstudy (7).png"
       alt="songtext versie 0" />
 
-<img src="images/Decorative_Devider_5.png"
+<img src="conceptartproces/Decorative_Devider_3.png"
       alt="een leuke decoratieve devider" />
 
 <img src="conceptartproces/songtextv1 (1).png"
@@ -282,7 +282,7 @@ Ook zou ik de toegankelijkheid van de website uitgebreider testen. Hierbij zou i
 <img src="conceptartproces/songtextv1 (2).png"
       alt="songtext versie 1" />
 
-<img src="images/Decorative_Devider_4.png"
+<img src="images/Decorative_Devider_3.png"
       alt="een leuke decoratieve devider" />
 
 <img src="conceptartproces/songtextv2 (1).png"
