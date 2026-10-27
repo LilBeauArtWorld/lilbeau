@@ -2,6 +2,38 @@
 
 Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door studenten worden gemaakt.
 
+<details> 
+<summary> Bi-Weekly-Geekly </summary>
+
+<img src="conceptartproces/bi-weekly-geekly.jpeg"
+      alt="BWG" />
+
+<img src="conceptartproces/bi-weekly-geekly2.jpeg"
+      alt="BWG" />
+
+<img src="conceptartproces/bi-weekly-geekly3.jpeg"
+      alt="BWG" />
+
+<img src="conceptartproces/bi-weekly-geekly4.jpeg"
+      alt="BWG" />
+
+<img src="conceptartproces/bi-weekly-geekly5.jpeg"
+      alt="BWG" />
+
+<img src="conceptartproces/bi-weekly-geekly6.JPG"
+      alt="BWG" />
+
+<img src="conceptartproces/bi-weekly-geekly7.JPG"
+      alt="BWG" />
+
+<img src="conceptartproces/bi-weekly-geekly8.JPG"
+      alt="BWG" />
+
+<img src="conceptartproces/bi-weekly-geekly9.jpeg"
+      alt="BWG" />
+
+</details>
+
 ### Learning Log
 
 <details>
@@ -103,6 +135,15 @@ foto: Screenshot van mijn website html validator check
 <summary> Final feedbacks en expo </summary>
 
 ### Reflectie op de feedback van mijn website
+
+<img src="conceptartproces/expofeedbacks.jpeg"
+      alt="expo feedback" />
+
+<img src="conceptartproces/learninglogfeedback.jpeg"
+      alt="checklist learning log" />
+
+<img src="conceptartproces/webbyeindproduct.jpeg"
+      alt="webby ratings voor mijn website" />
 
 Uit de feedback die ik van mijn mede studenten heb gekregen blijkt dat mijn website een persoonlijkeen creatieve uitstraling heeft. Ze vinden dat mijn digitale tuintje origineel is en goed bij mij past (vooral de mensen die mij ook echt kennen), omdat mijn eigen illustraties en ervaringen erin terug komen. Ook de cookies kregen een leuke opmerkingen zals hoe grappig het is.
 Ik vind het fijn om te zien dat mijn persoonlijke stijl duidelijk naar voren komt en dat mijn website daardoor anders is dan een standaard website.
