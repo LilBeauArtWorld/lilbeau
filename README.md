@@ -90,7 +90,7 @@ extra
 
 ##### ❓ Is de HTML die je hebt geschreven nog wel valide? Check het regelmatig, hiermee voorkom je onverklaarbare fouten. En klopt de HTML wel? Gebruik je de juiste elementen op de juiste plek?
 
-<img src="images/htmlcheck.png"
+<img src="conceptartproces/htmlcheck.png"
       alt="een leuke decoratieve devider" />
 foto: Screenshot van mijn website html validator check
 
@@ -436,6 +436,21 @@ Mijn garden is een interactieve point-and-click wereld waarin bezoekers door een
 💚 online school: inspiraties van posters opgezocht en eventueel elementen eruit halen die passen bij mijn website. Crazy 8 eruit gehaald, maar ik zal er nog 1 maken, want ik was niet tevrede met de eerste versie. (Ik wist niet echt wat ik moest schetsen).
 Ik ben ondertussen begonnen met de eerste schetsen van mijn website. Wat zullen de bezoekers moeten zien? Hoe zet ik de achtergronden in en de light en dark modus (switchen van achtergrond als je op een lampen sprite klikt). Kijk Youtube video's en verdiep mijzelf erin.
 
+<img src="conceptartproces/visualstudy (1).png"
+      alt="les visual studie" />
+
+<img src="conceptartproces/visualstudy (2).png"
+      alt="les visual studie" />
+
+<img src="conceptartproces/visualstudy (3).png"
+      alt="les visual studie" />
+
+<img src="conceptartproces/visualstudy (4).png"
+      alt="les visual studie" />
+
+<img src="conceptartproces/visualstudy (5).png"
+      alt="les visual studie" />
+
 ### 🌸8 sept -🌸
 
 💚 Ik heb vandaag voor mijn website een mindmap gemaakt over wie ik ben... wat natuurlijk belangrijk is als ik een persoonlijke website ga maken. Met hulp daarvan heb ik een paar puntjes eruit kunnen halen die ik eventueel wil laten zien. 50+ afbeelding opgezocht op pinterest die mij inspireren en video's opgezocht die mij kunnen helpen.
@@ -483,6 +498,18 @@ Ik denk dat ik van mijn garden een soort van simpele 'point-and-click'-game erva
 - het soort content - point and click and read en beleven
 - verschillende ervaringen - Voelen en horen.
 
+<img src="conceptartproces/presentatie (1).png"
+alt= "Presentatie slide" />
+
+<img src="conceptartproces/presentatie (2).png"
+alt= "Presentatie slide" />
+
+<img src="conceptartproces/presentatie (3).png"
+alt= "Presentatie slide" />
+
+<img src="conceptartproces/presentatie (4).png"
+alt= "Presentatie slide" />
+
 #### 🌼De checkout vragen voor vandaag:🌼
 
 ##### ❓Leg uit wat een digital garden is en waarom dat anders is dan een reguliere website.
@@ -504,6 +531,7 @@ Een website is 'webby' als je echt gebruik maakt van bijvoorbeeld interactie, an
 
 <details> 
 <summary> Sprint 0 </summary>
+
 ### 🌸4 sept - Workshops🌸
 
 💚 -Typografie-
