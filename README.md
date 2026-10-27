@@ -7,10 +7,30 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 <img src="images/Decorative_Devider_3.png"
       alt="een leuke decoratieve devider" />
 
-### Procesdocumentatie - Digital Garden
+<details>
+<summary> Final feedbacks en expo </summary>
+
+### Reflectie op de feedback van mijn website
+
+Uit de feedback die ik van mijn mede studenten heb gekregen blijkt dat mijn website een persoonlijkeen creatieve uitstraling heeft. Ze vinden dat mijn digitale tuintje origineel is en goed bij mij past (vooral de mensen die mij ook echt kennen), omdat mijn eigen illustraties en ervaringen erin terug komen. Ook de cookies kregen een leuke opmerkingen zals hoe grappig het is.
+Ik vind het fijn om te zien dat mijn persoonlijke stijl duidelijk naar voren komt en dat mijn website daardoor anders is dan een standaard website.
+
+Daarnaast kreeg ik positieve feedback over de technische uitwerking. De interacties werken goed en er is aandacht besteed aan toegankelijkheid, zoals het gebruik van labels, toetsenbordbediening en hoe klikbaar knoppen zijn (voor dikke vingers of mensen met tremoren). Dit is ook een check voormijzelf dat ik niet alleen bezig ben geweest met de visuals, maak ook echt rekening heb gehouden met de a11y :)
+
+Natuurlijk zijn er ook verbeterpunten die ik uit mijn feedback heb kunnen halen. Ik moet de interactiefbare clickables een kleine animatie maken zodat mensen een kleine indicatie hebben van wat klikbaar is.
+Voor de rest doet de screenreader menu het, alleen kom ik niet zo ver met mijn windows laptop om het ook iedere keer te checken... Maar van alle keren dat ik het bij apple users het hebben kunnen zien, werkt het prima!
+
+Wat is dus meeneem uit al deze feedback, is dat een creatief en persoonlijk ontwerp goed kan samengaan met toegankelijkheid en techniek. Ik heb geleerd dat het niet genoeg is om een website er goed uit te laten zien.
+
+Voor de volgende keer zou ik visual zeker nog meer willen verbeteren en meerdere verschillende interacties met objecten willen hebben... Wat alleen een informatieve site is een no-go for me. Het moet leuk ÉN educatief zijn. exploring!
+
+</details>
 
 <details> 
 <summary> Sprint 3 </summary>
+
+### Procesdocumentatie - Digital Garden
+
 ##### 1. Het oorspronkelijke idee
 
 Mijn oorspronkelijke idee was om een persoonlijke website te maken die niet alleen als een portfolio functioneert, maar ook als een interactieve digitale wereld. Ik wilde mijn interesses zoals tekenen, lezen, bakken en creative projecten, op een visuele manier presenteren.
@@ -237,15 +257,25 @@ Oriënteren en begrijpen
 
 ##### ❓ Waarom geven de docenten deze opdracht?
 
+Volgensmij willende docenten dat we leren hoe we een eigen idee kunnen omzetten in een werkende website. Daarbij gaat het niet alleen om HTML en CSS maar ook om het begrijpen van de doelgroep, het maken van ontwerp keuzens en het kunnen uitleggen waarom we bepaalde dingen doen.
+
+Voor mijn eigen website wilde ik iets maken dat persoonlijk bij mij past. Ik ben slechthorend en merk dat een drukke dag soms best veel energie kost. Creativiteit is voor mij een manier om even tot rust te komen en in mijn eigen wereld te zitten. Of het nou tekenen is, koken, cocktails maken of boeken lezen. Ik wil de gebruikers niet alleen iets latem zien, maar ok een beetje begrijpen hoe het is voor een persoon zoals ik.
+
 ##### ❓ Welke technieken gebruik ik?
+
+HTML gebruik ik om de structuur van mijn website te maken. CSS om de vormgeving en opmaak te regelen. Ik heb gewerkt met achtergronden, afbeeldinge, clickables en verschillende lettertypes en kleuren.
+
+Daarnaast heb ik JavaScript gebruikt voor onderdelen die interacteis nodig hebben, zoals het openen en sluiten van dialogen. Ik merk dat ik dit nog erg lastig vind om hett zelfstandig te schrijven en eigenlijk was dit allemaal een extra uitdaging... maar toch wil ik proberen te begrijpen wat de code doet en waarom ik bepaalde technieken nodig heb. Ik wil hier uiteindelijk steeds zelfstandiger in worden zodat ik niet meer de heletijd van de ene artikel, naar de andere video, naar mijn code moet alt+tabben... bah...
 
 ##### ❓ Wat zijn de randvoorwaarden?
 
-##### ❓ Waar gebruik je HTML/CSS voor?
+Nou ik moet een werkende website opleveren die aansluit bij de opdracht van dit blok. Ook moet ik mijn proccess ducumenteren, mijn bronnen vermelden en rekening houden met de toegankelijkheid en andere beooordelings criteria.
 
 ##### ❓ Wat kan er allemaal met CSS?
 
-Verbeelden en conceptualiseren
+Je kan eigenlijk een stuk meer met CSS dan dat ik dacht. Dus niet alleen kleur, lettergrootte of margins en paddings, maar ook afbeedlingen op de juiste plek zetten met positions of grids of flex.
+
+Verbeelden en conceptualtieseren
 
 ##### ❓ Lukt het om verschillende ideeën te bedenken?
 
