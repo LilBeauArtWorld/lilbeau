@@ -2,6 +2,9 @@
 
 Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door studenten worden gemaakt.
 
+<img src="images/Decorative_Devider_3.png"
+      alt="een leuke decoratieve devider" />
+
 <details> 
 <summary> Bi-Weekly-Geekly </summary>
 
@@ -123,7 +126,7 @@ extra
 ##### ❓ Is de HTML die je hebt geschreven nog wel valide? Check het regelmatig, hiermee voorkom je onverklaarbare fouten. En klopt de HTML wel? Gebruik je de juiste elementen op de juiste plek?
 
 <img src="conceptartproces/htmlcheck.png"
-      alt="een leuke decoratieve devider" />
+      alt="html validator" />
 foto: Screenshot van mijn website html validator check
 
 </details>
@@ -158,6 +161,9 @@ Wat is dus meeneem uit al deze feedback, is dat een creatief en persoonlijk ontw
 Voor de volgende keer zou ik visual zeker nog meer willen verbeteren en meerdere verschillende interacties met objecten willen hebben... Wat alleen een informatieve site is een no-go for me. Het moet leuk ÉN educatief zijn. exploring!
 
 </details>
+
+<img src="images/Decorative_Devider_3.png"
+      alt="een leuke decoratieve devider" />
 
 <details> 
 <summary> Sprint 3 </summary>
@@ -344,9 +350,6 @@ Leading - de verticale ruimte tussen de tekstregels. Meer leading maakt een teks
 
 ##### ❓Als je in een ontwerp maar één variabele tot je beschikking had om hiërarchie aan te brengen (grootte, plaatsing, spacing, lettersoorten), welke zou je dan gebruiken en waarom?
 
-<img src="images/Decorative_Devider_3.png"
-      alt="een leuke decoratieve devider" />
-
 ### 🌸 2 okt -🌸
 
 💚 Ik heb helaas door prive redenen niet heel veel kunnen doen tijdens mijn studiedag... toch nog soortvan vandaag dingen kunnen squeezen en aanpassen.
@@ -438,9 +441,6 @@ dus ik heb echt de tijd genomen om videos en artikkelen te lezen over hoe javasc
 💚 Ik heb decorative deviders gemaakt die de opmaak en sfeer van mijn website meer whimsical maakt! :) Ben er best trots op, aangezien het goed te zien is in lightmode, maar vooral in darkmode. love ittttt!
 
 </details>
-
-<img src="images/Decorative_Devider_3.png"
-      alt="een leuke decoratieve devider" />
 
 <details> 
 <summary> Sprint 1 </summary>
@@ -631,6 +631,9 @@ Een website is 'webby' als je echt gebruik maakt van bijvoorbeeld interactie, an
 - Fantasy Town: Een kleine dorpje waarin verschillende gebouwen verschillende onderdelen van mijn persoonlijkheid en interesses laten zien.
 </details>
 
+<img src="images/Decorative_Devider_3.png"
+      alt="een leuke decoratieve devider" />
+
 <details> 
 <summary> Sprint 0 </summary>
 
@@ -671,4 +674,6 @@ Voor mijn website heb ik de domeinnaam lilbeau.nl gekozen.
 ##### ❓Beschrijf hoe je aanpassingen aan jouw pagina kunt maken en hoe je er voor zorgt dat die op het web gepubliceerd worden.
 
 </details>
-commit - sync changes - refresh page - bwam
+
+<img src="images/Decorative_Devider_3.png"
+      alt="een leuke decoratieve devider" />
