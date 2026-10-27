@@ -237,6 +237,71 @@ Ook zou ik de toegankelijkheid van de website uitgebreider testen. Hierbij zou i
 
 ### 🌸 7 okt -🌸
 
+<details>
+<summary> Songtext</summary>
+
+<img src="conceptartproces/songtext-schets (1).jpeg"
+      alt="songtextschets" />
+
+<img src="conceptartproces/songtext-schets (2).jpeg"
+      alt="songtextschets" />
+
+<img src="conceptartproces/songtext-schets (3).jpeg"
+      alt="songtextschets" />
+
+<img src="images/Decorative_Devider_1.png"
+      alt="een leuke decoratieve devider" />
+
+<img src="conceptartproces/sontextstudy (1).png"
+      alt="songtext versie 0" />
+
+<img src="conceptartproces/sontextstudy (2).png"
+      alt="songtext versie 0" />
+
+<img src="conceptartproces/sontextstudy (3).png"
+      alt="songtext versie 0" />
+
+<img src="conceptartproces/sontextstudy (4).png"
+      alt="songtext versie 0" />
+
+<img src="conceptartproces/sontextstudy (5).png"
+      alt="songtext versie 0" />
+
+<img src="conceptartproces/sontextstudy (6).png"
+      alt="songtext versie 0" />
+
+<img src="conceptartproces/sontextstudy (7).png"
+      alt="songtext versie 0" />
+
+<img src="images/Decorative_Devider_5.png"
+      alt="een leuke decoratieve devider" />
+
+<img src="conceptartproces/songtextv1 (1).png"
+      alt="songtext versie 1" />
+
+<img src="conceptartproces/songtextv1 (2).png"
+      alt="songtext versie 1" />
+
+<img src="images/Decorative_Devider_4.png"
+      alt="een leuke decoratieve devider" />
+
+<img src="conceptartproces/songtextv2 (1).png"
+      alt="songtext versie 2" />
+
+<img src="conceptartproces/songtextv2 (2).png"
+      alt="songtext versie 2" />
+
+<img src="conceptartproces/songtextv2 (3).png"
+      alt="songtext versie 2" />
+
+<img src="conceptartproces/songtextv2 (4).png"
+      alt="songtext versie 2" />
+
+<img src="conceptartproces/songtextv2 (5).png"
+      alt="songtext versie 2" />
+
+</details>
+
 #### 🌼De checkout vragen voor maandag 7 okt:🌼
 
 ##### ❓ Waarom is het goed om een grid in je ontwerp toe te passen? Noem een reden voor de ontwerper en een voor de bezoeker.
@@ -418,10 +483,6 @@ Ik zal er bewuster mee omgaan, vooral als het een onbekende website is. Ik heb t
 ##### ❓ Een grid biedt ruimte om te spelen (vrijheid), maar tegelijkertijd ook eenheid en structuur (vastigheid). Wat wordt hiermee bedoeld?
 
 Een grid geeft structuur en hoevast, omdat elementen op een bepaalde manier worden uitgelijnd. Terelijkertijd geeft een grid vrijheid, omdat je binnen die structuur kan spelen met grootte, positie en verdelingen van elementen.
-
-##### ❓ Welk principe neem je mee in een laatste iteratie van je eigen Garden?
-
--
 
 ### 🌸14 sept -🌸
 
