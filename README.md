@@ -94,18 +94,6 @@ extra
       alt="een leuke decoratieve devider" />
 foto: Screenshot van mijn website html validator check
 
-##### ❓ Check regelmatig of je website nog wel goed te gebruiken is met het toetsenbord. En of hij nog te begrijpen is met een screenreader. Zitten er alt-teksten op de afbeeldingen? Is het contrast overal hoog genoeg?
-
-##### ❓ Is mijn website nog wel adaptief?
-
-##### ❓ Voldoet mijn website nog wel aan de wet?
-
-##### ❓ Zie ik mezelf nog wel terug in wat ik doe?
-
-##### ❓
-
-##### ❓
-
 </details>
 
 <img src="images/Decorative_Devider_3.png"
