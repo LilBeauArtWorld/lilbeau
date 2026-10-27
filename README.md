@@ -4,6 +4,88 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 ### Learning Log
 
+<details>
+<summary> Beetje kijken naar componenten </summary>
+
+### Oriënteren en begrijpen
+
+##### ❓ Waarom geven de docenten deze opdracht?
+
+Volgensmij willende docenten dat we leren hoe we een eigen idee kunnen omzetten in een werkende website. Daarbij gaat het niet alleen om HTML en CSS maar ook om het begrijpen van de doelgroep, het maken van ontwerp keuzens en het kunnen uitleggen waarom we bepaalde dingen doen.
+
+Voor mijn eigen website wilde ik iets maken dat persoonlijk bij mij past. Ik ben slechthorend en merk dat een drukke dag soms best veel energie kost. Creativiteit is voor mij een manier om even tot rust te komen en in mijn eigen wereld te zitten. Of het nou tekenen is, koken, cocktails maken of boeken lezen. Ik wil de gebruikers niet alleen iets latem zien, maar ok een beetje begrijpen hoe het is voor een persoon zoals ik.
+
+##### ❓ Welke technieken gebruik ik?
+
+HTML gebruik ik om de structuur van mijn website te maken. CSS om de vormgeving en opmaak te regelen. Ik heb gewerkt met achtergronden, afbeeldinge, clickables en verschillende lettertypes en kleuren.
+
+Daarnaast heb ik JavaScript gebruikt voor onderdelen die interacteis nodig hebben, zoals het openen en sluiten van dialogen. Ik merk dat ik dit nog erg lastig vind om hett zelfstandig te schrijven en eigenlijk was dit allemaal een extra uitdaging... maar toch wil ik proberen te begrijpen wat de code doet en waarom ik bepaalde technieken nodig heb. Ik wil hier uiteindelijk steeds zelfstandiger in worden zodat ik niet meer de heletijd van de ene artikel, naar de andere video, naar mijn code moet alt+tabben... bah...
+
+##### ❓ Wat zijn de randvoorwaarden?
+
+Nou ik moet een werkende website opleveren die aansluit bij de opdracht van dit blok. Ook moet ik mijn proccess ducumenteren, mijn bronnen vermelden en rekening houden met de toegankelijkheid en andere beooordelings criteria.
+
+##### ❓ Wat kan er allemaal met CSS?
+
+Je kan eigenlijk een stuk meer met CSS dan dat ik dacht. Dus niet alleen kleur, lettergrootte of margins en paddings, maar ook afbeedlingen op de juiste plek zetten met positions of grids of flex.
+
+### Verbeelden en conceptualtieseren
+
+##### ❓ Lukt het om verschillende ideeën te bedenken?
+
+Ja ik heb tijdens het process verschillende ideën onderzocht voor mijn website. Ik wilde iets maken waarin mijn creabea en ervaring met slechthorendheid samen komen. I plaats van alleen informatie over slechthorendheid te geven.
+
+Mijn concept is onderweg veranderd en duidelijker geworden. Ik heb gemerkt dat ik soms heel veel ideeën tegelijk heb, maar dat niet ieder idee automatisch bijdraagt aan het einresultaat. Nay I say. Ik moest daarom keuzes maken en bepalen welke onderdelen mijn verhaal het beste vertelllen.
+
+##### ❓ Lukt het om je ideeën te schetsen?
+
+Net als wat ik net zei: "Ik heb gemerkt dat ik soms heel veel ideeën tegelijk heb,"
+Hierdoor wil ik het liefst meteen beginnen met maken maken maken. trial and error. Toch helpt het wel om eventjes stil te staan bij indeling en de bedoelingen van per onderdeel.
+
+### Prototypen en uitwerken
+
+##### ❓ Begrijpen bezoekers de site?
+
+##### ❓ Wat vindt de opdrachtgever er van?
+
+##### ❓ Werkt dit wel?
+
+##### ❓ Oooooh, kan dit óók?!
+
+Evalueren
+
+##### ❓ (1) wat wilde ik weten? (2) wat deed ik om er achter te komen? (3) wat was het resultaat? (4) wat weet ik nu (niet)?
+
+##### ❓ Wat wil(de) ik weten/bereiken?
+
+##### ❓ Wat heb ik gedaan?
+
+##### ❓ Wat was het resultaat?
+
+##### ❓ Wat weet je nu (niet)?
+
+##### ❓ Wat vond je (niet) leuk?
+
+##### ❓ Voldoet het nog aan de eisen?
+
+extra
+
+##### ❓ Is de HTML die je hebt geschreven nog wel valide? Check het regelmatig, hiermee voorkom je onverklaarbare fouten. En klopt de HTML wel? Gebruik je de juiste elementen op de juiste plek?
+
+##### ❓ Check regelmatig of je website nog wel goed te gebruiken is met het toetsenbord. En of hij nog te begrijpen is met een screenreader. Zitten er alt-teksten op de afbeeldingen? Is het contrast overal hoog genoeg?
+
+##### ❓ Is mijn website nog wel adaptief?
+
+##### ❓ Voldoet mijn website nog wel aan de wet?
+
+##### ❓ Zie ik mezelf nog wel terug in wat ik doe?
+
+##### ❓
+
+##### ❓
+
+</details>
+
 <img src="images/Decorative_Devider_3.png"
       alt="een leuke decoratieve devider" />
 
@@ -250,86 +332,6 @@ dus ik heb echt de tijd genomen om videos en artikkelen te lezen over hoe javasc
 ### 🌸 18 t/m 21 sept -🌸
 
 💚 Heb vooral deze dagen mijn huidige wesite code een beetje aangepast en zitten spelen met kleuren en visuals. Ook heb ik wel wat meer persoonlijker textjes er in gedaan. Dat werd tijdens mijn feedback moment vertelt, maak het meer persoonlijker. Ook nog aan mijn kleine comic gewerkt, zeker nog niet af, alleen misschien gooi ik een tijdelijke digitale schets versie daarvan erin.
-
-#### 🌼De checkout vragen voor vrijdag 18 sept:🌼
-
-Oriënteren en begrijpen
-
-##### ❓ Waarom geven de docenten deze opdracht?
-
-Volgensmij willende docenten dat we leren hoe we een eigen idee kunnen omzetten in een werkende website. Daarbij gaat het niet alleen om HTML en CSS maar ook om het begrijpen van de doelgroep, het maken van ontwerp keuzens en het kunnen uitleggen waarom we bepaalde dingen doen.
-
-Voor mijn eigen website wilde ik iets maken dat persoonlijk bij mij past. Ik ben slechthorend en merk dat een drukke dag soms best veel energie kost. Creativiteit is voor mij een manier om even tot rust te komen en in mijn eigen wereld te zitten. Of het nou tekenen is, koken, cocktails maken of boeken lezen. Ik wil de gebruikers niet alleen iets latem zien, maar ok een beetje begrijpen hoe het is voor een persoon zoals ik.
-
-##### ❓ Welke technieken gebruik ik?
-
-HTML gebruik ik om de structuur van mijn website te maken. CSS om de vormgeving en opmaak te regelen. Ik heb gewerkt met achtergronden, afbeeldinge, clickables en verschillende lettertypes en kleuren.
-
-Daarnaast heb ik JavaScript gebruikt voor onderdelen die interacteis nodig hebben, zoals het openen en sluiten van dialogen. Ik merk dat ik dit nog erg lastig vind om hett zelfstandig te schrijven en eigenlijk was dit allemaal een extra uitdaging... maar toch wil ik proberen te begrijpen wat de code doet en waarom ik bepaalde technieken nodig heb. Ik wil hier uiteindelijk steeds zelfstandiger in worden zodat ik niet meer de heletijd van de ene artikel, naar de andere video, naar mijn code moet alt+tabben... bah...
-
-##### ❓ Wat zijn de randvoorwaarden?
-
-Nou ik moet een werkende website opleveren die aansluit bij de opdracht van dit blok. Ook moet ik mijn proccess ducumenteren, mijn bronnen vermelden en rekening houden met de toegankelijkheid en andere beooordelings criteria.
-
-##### ❓ Wat kan er allemaal met CSS?
-
-Je kan eigenlijk een stuk meer met CSS dan dat ik dacht. Dus niet alleen kleur, lettergrootte of margins en paddings, maar ook afbeedlingen op de juiste plek zetten met positions of grids of flex.
-
-Verbeelden en conceptualtieseren
-
-##### ❓ Lukt het om verschillende ideeën te bedenken?
-
-##### ❓ Lukt het om je ideeën te schetsen?
-
-##### ❓ Wat doet deze CSS-property?
-
-##### ❓ Welke content, en welke HTML heb ik nodig?
-
-##### ❓ Hoe kan ik dit soort content vormgeven?
-
-##### ❓ Wat als ik hier nu eens 1000 invul?
-
-Prototypen en uitwerken
-
-##### ❓ Begrijpen bezoekers de site?
-
-##### ❓ Wat vindt de opdrachtgever er van?
-
-##### ❓ Werkt dit wel?
-
-##### ❓ Oooooh, kan dit óók?!
-
-Evalueren
-
-##### ❓ (1) wat wilde ik weten? (2) wat deed ik om er achter te komen? (3) wat was het resultaat? (4) wat weet ik nu (niet)?
-
-##### ❓ Wat wil(de) ik weten/bereiken?
-
-##### ❓ Wat heb ik gedaan?
-
-##### ❓ Wat was het resultaat?
-
-##### ❓ Wat weet je nu (niet)?
-
-##### ❓ Wat vond je (niet) leuk?
-
-##### ❓ Voldoet het nog aan de eisen?
-
-extra
-
-##### ❓ Is de HTML die je hebt geschreven nog wel valide? Check het regelmatig, hiermee voorkom je onverklaarbare fouten. En klopt de HTML wel? Gebruik je de juiste elementen op de juiste plek?
-
-##### ❓ Check regelmatig of je website nog wel goed te gebruiken is met het toetsenbord. En of hij nog te begrijpen is met een screenreader. Zitten er alt-teksten op de afbeeldingen? Is het contrast overal hoog genoeg?
-
-##### ❓ Is mijn website nog wel adaptief?
-
-##### ❓ Voldoet mijn website nog wel aan de wet?
-
-##### ❓ Zie ik mezelf nog wel terug in wat ik doe?
-
-##### ❓
-
-##### ❓
 
 #### 🌼De checkout vragen voor vrijdag 21 sept:🌼
 
